@@ -5,35 +5,101 @@ document.addEventListener('DOMContentLoaded', () => {
     const appsGrid = document.getElementById('appsGrid');
     const searchInput = document.getElementById('searchInput');
 
-    // دالة لإنشاء مسار الصورة مع تجربة امتدادات مختلفة
-    function getImagePath(appName) {
-        const extensions = ['png', 'jpg', 'jpeg', 'webp', 'svg'];
-        for (let ext of extensions) {
-            const path = `assets/images/icons/${appName}.${ext}`;
-            // نعود المسار مباشرة، وسنتعامل مع الخطأ في onerror
-            if (ext === 'png') return path; // نبدأ بـ PNG كافتراضي
+    // دالة ذكية لتحويل اسم التطبيق إلى اسم الملف
+    function getImageFileName(appName) {
+        // قائمة التطابقات بين أسماء التطبيقات وأسماء الملفات
+        const fileMap = {
+            'Netflix': 'Netflix.png',
+            'FIFA Mobile': 'Fifa.jpg',
+            'PUBG Mobile': 'pubg_mobile.jpg',
+            'Free Fire': 'freefire.jpg',
+            'Call of Duty': 'call_of_duty.jpg',
+            'WhatsApp': 'WhatsApp.jpg',
+            'Instagram': 'Instagram.jpg',
+            'Telegram': 'Telegram.jpg',
+            'Snapchat': 'snapchat.jpg',
+            'TikTok': 'tiktok.webp',
+            'YouTube Music': 'YouTube.jpg',
+            'Spotify': 'Spotify.jpg',
+            'Facebook': 'Facebook.jpg',
+            'Messenger': 'Messenger.jpg',
+            'Google Translate': 'Google Translate.jpg',
+            'Google Gemini': 'Google-Gemini.jpg',
+            'Google Assistant': 'google_assistant.jpg',
+            'Google Play': 'google_play.jpg',
+            'ChatGPT': 'hatgpt.jpg',
+            'Microsoft Copilot': 'Microsoft-Copilot AI Assistant.jpg',
+            'Pinterest': 'Pinterest.jpg',
+            'Shopify': 'Shopify.jpg',
+            'Fiverr': 'Fiverr - Freelance Service.jpg',
+            'Uber': 'Uber.jpg',
+            'Minecraft': 'Minecraft.jpg',
+            'Roblox': 'Roblox.jpg',
+            'Clash of Clans': 'clash.webp',
+            'Telegram X': 'telegram_x.jpg',
+            'Instagram Lite': 'instagram_lite.jpg',
+            'TikTok Lite': 'tiktok_lite.jpg',
+            'Free Fire MAX': 'freefire_max.jpg',
+            'Snake': 'Snake.jpg',
+            'Temu': 'Temu.jpg',
+            'Threads': 'Threads.jpg',
+            'Khatma': 'Khatma.png',
+            'Koora': 'Koora.jpg',
+            'Ostoura': 'Ostoura.png',
+            'Partshisi': 'Partshisi.png',
+            'Picsart': 'Picsart.png',
+            'Lightroom': 'LightroomideoEditor.png',
+            'SnapTube': 'snaptube.png',
+            'Quran': 'quran.png',
+            'Salaat First': 'salaat_first.jpg',
+            'Opera': 'opera.jpeg',
+            'HatGPT': 'hatgpt.jpg'
+        };
+
+        return fileMap[appName] || null;
+    }
+
+    // دالة للتحقق من وجود الصورة
+    function checkImageExists(fileName, callback) {
+        if (!fileName) {
+            callback(null);
+            return;
         }
-        return `assets/images/icons/${appName}.png`;
+        
+        const img = new Image();
+        const path = `assets/images/icons/${fileName}`;
+        
+        img.onload = () => callback(path);
+        img.onerror = () => callback(null);
+        
+        img.src = path;
     }
 
     // دالة إنشاء بطاقة التطبيق
-    function createAppCard(app) {
+    function createAppCard(app, callback) {
         const card = document.createElement('div');
         card.className = 'app-card';
         
         const stars = '★'.repeat(Math.floor(app.rating)) + '☆'.repeat(5 - Math.floor(app.rating));
+        const defaultIcon = `https://ui-avatars.com/api/?name=${encodeURIComponent(app.name)}&background=2d3748&color=fff&size=80`;
         
-        const imagePath = getImagePath(app.name);
+        const fileName = getImageFileName(app.name);
         
-        card.innerHTML = `
-            <img src="${imagePath}" 
-                 alt="${app.name}" 
-                 class="app-icon"
-                 onerror="this.src='https://via.placeholder.com/80?text=${app.name.charAt(0)}'">
-            <h3 class="app-name">${app.name}</h3>
-            <div class="app-rating">${app.rating} ${stars}</div>
-            <a href="${app.downloadLink}" class="download-btn" target="_blank">تحميل</a>
-        `;
+        checkImageExists(fileName, (imagePath) => {
+            const finalPath = imagePath || defaultIcon;
+            
+            card.innerHTML = `
+                <img src="${finalPath}" 
+                     alt="${app.name}" 
+                     class="app-icon"
+                     onerror="this.src='${defaultIcon}'">
+                <h3 class="app-name">${app.name}</h3>
+                <div class="app-rating">${app.rating} ${stars}</div>
+                <a href="${app.downloadLink}" class="download-btn" target="_blank">تحميل</a>
+            `;
+            
+            if (callback) callback();
+        });
         
         return card;
     }
@@ -43,18 +109,25 @@ document.addEventListener('DOMContentLoaded', () => {
         const card = document.createElement('div');
         card.className = 'slider-card';
         
-        const imagePath = getImagePath(app.name);
+        const stars = '★'.repeat(Math.floor(app.rating)) + '☆'.repeat(5 - Math.floor(app.rating));
+        const defaultIcon = `https://ui-avatars.com/api/?name=${encodeURIComponent(app.name)}&background=2d3748&color=fff&size=100`;
         
-        card.innerHTML = `
-            <img src="${imagePath}" 
-                 alt="${app.name}" 
-                 class="app-icon"
-                 style="width: 100px; height: 100px;"
-                 onerror="this.src='https://via.placeholder.com/100?text=${app.name.charAt(0)}'">
-            <h3 class="app-name">${app.name}</h3>
-            <div class="app-rating">${app.rating} ★</div>
-            <a href="${app.downloadLink}" class="download-btn" target="_blank">تحميل الآن</a>
-        `;
+        const fileName = getImageFileName(app.name);
+        
+        checkImageExists(fileName, (imagePath) => {
+            const finalPath = imagePath || defaultIcon;
+            
+            card.innerHTML = `
+                <img src="${finalPath}" 
+                     alt="${app.name}" 
+                     class="app-icon"
+                     style="width: 100px; height: 100px; margin: 0 auto 15px;"
+                     onerror="this.src='${defaultIcon}'">
+                <h3 class="app-name">${app.name}</h3>
+                <div class="app-rating">${app.rating} ${stars}</div>
+                <a href="${app.downloadLink}" class="download-btn" target="_blank">تحميل الآن</a>
+            `;
+        });
         
         return card;
     }
@@ -65,39 +138,46 @@ document.addEventListener('DOMContentLoaded', () => {
         appsGrid.innerHTML = '';
         
         if (!apps || apps.length === 0) {
-            appsGrid.innerHTML = '<p style="text-align: center; grid-column: 1/-1;">لا توجد تطبيقات للعرض</p>';
+            appsGrid.innerHTML = '<p style="text-align: center; grid-column: 1/-1; padding: 40px;">لا توجد تطبيقات للعرض</p>';
             return;
         }
+
+        let loadedCount = 0;
+        const totalApps = apps.length;
 
         apps.forEach(app => {
             if (app.isSlider) {
                 sliderContainer.appendChild(createSliderCard(app));
             }
-            appsGrid.appendChild(createAppCard(app));
+            
+            const card = createAppCard(app, () => {
+                loadedCount++;
+                if (loadedCount === totalApps) {
+                    console.log('تم تحميل جميع التطبيقات');
+                }
+            });
+            appsGrid.appendChild(card);
         });
-        
-        console.log(`تم عرض ${apps.length} تطبيق`);
     }
 
     // البحث
+    let searchTimeout;
     searchInput.addEventListener('input', (e) => {
-        const searchTerm = e.target.value.toLowerCase().trim();
-        const filteredApps = appsData.filter(app => 
-            app.name.toLowerCase().includes(searchTerm)
-        );
-        renderApps(filteredApps);
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+            const searchTerm = e.target.value.toLowerCase().trim();
+            const filteredApps = appsData.filter(app => 
+                app.name.toLowerCase().includes(searchTerm)
+            );
+            renderApps(filteredApps);
+        }, 300);
     });
 
     // عرض التطبيقات عند التحميل
-    try {
-        if (typeof appsData !== 'undefined') {
-            renderApps(appsData);
-        } else {
-            console.error('ملف البيانات apps-data.js لم يتم تحميله');
-            appsGrid.innerHTML = '<p style="text-align: center; grid-column: 1/-1; color: red;">خطأ: لم يتم تحميل البيانات</p>';
-        }
-    } catch (error) {
-        console.error('خطأ في عرض التطبيقات:', error);
-        appsGrid.innerHTML = '<p style="text-align: center; grid-column: 1/-1; color: red;">حدث خطأ في تحميل التطبيقات</p>';
+    if (typeof appsData !== 'undefined') {
+        renderApps(appsData);
+    } else {
+        console.error('ملف البيانات لم يتم تحميله');
+        appsGrid.innerHTML = '<p style="text-align: center; grid-column: 1/-1; color: #e53e3e; padding: 40px;">خطأ: لم يتم تحميل البيانات</p>';
     }
 });

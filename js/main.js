@@ -1,53 +1,3 @@
-// js/main.js
-
-// بيانات التطبيقات (مدمجة مباشرة لتجنب مشاكل التحميل)
-const appsData = [
-    { id: 1, name: "PUBG Mobile", rating: 4.7, downloadLink: "#", isSlider: true, category: "Games" },
-    { id: 2, name: "FIFA Mobile", rating: 4.9, downloadLink: "#", isSlider: true, category: "Games" },
-    { id: 3, name: "Netflix", rating: 4.8, downloadLink: "#", isSlider: true, category: "Entertainment" },
-    { id: 4, name: "WhatsApp", rating: 4.5, downloadLink: "#", isSlider: false, category: "Social" },
-    { id: 5, name: "Instagram", rating: 4.6, downloadLink: "#", isSlider: false, category: "Social" },
-    { id: 6, name: "Telegram", rating: 4.7, downloadLink: "#", isSlider: false, category: "Social" },
-    { id: 7, name: "Snapchat", rating: 4.3, downloadLink: "#", isSlider: false, category: "Social" },
-    { id: 8, name: "TikTok", rating: 4.4, downloadLink: "#", isSlider: false, category: "Social" },
-    { id: 9, name: "Facebook", rating: 4.2, downloadLink: "#", isSlider: false, category: "Social" },
-    { id: 10, name: "Messenger", rating: 4.4, downloadLink: "#", isSlider: false, category: "Social" },
-    { id: 11, name: "Pinterest", rating: 4.5, downloadLink: "#", isSlider: false, category: "Social" },
-    { id: 12, name: "Threads", rating: 4.3, downloadLink: "#", isSlider: false, category: "Social" },
-    { id: 13, name: "Spotify", rating: 4.8, downloadLink: "#", isSlider: false, category: "Music" },
-    { id: 14, name: "YouTube Music", rating: 4.5, downloadLink: "#", isSlider: false, category: "Music" },
-    { id: 15, name: "Free Fire", rating: 4.6, downloadLink: "#", isSlider: false, category: "Games" },
-    { id: 16, name: "Call of Duty", rating: 4.7, downloadLink: "#", isSlider: false, category: "Games" },
-    { id: 17, name: "Clash of Clans", rating: 4.8, downloadLink: "#", isSlider: false, category: "Games" },
-    { id: 18, name: "Minecraft", rating: 4.9, downloadLink: "#", isSlider: false, category: "Games" },
-    { id: 19, name: "Roblox", rating: 4.5, downloadLink: "#", isSlider: false, category: "Games" },
-    { id: 20, name: "Snake", rating: 4.2, downloadLink: "#", isSlider: false, category: "Games" },
-    { id: 21, name: "Uber", rating: 4.4, downloadLink: "#", isSlider: false, category: "Lifestyle" },
-    { id: 22, name: "Google Translate", rating: 4.6, downloadLink: "#", isSlider: false, category: "Tools" },
-    { id: 23, name: "Google Gemini", rating: 4.5, downloadLink: "#", isSlider: false, category: "AI" },
-    { id: 24, name: "ChatGPT", rating: 4.8, downloadLink: "#", isSlider: false, category: "AI" },
-    { id: 25, name: "Microsoft Copilot", rating: 4.6, downloadLink: "#", isSlider: false, category: "AI" },
-    { id: 26, name: "Google Assistant", rating: 4.5, downloadLink: "#", isSlider: false, category: "AI" },
-    { id: 27, name: "Google Play", rating: 4.7, downloadLink: "#", isSlider: false, category: "Tools" },
-    { id: 28, name: "Fiverr", rating: 4.6, downloadLink: "#", isSlider: false, category: "Freelance" },
-    { id: 29, name: "Shopify", rating: 4.7, downloadLink: "#", isSlider: false, category: "Business" },
-    { id: 30, name: "Temu", rating: 4.4, downloadLink: "#", isSlider: false, category: "Shopping" },
-    { id: 31, name: "Picsart", rating: 4.6, downloadLink: "#", isSlider: false, category: "Photography" },
-    { id: 32, name: "Lightroom", rating: 4.7, downloadLink: "#", isSlider: false, category: "Photography" },
-    { id: 33, name: "Khatma", rating: 4.9, downloadLink: "#", isSlider: false, category: "Religious" },
-    { id: 34, name: "Quran", rating: 4.9, downloadLink: "#", isSlider: false, category: "Religious" },
-    { id: 35, name: "Salaat First", rating: 4.7, downloadLink: "#", isSlider: false, category: "Religious" },
-    { id: 36, name: "Koora", rating: 4.5, downloadLink: "#", isSlider: false, category: "Sports" },
-    { id: 37, name: "Ostoura", rating: 4.6, downloadLink: "#", isSlider: false, category: "Entertainment" },
-    { id: 38, name: "Partshisi", rating: 4.5, downloadLink: "#", isSlider: false, category: "Entertainment" },
-    { id: 39, name: "SnapTube", rating: 4.4, downloadLink: "#", isSlider: false, category: "Tools" },
-    { id: 40, name: "Opera", rating: 4.5, downloadLink: "#", isSlider: false, category: "Browser" },
-    { id: 41, name: "HatGPT", rating: 4.6, downloadLink: "#", isSlider: false, category: "AI" },
-    { id: 42, name: "Instagram Lite", rating: 4.3, downloadLink: "#", isSlider: false, category: "Social" },
-    { id: 43, name: "TikTok Lite", rating: 4.2, downloadLink: "#", isSlider: false, category: "Social" },
-    { id: 44, name: "Telegram X", rating: 4.5, downloadLink: "#", isSlider: false, category: "Social" }
-];
-
 // خريطة أسماء الملفات
 const fileMap = {
     'Netflix': 'Netflix.png',
@@ -188,7 +138,6 @@ function createSliderCard(app) {
 }
 
 function renderApps(apps) {
-    console.log('Rendering apps:', apps.length);
     const sliderContainer = document.getElementById('sliderContainer');
     const appsGrid = document.getElementById('appsGrid');
     
@@ -211,13 +160,11 @@ function renderApps(apps) {
         }
         appsGrid.appendChild(createAppCard(app));
     });
-    
-    console.log('Apps rendered successfully');
 }
 
 // التهيئة عند تحميل الصفحة
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Page loaded, appsData:', appsData ? appsData.length : 'undefined');
+    console.log('Page loaded');
     
     // عرض التطبيقات
     if (typeof appsData !== 'undefined' && appsData.length > 0) {
@@ -230,184 +177,94 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Sidebar Functionality
+    // ==================== Sidebar ====================
     const menuToggle = document.getElementById('menuToggle');
     const sidebar = document.getElementById('sidebar');
     const sidebarClose = document.getElementById('sidebarClose');
     const sidebarOverlay = document.getElementById('sidebarOverlay');
 
     function openSidebar() {
-        if (sidebar) {
-            sidebar.classList.add('active');
-        }
-        if (sidebarOverlay) {
-            sidebarOverlay.classList.add('active');
-        }
+        if (sidebar) sidebar.classList.add('active');
+        if (sidebarOverlay) sidebarOverlay.classList.add('active');
         document.body.classList.add('sidebar-open');
     }
 
     function closeSidebar() {
-        if (sidebar) {
-            sidebar.classList.remove('active');
-        }
-        if (sidebarOverlay) {
-            sidebarOverlay.classList.remove('active');
-        }
+        if (sidebar) sidebar.classList.remove('active');
+        if (sidebarOverlay) sidebarOverlay.classList.remove('active');
         document.body.classList.remove('sidebar-open');
     }
 
-    if (menuToggle) {
-        menuToggle.addEventListener('click', (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            openSidebar();
-        });
-    }
+    if (menuToggle) menuToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        openSidebar();
+    });
 
-    if (sidebarClose) {
-        sidebarClose.addEventListener('click', closeSidebar);
-    }
+    if (sidebarClose) sidebarClose.addEventListener('click', closeSidebar);
+    if (sidebarOverlay) sidebarOverlay.addEventListener('click', closeSidebar);
 
-    if (sidebarOverlay) {
-        sidebarOverlay.addEventListener('click', closeSidebar);
+    // ==================== Dark Mode ====================
+    const themeToggle = document.getElementById('themeToggle');
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    
+    // التحقق من الوضع المحفوظ
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+        if (themeToggle) themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        if (darkModeToggle) darkModeToggle.checked = true;
     }
-
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && sidebar && sidebar.classList.contains('active')) {
-            closeSidebar();
+    
+    function toggleDarkMode() {
+        const isNowDark = !document.body.classList.contains('dark-mode');
+        document.body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', isNowDark);
+        
+        if (themeToggle) {
+            themeToggle.innerHTML = isNowDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
         }
-    });
-
-    if (sidebar) {
-        sidebar.addEventListener('click', (e) => {
-            e.stopPropagation();
-        });
+        if (darkModeToggle) {
+            darkModeToggle.checked = isNowDark;
+        }
+    }
+    
+    if (themeToggle) {
+        themeToggle.addEventListener('click', toggleDarkMode);
+    }
+    
+    if (darkModeToggle) {
+        darkModeToggle.addEventListener('change', toggleDarkMode);
     }
 
-    document.querySelectorAll('.sidebar a').forEach(link => {
-        link.addEventListener('click', () => {
-            setTimeout(closeSidebar, 300);
-        });
-    });
-
-    // Dark Mode & Language
+    // ==================== Language ====================
+    const langToggle = document.getElementById('langToggle');
+    const langButtons = document.querySelectorAll('.lang-btn');
+    let currentLang = localStorage.getItem('lang') || 'ar';
+    
     const translations = {
         ar: {
-            darkMode: 'الوضع الليلي',
-            language: 'اللغة',
             searchPlaceholder: 'ابحث عن تطبيق...',
             featuredTitle: 'الأكثر تميزاً',
             allAppsTitle: 'جميع التطبيقات',
             download: 'تحميل',
-            downloadNow: 'تحميل الآن',
-            newsSection: 'أخبار التقنية',
-            contactSection: 'تواصل معنا',
-            settingsSection: 'الإعدادات',
-            statsSection: 'إحصائيات المتجر',
-            totalApps: 'تطبيق',
-            avgRating: 'متوسط التقييم',
-            footer: 'جميع الحقوق محفوظة'
+            downloadNow: 'تحميل الآن'
         },
         en: {
-            darkMode: 'Dark Mode',
-            language: 'Language',
             searchPlaceholder: 'Search for an app...',
             featuredTitle: 'Featured Apps',
             allAppsTitle: 'All Applications',
             download: 'Download',
-            downloadNow: 'Download Now',
-            newsSection: 'Tech News',
-            contactSection: 'Contact Us',
-            settingsSection: 'Settings',
-            statsSection: 'Store Statistics',
-            totalApps: 'Apps',
-            avgRating: 'Average Rating',
-            footer: 'All Rights Reserved'
+            downloadNow: 'Download Now'
         },
         fr: {
-            darkMode: 'Mode Sombre',
-            language: 'Langue',
             searchPlaceholder: 'Rechercher une application...',
             featuredTitle: 'Applications en Vedette',
             allAppsTitle: 'Toutes les Applications',
             download: 'Télécharger',
-            downloadNow: 'Télécharger Maintenant',
-            newsSection: 'Actualités Tech',
-            contactSection: 'Contactez-nous',
-            settingsSection: 'Paramètres',
-            statsSection: 'Statistiques du Magasin',
-            totalApps: 'Applications',
-            avgRating: 'Note Moyenne',
-            footer: 'Tous Droits Réservés'
+            downloadNow: 'Télécharger Maintenant'
         }
     };
-
-    let currentLang = localStorage.getItem('lang') || 'ar';
-    let isDarkMode = localStorage.getItem('darkMode') === 'true';
-    const themeToggle = document.getElementById('themeToggle');
-    const langToggle = document.getElementById('langToggle');
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    const langButtons = document.querySelectorAll('.lang-btn');
-
-    function initThemeAndLanguage() {
-        if (isDarkMode) {
-            document.body.classList.add('dark-mode');
-            if (themeToggle) {
-                themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-            }
-            if (darkModeToggle) {
-                darkModeToggle.checked = true;
-            }
-        }
-        
-        applyLanguage(currentLang);
-        animateStats();
-    }
-
-    function toggleDarkMode() {
-        isDarkMode = !isDarkMode;
-        document.body.classList.toggle('dark-mode');
-        localStorage.setItem('darkMode', isDarkMode);
-        
-        if (themeToggle) {
-            themeToggle.innerHTML = isDarkMode ? 
-                '<i class="fas fa-sun"></i>' : 
-                '<i class="fas fa-moon"></i>';
-        }
-        
-        if (darkModeToggle) {
-            darkModeToggle.checked = isDarkMode;
-        }
-    }
-
-    function updateLanguageTexts() {
-        const t = translations[currentLang];
-        
-        document.querySelectorAll('.download-btn').forEach(btn => {
-            if (btn.closest('.slider-card')) {
-                btn.textContent = t.downloadNow;
-            } else {
-                btn.textContent = t.download;
-            }
-        });
-        
-        const searchInput = document.getElementById('searchInput');
-        if (searchInput) {
-            searchInput.placeholder = t.searchPlaceholder;
-        }
-        
-        const h2Elements = document.querySelectorAll('.section-heading');
-        if (h2Elements[0]) h2Elements[0].textContent = t.featuredTitle;
-        if (h2Elements[1]) h2Elements[1].textContent = t.allAppsTitle;
-        
-        if (langToggle) {
-            const langText = langToggle.querySelector('.lang-text');
-            if (langText) {
-                langText.textContent = currentLang === 'ar' ? 'EN' : currentLang === 'en' ? 'FR' : 'AR';
-            }
-        }
-    }
-
+    
     function applyLanguage(lang) {
         currentLang = lang;
         localStorage.setItem('lang', lang);
@@ -415,94 +272,87 @@ document.addEventListener('DOMContentLoaded', function() {
         document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
         
         const t = translations[lang];
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput) searchInput.placeholder = t.searchPlaceholder;
         
-        document.querySelectorAll('[data-key]').forEach(el => {
-            const key = el.getAttribute('data-key');
-            if (t[key]) {
-                el.textContent = t[key];
+        const headings = document.querySelectorAll('.section-heading');
+        if (headings[0]) headings[0].textContent = t.featuredTitle;
+        if (headings[1]) headings[1].textContent = t.allAppsTitle;
+        
+        if (langToggle) {
+            const langText = langToggle.querySelector('.lang-text');
+            if (langText) {
+                langText.textContent = lang === 'ar' ? 'EN' : lang === 'en' ? 'FR' : 'AR';
             }
-        });
-        
-        updateLanguageTexts();
+        }
         
         if (langButtons) {
             langButtons.forEach(btn => {
                 btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
             });
         }
+        
+        // تحديث أزرار التحميل
+        document.querySelectorAll('.download-btn').forEach(btn => {
+            if (btn.closest('.slider-card')) {
+                btn.textContent = t.downloadNow;
+            } else {
+                btn.textContent = t.download;
+            }
+        });
     }
-
-    function switchLanguage() {
-        const langs = ['ar', 'en', 'fr'];
-        const currentIndex = langs.indexOf(currentLang);
-        const nextLang = langs[(currentIndex + 1) % langs.length];
-        applyLanguage(nextLang);
-    }
-
-    if (themeToggle) {
-        themeToggle.addEventListener('click', toggleDarkMode);
-    }
-
+    
     if (langToggle) {
-        langToggle.addEventListener('click', switchLanguage);
+        langToggle.addEventListener('click', () => {
+            const langs = ['ar', 'en', 'fr'];
+            const nextLang = langs[(langs.indexOf(currentLang) + 1) % langs.length];
+            applyLanguage(nextLang);
+        });
     }
-
-    if (darkModeToggle) {
-        darkModeToggle.addEventListener('change', toggleDarkMode);
-    }
-
+    
     if (langButtons) {
         langButtons.forEach(btn => {
             btn.addEventListener('click', () => {
-                const lang = btn.getAttribute('data-lang');
-                applyLanguage(lang);
+                applyLanguage(btn.getAttribute('data-lang'));
             });
         });
     }
-
-    function animateStats() {
-        const totalAppsEl = document.getElementById('totalApps');
-        if (!totalAppsEl) return;
-        
-        const target = 44;
-        let current = 0;
-        const increment = Math.ceil(target / 20);
-        
-        const updateCounter = () => {
-            current += increment;
-            if (current >= target) {
-                totalAppsEl.textContent = target + '+';
-            } else {
-                totalAppsEl.textContent = current + '+';
-                requestAnimationFrame(updateCounter);
-            }
-        };
-        
-        if (sidebar && !sidebar.dataset.animated) {
-            sidebar.addEventListener('transitionend', (e) => {
-                if (sidebar.classList.contains('active') && current === 0) {
-                    sidebar.dataset.animated = 'true';
-                    updateCounter();
-                }
-            }, { once: true });
-        }
-    }
-
-    // Search functionality
+    
+    // تطبيق اللغة المحفوظة
+    applyLanguage(currentLang);
+    
+    // ==================== Search ====================
     const searchInput = document.getElementById('searchInput');
     if (searchInput) {
         let searchTimeout;
         searchInput.addEventListener('input', (e) => {
             clearTimeout(searchTimeout);
             searchTimeout = setTimeout(() => {
-                const searchTerm = e.target.value.toLowerCase().trim();
-                const filteredApps = appsData.filter(app => 
-                    app.name.toLowerCase().includes(searchTerm)
+                const term = e.target.value.toLowerCase().trim();
+                const filtered = appsData.filter(app => 
+                    app.name.toLowerCase().includes(term)
                 );
-                renderApps(filteredApps);
+                renderApps(filtered);
             }, 300);
         });
     }
-
-    initThemeAndLanguage();
+    
+    // ==================== Stats Animation ====================
+    const totalAppsEl = document.getElementById('totalApps');
+    if (totalAppsEl && sidebar) {
+        sidebar.addEventListener('transitionend', () => {
+            if (sidebar.classList.contains('active') && totalAppsEl.textContent === '0+') {
+                let count = 0;
+                const interval = setInterval(() => {
+                    count += 5;
+                    if (count >= 44) {
+                        totalAppsEl.textContent = '44+';
+                        clearInterval(interval);
+                    } else {
+                        totalAppsEl.textContent = count + '+';
+                    }
+                }, 50);
+            }
+        }, { once: true });
+    }
 });

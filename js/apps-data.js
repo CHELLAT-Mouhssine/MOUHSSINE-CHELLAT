@@ -17,8 +17,6 @@ const appsData = [
     { id: 13, name: "Spotify", rating: 4.8, downloadLink: "#", isSlider: false, category: "Music" },
     { id: 14, name: "YouTube Music", rating: 4.5, downloadLink: "#", isSlider: false, category: "Music" },
     { id: 15, name: "Free Fire", rating: 4.6, downloadLink: "#", isSlider: false, category: "Games" },
-    { id: 16, name: "Call of Duty", rating: 4.7, downloadLink: "#", isSlider: false, category: "Games" },
-    { id: 17, name: "Clash of Clans", rating: 4.8, downloadLink: "#", isSlider: false, category: "Games" },
     { id: 20, name: "Snake", rating: 4.2, downloadLink: "#", isSlider: false, category: "Games" },
     { id: 22, name: "Google Translate", rating: 4.6, downloadLink: "#", isSlider: false, category: "Tools" },
     { id: 23, name: "Google Gemini", rating: 4.5, downloadLink: "#", isSlider: false, category: "AI" },

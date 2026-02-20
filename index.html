@@ -33,11 +33,99 @@
     </header>
 
     <!-- Sidebar -->
-    <aside class="sidebar" id="sidebar">
-        <div class="sidebar-header">
-            <h3>قائمة CHELAT STORE</h3>
-            <button class="sidebar-close" id="sidebarClose" aria-label="إغلاق القائمة">&times;</button>
+    <!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <h3>قائمة CHELAT STORE</h3>
+        <button class="sidebar-close" id="sidebarClose" aria-label="إغلاق القائمة">&times;</button>
+    </div>
+    
+    <!-- قسم الأخبار -->
+    <div class="sidebar-section">
+        <h4><i class="fas fa-newspaper"></i> <span data-key="newsSection">أخبار التقنية</span></h4>
+        <div class="news-links">
+            <a href="https://www.aljazeera.net" target="_blank" rel="noopener noreferrer" class="news-item">
+                <i class="fas fa-globe"></i> الجزيرة نت
+            </a>
+            <a href="https://www.bbc.com/arabic" target="_blank" rel="noopener noreferrer" class="news-item">
+                <i class="fas fa-broadcast-tower"></i> BBC Arabic
+            </a>
+            <a href="https://www.france24.com/ar" target="_blank" rel="noopener noreferrer" class="news-item">
+                <i class="fas fa-tv"></i> France 24
+            </a>
         </div>
+    </div>
+    
+    <!-- قسم التواصل -->
+    <div class="sidebar-section">
+        <h4><i class="fas fa-headset"></i> <span data-key="contactSection">تواصل معنا</span></h4>
+        <div class="contact-links">
+            <a href="https://wa.me/212621681257" target="_blank" rel="noopener noreferrer" class="contact-item whatsapp">
+                <i class="fab fa-whatsapp"></i> <span data-key="whatsapp">واتساب</span>
+            </a>
+            <a href="mailto:Mouhssinechellat@gmail.com" class="contact-item email">
+                <i class="fas fa-envelope"></i> <span data-key="email">البريد الإلكتروني</span>
+            </a>
+            <a href="tel:+212621681257" class="contact-item phone">
+                <i class="fas fa-phone"></i> <span data-key="phone">اتصل بنا</span>
+            </a>
+        </div>
+    </div>
+    
+    <!-- قسم الإعدادات -->
+    <div class="sidebar-section settings-section">
+        <h4><i class="fas fa-cog"></i> <span data-key="settingsSection">الإعدادات</span></h4>
+        
+        <!-- تبديل الوضع -->
+        <div class="setting-item">
+            <div class="setting-label">
+                <i class="fas fa-moon"></i>
+                <span data-key="darkMode">الوضع الليلي</span>
+            </div>
+            <label class="toggle-switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="toggle-slider"></span>
+            </label>
+        </div>
+        
+        <!-- تغيير اللغة -->
+        <div class="setting-item">
+            <div class="setting-label">
+                <i class="fas fa-language"></i>
+                <span data-key="language">اللغة</span>
+            </div>
+            <div class="lang-selector">
+                <button class="lang-btn active" data-lang="ar">العربية</button>
+                <button class="lang-btn" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="fr">Français</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- قسم إحصائيات -->
+    <div class="sidebar-section stats-section">
+        <h4><i class="fas fa-chart-line"></i> <span data-key="statsSection">إحصائيات المتجر</span></h4>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number" id="totalApps">0+</span>
+                <span class="stat-label" data-key="totalApps">تطبيق</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">4.7★</span>
+                <span class="stat-label" data-key="avgRating">متوسط التقييم</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- تذييل القائمة -->
+    <div class="sidebar-footer">
+        <p>© 2026 CHELAT STORE</p>
+        <small data-key="footer">جميع الحقوق محفوظة</small>
+    </div>
+</aside>
+
+<!-- Overlay للخلفية -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
         
         <!-- قسم الأخبار -->
         <div class="sidebar-section">

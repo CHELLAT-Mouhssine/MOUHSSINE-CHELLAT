@@ -9,6 +9,7 @@ const appsData = [
     
     // Regular Apps - محدثة لتطابق أسماء الملفات 
     { id: 6, name: "Telegram", rating: 4.7, downloadLink: "#", isSlider: false, category: "Social" },
+     { id: 9, name: "Facebook", rating: 4.2, downloadLink: "#", isSlider: false, category: "Social" },
     { id: 7, name: "Snapchat", rating: 4.3, downloadLink: "#", isSlider: false, category: "Social" },
     { id: 8, name: "TikTok", rating: 4.4, downloadLink: "#", isSlider: false, category: "Social" },
     { id: 10, name: "Messenger", rating: 4.4, downloadLink: "#", isSlider: false, category: "Social" },
@@ -16,6 +17,7 @@ const appsData = [
     { id: 12, name: "Threads", rating: 4.3, downloadLink: "#", isSlider: false, category: "Social" },
     { id: 13, name: "Spotify", rating: 4.8, downloadLink: "#", isSlider: false, category: "Music" },
     { id: 14, name: "YouTube Music", rating: 4.5, downloadLink: "#", isSlider: false, category: "Music" },
+    { id: 25, name: "Microsoft Copilot", rating: 4.6, downloadLink: "#", isSlider: false, category: "AI" },
     { id: 15, name: "Free Fire", rating: 4.6, downloadLink: "#", isSlider: false, category: "Games" },
     { id: 20, name: "Snake", rating: 4.2, downloadLink: "#", isSlider: false, category: "Games" },
     { id: 22, name: "Google Translate", rating: 4.6, downloadLink: "#", isSlider: false, category: "Tools" },

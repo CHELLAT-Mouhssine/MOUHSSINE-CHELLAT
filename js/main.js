@@ -15,68 +15,119 @@ const fileMap = {
     'Messenger': 'Messenger.jpg',
     'Pinterest': 'Pinterest.jpg',
     'Threads': 'Threads.jpg',
+    'Twitter': 'Twitter.jpg',
+    'LinkedIn': 'LinkedIn.jpg',
+    'Discord': 'Discord.jpg',
+    'Reddit': 'Reddit.jpg',
+    'Viber': 'Viber.jpg',
     'Call of Duty': 'CD.jpg',
+    'Clash of Clans': 'clash.webp',
+    'Minecraft': 'Minecraft.jpg',
+    'Roblox': 'Roblox.jpg',
+    'Among Us': 'AmongUs.jpg',
+    'Subway Surfers': 'SubwaySurfers.jpg',
+    'Candy Crush': 'CandyCrush.jpg',
+    '8 Ball Pool': '8BallPool.jpg',
+    'Ludo King': 'LudoKing.jpg',
+    'Asphalt 9': 'Asphalt9.jpg',
+    'Snake': 'Snake.jpg',
     'Google Translate': 'Google Translate.jpg',
-    'Google Gemini': 'Google-Gemini.jpg',
+    'Google Chrome': 'GoogleChrome.jpg',
+    'Microsoft Office': 'MicrosoftOffice.jpg',
+    'Adobe Acrobat': 'AdobeAcrobat.jpg',
+    'CamScanner': 'CamScanner.jpg',
+    'Dropbox': 'Dropbox.jpg',
+    'Google Drive': 'GoogleDrive.jpg',
+    'Google Photos': 'GooglePhotos.jpg',
+    'Firefox': 'Firefox.jpg',
+    'Brave Browser': 'BraveBrowser.jpg',
+    'SHAREit': 'SHAREit.jpg',
+    'Truecaller': 'Truecaller.jpg',
+    'Amazon': 'Amazon.jpg',
+    'AliExpress': 'AliExpress.jpg',
+    'Noon': 'Noon.jpg',
+    'Jumia': 'Jumia.jpg',
+    'Temu': 'Temu.jpg',
+    'Shopify': 'Shopify.jpg',
+    'Uber Eats': 'UberEats.jpg',
+    'Talabat': 'Talabat.jpg',
+    'Glovo': 'Glovo.jpg',
+    'Mrsool': 'Mrsool.jpg',
+    'PayPal': 'PayPal.jpg',
+    'Binance': 'Binance.jpg',
+    'Western Union': 'WesternUnion.jpg',
+    'Coinbase': 'Coinbase.jpg',
+    'Sky News Arabia': 'SkyNews.jpg',
+    'Al Arabiya': 'AlArabiya.jpg',
+    'MyFitnessPal': 'MyFitnessPal.jpg',
+    'Nike Training': 'NikeTraining.jpg',
+    'Strava': 'Strava.jpg',
+    'Duolingo': 'Duolingo.jpg',
+    'Khan Academy': 'KhanAcademy.jpg',
+    'Udemy': 'Udemy.jpg',
+    'Canva': 'Canva.jpg',
+    'Picsart': 'Picsart.png',
+    'Adobe Photoshop': 'AdobePhotoshop.jpg',
+    'Google Maps': 'GoogleMaps.jpg',
+    'Waze': 'Waze.jpg',
+    'Booking.com': 'Booking.jpg',
+    'Airbnb': 'Airbnb.jpg',
+    'Avast Antivirus': 'Avast.jpg',
+    'Norton Security': 'Norton.jpg',
+    'Quran': 'quran.png',
+    'Khatma': 'Khatma.png',
+    'Salaat First': 'salaat_first.jpg',
     'ChatGPT': 'hatgpt.jpg',
+    'Google Gemini': 'Google-Gemini.jpg',
     'Microsoft Copilot': 'Copilot.jpg',
     'Google Assistant': 'google_assistant.jpg',
-    'Google Play': 'google_play.jpg',
-    'Uber': 'Uber.jpg',
-    'Fiverr': 'Fiverr - Freelance Service.jpg',
-    'Shopify': 'Shopify.jpg',
-    'Temu': 'Temu.jpg',
-    'Picsart': 'Picsart.png',
-    'Lightroom': 'LightroomideoEditor.png',
-    'Snake': 'Snake.jpg',
-    'Clash of Clans': 'clash.webp',
-    'Khatma': 'Khatma.png',
     'Koora': 'Koora.jpg',
     'Ostoura': 'Ostoura.png',
     'Partshisi': 'Partshisi.png',
     'SnapTube': 'snaptube.png',
-    'Quran': 'quran.png',
-    'Salaat First': 'salaat_first.jpg',
     'Opera': 'opera.jpeg',
     'HatGPT': 'hatgpt.jpg',
+    'Uber': 'Uber.jpg',
+    'Fiverr': 'Fiverr - Freelance Service.jpg',
+    'Lightroom': 'LightroomideoEditor.png',
+    'Google Play': 'google_play.jpg',
+    'Shahid': 'Shahid.jpg',
+    'OSN+': 'OSN.jpg',
+    'Yacine TV': 'yacine-tv.png',
+    'beIN CONNECT': 'beIN.jpg',
+    'Kooora Live': 'KoooraLive.jpg',
+    'SoundCloud': 'SoundCloud.jpg',
+    'Deezer': 'Deezer.jpg',
+    'VLC Player': 'VLC.jpg',
+    'MX Player': 'MXPlayer.jpg',
+    'InShot': 'InShot.jpg',
+    'KineMaster': 'KineMaster.jpg',
     'Telegram X': 'telegram_x.jpg',
     'Instagram Lite': 'instagram_lite.jpg',
     'TikTok Lite': 'tiktok_lite.jpg',
     'Free Fire MAX': 'freefire_max.jpg',
-    'Roblox': 'Roblox.jpg',
-    'Minecraft': 'Minecraft.jpg'
+    'eFootball PES': 'eFootball.jpg',
+    'IMO': 'IMO.jpg',
+    'Line': 'Line.jpg',
+    'WeChat': 'WeChat.jpg',
+    'Google Photos': 'GooglePhotos.jpg',
+    'Flashlight': 'Flashlight.jpg',
+    'Calculator': 'Calculator.jpg',
+    'eBay': 'eBay.jpg',
+    'Fiver': 'Fiverr.jpg',
+    'Google Gemini': 'Google-Gemini.jpg'
 };
 
-// ألوان مخصصة
 const appColors = {
-    'WhatsApp': '25D366',
-    'Facebook': '1877F2',
-    'Messenger': '00B2FF',
-    'Call of Duty': 'FF6B6B',
-    'Roblox': 'DE1212',
-    'Minecraft': '5D8C3A',
-    'Uber': '000000',
-    'Microsoft Copilot': '00A4EF',
-    'Netflix': 'E50914',
-    'Spotify': '1DB954',
-    'Instagram': 'E4405F',
-    'Snapchat': 'FFFC00',
-    'Telegram': '0088CC',
-    'TikTok': '000000',
-    'Pinterest': 'BD081C',
-    'Threads': '000000',
-    'YouTube Music': 'FF0000',
-    'Google Translate': '4285F4',
-    'Google Gemini': '8E75F5',
-    'ChatGPT': '10A37F',
-    'Google Assistant': '4285F4',
-    'Google Play': '34A853',
-    'Fiverr': '1DBF73',
-    'Shopify': '96BF48',
-    'Temu': 'FB7701',
-    'Picsart': 'C209C2',
-    'Free Fire': 'FFA500',
-    'Clash of Clans': 'F1C40F'
+    'WhatsApp': '25D366', 'Facebook': '1877F2', 'Messenger': '00B2FF',
+    'Call of Duty': 'FF6B6B', 'Roblox': 'DE1212', 'Minecraft': '5D8C3A',
+    'Uber': '000000', 'Microsoft Copilot': '00A4EF', 'Netflix': 'E50914',
+    'Spotify': '1DB954', 'Instagram': 'E4405F', 'Snapchat': 'FFFC00',
+    'Telegram': '0088CC', 'TikTok': '000000', 'Pinterest': 'BD081C',
+    'YouTube Music': 'FF0000', 'Google Translate': '4285F4',
+    'ChatGPT': '10A37F', 'Google Play': '34A853', 'Fiverr': '1DBF73',
+    'Shopify': '96BF48', 'Temu': 'FB7701', 'Picsart': 'C209C2',
+    'Free Fire': 'FFA500', 'Clash of Clans': 'F1C40F'
 };
 
 function getDefaultIcon(appName) {
@@ -102,11 +153,8 @@ function createAppCard(app) {
     const defaultIcon = getDefaultIcon(app.name);
     
     card.innerHTML = `
-        <img src="${imagePath || defaultIcon}" 
-             alt="${app.name}" 
-             class="app-icon"
-             onerror="this.onerror=null; this.src='${defaultIcon}'"
-             loading="lazy">
+        <img src="${imagePath || defaultIcon}" alt="${app.name}" class="app-icon"
+             onerror="this.onerror=null; this.src='${defaultIcon}'" loading="lazy">
         <h3 class="app-name">${app.name}</h3>
         <div class="app-rating">${app.rating} ${stars}</div>
         <a href="${app.downloadLink}" class="download-btn" target="_blank">تحميل</a>
@@ -124,9 +172,7 @@ function createSliderCard(app) {
     const defaultIcon = getDefaultIcon(app.name);
     
     card.innerHTML = `
-        <img src="${imagePath || defaultIcon}" 
-             alt="${app.name}" 
-             class="app-icon"
+        <img src="${imagePath || defaultIcon}" alt="${app.name}" class="app-icon"
              style="width: 100px; height: 100px; margin: 0 auto 15px;"
              onerror="this.onerror=null; this.src='${defaultIcon}'">
         <h3 class="app-name">${app.name}</h3>
@@ -139,45 +185,69 @@ function createSliderCard(app) {
 
 function renderApps(apps) {
     const sliderContainer = document.getElementById('sliderContainer');
-    const appsGrid = document.getElementById('appsGrid');
+    const categoriesContainer = document.getElementById('categoriesContainer');
     
-    if (!sliderContainer || !appsGrid) {
-        console.error('Containers not found!');
-        return;
-    }
+    if (!sliderContainer || !categoriesContainer) return;
     
     sliderContainer.innerHTML = '';
-    appsGrid.innerHTML = '';
+    categoriesContainer.innerHTML = '';
     
     if (!apps || apps.length === 0) {
-        appsGrid.innerHTML = '<p style="text-align: center; grid-column: 1/-1; padding: 40px; color: var(--text-color);">لا توجد تطبيقات للعرض</p>';
+        categoriesContainer.innerHTML = '<p style="text-align: center; padding: 40px;">لا توجد تطبيقات</p>';
         return;
     }
-
-    apps.forEach(app => {
-        if (app.isSlider) {
-            sliderContainer.appendChild(createSliderCard(app));
-        }
-        appsGrid.appendChild(createAppCard(app));
+    
+    // عرض التطبيقات المميزة في السلايدر
+    const featuredApps = apps.filter(app => app.isFeatured);
+    featuredApps.forEach(app => {
+        sliderContainer.appendChild(createSliderCard(app));
     });
+    
+    // تجميع التطبيقات حسب الفئات
+    const appsByCategory = {};
+    apps.forEach(app => {
+        if (!app.isFeatured) {
+            if (!appsByCategory[app.category]) {
+                appsByCategory[app.category] = [];
+            }
+            appsByCategory[app.category].push(app);
+        }
+    });
+    
+    // عرض كل فئة
+    for (const [categoryKey, categoryApps] of Object.entries(appsByCategory)) {
+        const categoryInfo = categories[categoryKey] || { name: categoryKey, icon: 'fa-box' };
+        
+        const section = document.createElement('div');
+        section.className = 'category-section';
+        
+        section.innerHTML = `
+            <div class="category-header">
+                <i class="fas ${categoryInfo.icon}"></i>
+                <h2>${categoryInfo.name}</h2>
+                <span style="margin-right: auto; color: var(--section-title); font-size: 0.9rem;">${categoryApps.length} تطبيق</span>
+            </div>
+            <div class="apps-grid" id="category-${categoryKey}"></div>
+        `;
+        
+        categoriesContainer.appendChild(section);
+        
+        const grid = section.querySelector('.apps-grid');
+        categoryApps.forEach(app => {
+            grid.appendChild(createAppCard(app));
+        });
+    }
 }
 
 // التهيئة عند تحميل الصفحة
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Page loaded');
     
-    // عرض التطبيقات
     if (typeof appsData !== 'undefined' && appsData.length > 0) {
         renderApps(appsData);
-    } else {
-        console.error('appsData is not defined or empty');
-        const appsGrid = document.getElementById('appsGrid');
-        if (appsGrid) {
-            appsGrid.innerHTML = '<p style="text-align: center; grid-column: 1/-1; padding: 40px; color: red;">خطأ: لم يتم تحميل البيانات</p>';
-        }
     }
     
-    // ==================== Sidebar ====================
+    // Sidebar
     const menuToggle = document.getElementById('menuToggle');
     const sidebar = document.getElementById('sidebar');
     const sidebarClose = document.getElementById('sidebarClose');
@@ -203,11 +273,10 @@ document.addEventListener('DOMContentLoaded', function() {
     if (sidebarClose) sidebarClose.addEventListener('click', closeSidebar);
     if (sidebarOverlay) sidebarOverlay.addEventListener('click', closeSidebar);
 
-    // ==================== Dark Mode ====================
+    // Dark Mode
     const themeToggle = document.getElementById('themeToggle');
     const darkModeToggle = document.getElementById('darkModeToggle');
     
-    // التحقق من الوضع المحفوظ
     const isDarkMode = localStorage.getItem('darkMode') === 'true';
     if (isDarkMode) {
         document.body.classList.add('dark-mode');
@@ -228,41 +297,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    if (themeToggle) {
-        themeToggle.addEventListener('click', toggleDarkMode);
-    }
-    
-    if (darkModeToggle) {
-        darkModeToggle.addEventListener('change', toggleDarkMode);
-    }
+    if (themeToggle) themeToggle.addEventListener('click', toggleDarkMode);
+    if (darkModeToggle) darkModeToggle.addEventListener('change', toggleDarkMode);
 
-    // ==================== Language ====================
+    // Language
     const langToggle = document.getElementById('langToggle');
     const langButtons = document.querySelectorAll('.lang-btn');
     let currentLang = localStorage.getItem('lang') || 'ar';
     
     const translations = {
-        ar: {
-            searchPlaceholder: 'ابحث عن تطبيق...',
-            featuredTitle: 'الأكثر تميزاً',
-            allAppsTitle: 'جميع التطبيقات',
-            download: 'تحميل',
-            downloadNow: 'تحميل الآن'
-        },
-        en: {
-            searchPlaceholder: 'Search for an app...',
-            featuredTitle: 'Featured Apps',
-            allAppsTitle: 'All Applications',
-            download: 'Download',
-            downloadNow: 'Download Now'
-        },
-        fr: {
-            searchPlaceholder: 'Rechercher une application...',
-            featuredTitle: 'Applications en Vedette',
-            allAppsTitle: 'Toutes les Applications',
-            download: 'Télécharger',
-            downloadNow: 'Télécharger Maintenant'
-        }
+        ar: { searchPlaceholder: 'ابحث عن تطبيق...', featuredTitle: '🔥 الأكثر تميزاً', download: 'تحميل', downloadNow: 'تحميل الآن' },
+        en: { searchPlaceholder: 'Search for an app...', featuredTitle: '🔥 Featured Apps', download: 'Download', downloadNow: 'Download Now' },
+        fr: { searchPlaceholder: 'Rechercher...', featuredTitle: '🔥 En Vedette', download: 'Télécharger', downloadNow: 'Télécharger Maintenant' }
     };
     
     function applyLanguage(lang) {
@@ -275,30 +321,21 @@ document.addEventListener('DOMContentLoaded', function() {
         const searchInput = document.getElementById('searchInput');
         if (searchInput) searchInput.placeholder = t.searchPlaceholder;
         
-        const headings = document.querySelectorAll('.section-heading');
-        if (headings[0]) headings[0].textContent = t.featuredTitle;
-        if (headings[1]) headings[1].textContent = t.allAppsTitle;
+        const heading = document.querySelector('.section-heading');
+        if (heading) heading.textContent = t.featuredTitle;
         
         if (langToggle) {
             const langText = langToggle.querySelector('.lang-text');
-            if (langText) {
-                langText.textContent = lang === 'ar' ? 'EN' : lang === 'en' ? 'FR' : 'AR';
-            }
+            if (langText) langText.textContent = lang === 'ar' ? 'EN' : lang === 'en' ? 'FR' : 'AR';
         }
         
         if (langButtons) {
-            langButtons.forEach(btn => {
-                btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
-            });
+            langButtons.forEach(btn => btn.classList.toggle('active', btn.getAttribute('data-lang') === lang));
         }
         
-        // تحديث أزرار التحميل
         document.querySelectorAll('.download-btn').forEach(btn => {
-            if (btn.closest('.slider-card')) {
-                btn.textContent = t.downloadNow;
-            } else {
-                btn.textContent = t.download;
-            }
+            if (btn.closest('.slider-card')) btn.textContent = t.downloadNow;
+            else btn.textContent = t.download;
         });
     }
     
@@ -312,16 +349,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (langButtons) {
         langButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                applyLanguage(btn.getAttribute('data-lang'));
-            });
+            btn.addEventListener('click', () => applyLanguage(btn.getAttribute('data-lang')));
         });
     }
     
-    // تطبيق اللغة المحفوظة
     applyLanguage(currentLang);
     
-    // ==================== Search ====================
+    // Search
     const searchInput = document.getElementById('searchInput');
     if (searchInput) {
         let searchTimeout;
@@ -329,15 +363,13 @@ document.addEventListener('DOMContentLoaded', function() {
             clearTimeout(searchTimeout);
             searchTimeout = setTimeout(() => {
                 const term = e.target.value.toLowerCase().trim();
-                const filtered = appsData.filter(app => 
-                    app.name.toLowerCase().includes(term)
-                );
+                const filtered = appsData.filter(app => app.name.toLowerCase().includes(term));
                 renderApps(filtered);
             }, 300);
         });
     }
     
-    // ==================== Stats Animation ====================
+    // Stats Animation
     const totalAppsEl = document.getElementById('totalApps');
     if (totalAppsEl && sidebar) {
         sidebar.addEventListener('transitionend', () => {
@@ -345,8 +377,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 let count = 0;
                 const interval = setInterval(() => {
                     count += 5;
-                    if (count >= 44) {
-                        totalAppsEl.textContent = '44+';
+                    if (count >= appsData.length) {
+                        totalAppsEl.textContent = appsData.length + '+';
                         clearInterval(interval);
                     } else {
                         totalAppsEl.textContent = count + '+';

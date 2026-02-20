@@ -1,12 +1,7 @@
-// js/apps-data.js
-
 const appsData = [
-    // Slider Apps
     { id: 1, name: "PUBG Mobile", rating: 4.7, downloadLink: "#", isSlider: true, category: "Games" },
     { id: 2, name: "FIFA Mobile", rating: 4.9, downloadLink: "#", isSlider: true, category: "Games" },
     { id: 3, name: "Netflix", rating: 4.8, downloadLink: "#", isSlider: true, category: "Entertainment" },
-    
-    // Regular Apps
     { id: 4, name: "WhatsApp", rating: 4.5, downloadLink: "#", isSlider: false, category: "Social" },
     { id: 5, name: "Instagram", rating: 4.6, downloadLink: "#", isSlider: false, category: "Social" },
     { id: 6, name: "Telegram", rating: 4.7, downloadLink: "#", isSlider: false, category: "Social" },

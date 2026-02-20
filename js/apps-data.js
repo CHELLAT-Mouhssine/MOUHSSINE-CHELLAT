@@ -5,9 +5,9 @@ const appsData = [
     { id: 1, name: "PUBG Mobile", rating: 4.7, downloadLink: "#", isSlider: true, category: "Games" },
     { id: 2, name: "FIFA Mobile", rating: 4.9, downloadLink: "#", isSlider: true, category: "Games" },
     { id: 3, name: "Netflix", rating: 4.8, downloadLink: "#", isSlider: true, category: "Entertainment" },
-    
-    // Regular Apps - محدثة لتطابق أسماء الملفات
     { id: 5, name: "Instagram", rating: 4.6, downloadLink: "#", isSlider: false, category: "Social" },
+    
+    // Regular Apps - محدثة لتطابق أسماء الملفات 
     { id: 6, name: "Telegram", rating: 4.7, downloadLink: "#", isSlider: false, category: "Social" },
     { id: 7, name: "Snapchat", rating: 4.3, downloadLink: "#", isSlider: false, category: "Social" },
     { id: 8, name: "TikTok", rating: 4.4, downloadLink: "#", isSlider: false, category: "Social" },

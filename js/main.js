@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
             'FIFA Mobile': 'Fifa.jpg',
             'PUBG Mobile': 'pubg_mobile.jpg',
             'Free Fire': 'freefire.jpg',
-            'Call of Duty': 'call_of_duty.jpg',
             'Instagram': 'Instagram.jpg',
             'Telegram': 'Telegram.jpg',
             'Snapchat': 'snapchat.jpg',

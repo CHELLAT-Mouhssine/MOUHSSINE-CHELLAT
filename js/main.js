@@ -1,175 +1,194 @@
-// خريطة أسماء الملفات
+// ==================== خريطة أسماء الملفات ====================
 const fileMap = {
-    'Netflix': 'Netflix.png',
-    'FIFA Mobile': 'Fifa.jpg',
+    // Slider Apps
     'PUBG Mobile': 'pubg_mobile.jpg',
-    'Free Fire': 'freefire.jpg',
+    'FIFA Mobile': 'Fifa.jpg',
+    'Netflix': 'Netflix.png',
+    
+    // Social Media
     'WhatsApp': 'WhatsApp.jpg',
     'Instagram': 'Instagram.jpg',
     'Telegram': 'Telegram.jpg',
     'Snapchat': 'snapchat.jpg',
     'TikTok': 'tiktok.webp',
-    'YouTube Music': 'YouTube.jpg',
-    'Spotify': 'Spotify.jpg',
     'Facebook': 'Facebook.jpg',
     'Messenger': 'Messenger.jpg',
+    'Twitter': 'twitter.png',
+    'LinkedIn': 'linkedin.png',
     'Pinterest': 'Pinterest.jpg',
     'Threads': 'Threads.jpg',
-    'Twitter': 'Twitter.jpg',
-    'LinkedIn': 'LinkedIn.jpg',
-    'Discord': 'Discord.jpg',
-    'Reddit': 'Reddit.jpg',
-    'Viber': 'Viber.jpg',
+    'Discord': 'discord.png',
+    'Reddit': 'reddit.png',
+    'Viber': 'viber.png',
+    'IMO': 'imo.png',
+    'Line': 'line.png',
+    'WeChat': 'wechat.png',
+    'Telegram X': 'telegram_x.jpg',
+    'Instagram Lite': 'instagram_lite.jpg',
+    'TikTok Lite': 'tiktok_lite.jpg',
+    
+    // Games
+    'Free Fire': 'freefire.jpg',
     'Call of Duty': 'CD.jpg',
     'Clash of Clans': 'clash.webp',
     'Minecraft': 'Minecraft.jpg',
-    'Roblox': 'Roblox.jpg',
+    'Roblox': 'roblox.png',
     'Among Us': 'AmongUs.jpg',
     'Subway Surfers': 'SubwaySurfers.jpg',
     'Candy Crush': 'CandyCrush.jpg',
-    '8 Ball Pool': '8BallPool.jpg',
+    'eFootball PES': 'eFootball.jpg',
+    '8 Ball Pool': 'pool-balls (1).png',
     'Ludo King': 'LudoKing.jpg',
     'Asphalt 9': 'Asphalt9.jpg',
     'Snake': 'Snake.jpg',
+    'Free Fire MAX': 'freefire_max.jpg',
+    
+    // Music & Video
+    'Spotify': 'Spotify.jpg',
+    'YouTube Music': 'YouTube.jpg',
+    'SoundCloud': 'SoundCloud.jpg',
+    'Deezer': 'Deezer.jpg',
+    'VLC Player': 'vlc.png',
+    'MX Player': 'MXPlayer.jpg',
+    'InShot': 'InShot.jpg',
+    'KineMaster': 'KineMaster.jpg',
+    
+    // Streaming
+    'Shahid': 'Shahid.jpg',
+    'OSN+': 'OSN.jpg',
+    'Yacine TV': 'yacine-tv.png',
+    'beIN CONNECT': 'beIN.jpg',
+    'Kooora Live': 'KoooraLive.jpg',
+    
+    // Tools & Productivity
     'Google Translate': 'Google Translate.jpg',
     'Google Chrome': 'GoogleChrome.jpg',
     'Microsoft Office': 'MicrosoftOffice.jpg',
     'Adobe Acrobat': 'AdobeAcrobat.jpg',
     'CamScanner': 'CamScanner.jpg',
-    'Dropbox': 'Dropbox.jpg',
-    'Google Drive': 'GoogleDrive.jpg',
-    'Google Photos': 'GooglePhotos.jpg',
-    'Firefox': 'Firefox.jpg',
+    'Dropbox': 'dropbox.png',
+    'Google Drive': 'google-drive.png',
+    'Google Photos': 'google-photos.png',
+    'Firefox': 'firefox.png',
     'Brave Browser': 'BraveBrowser.jpg',
     'SHAREit': 'SHAREit.jpg',
     'Truecaller': 'Truecaller.jpg',
+    'Flashlight': 'Flashlight.jpg',
+    'Calculator': 'Calculator.jpg',
+    'Google Play': 'google-play.png',
+    'Google': 'google.png',
+    'Google Pay': 'google-pay.png',
+    'Google Maps': 'google-maps.png',
+    
+    // Shopping
     'Amazon': 'Amazon.jpg',
     'AliExpress': 'AliExpress.jpg',
     'Noon': 'Noon.jpg',
     'Jumia': 'Jumia.jpg',
     'Temu': 'Temu.jpg',
     'Shopify': 'Shopify.jpg',
+    'eBay': 'eBay.jpg',
+    
+    // Food & Delivery
     'Uber Eats': 'UberEats.jpg',
     'Talabat': 'Talabat.jpg',
     'Glovo': 'Glovo.jpg',
     'Mrsool': 'Mrsool.jpg',
-    'PayPal': 'PayPal.jpg',
-    'Binance': 'Binance.jpg',
-    'Western Union': 'WesternUnion.jpg',
+    
+    // Finance
+    'PayPal': 'paypal.png',
+    'Binance': 'binance.png',
+    'Western Union': 'western-union.png',
     'Coinbase': 'Coinbase.jpg',
+    
+    // News
     'Sky News Arabia': 'SkyNews.jpg',
     'Al Arabiya': 'AlArabiya.jpg',
+    
+    // Health & Fitness
     'MyFitnessPal': 'MyFitnessPal.jpg',
     'Nike Training': 'NikeTraining.jpg',
     'Strava': 'Strava.jpg',
+    
+    // Education
     'Duolingo': 'Duolingo.jpg',
     'Khan Academy': 'KhanAcademy.jpg',
     'Udemy': 'Udemy.jpg',
+    
+    // Design & Creativity
     'Canva': 'Canva.jpg',
     'Picsart': 'Picsart.png',
     'Adobe Photoshop': 'AdobePhotoshop.jpg',
-    'Google Maps': 'GoogleMaps.jpg',
+    
+    // Navigation & Travel
     'Waze': 'Waze.jpg',
     'Booking.com': 'Booking.jpg',
     'Airbnb': 'Airbnb.jpg',
+    
+    // Security
     'Avast Antivirus': 'Avast.jpg',
     'Norton Security': 'Norton.jpg',
+    
+    // Religious
     'Quran': 'quran.png',
     'Khatma': 'Khatma.png',
     'Salaat First': 'salaat_first.jpg',
+    
+    // AI & Assistants
     'ChatGPT': 'hatgpt.jpg',
     'Google Gemini': 'Google-Gemini.jpg',
     'Microsoft Copilot': 'Copilot.jpg',
     'Google Assistant': 'google_assistant.jpg',
+    
+    // Entertainment
     'Koora': 'Koora.jpg',
     'Ostoura': 'Ostoura.png',
     'Partshisi': 'Partshisi.png',
     'SnapTube': 'snaptube.png',
     'Opera': 'opera.jpeg',
     'HatGPT': 'hatgpt.jpg',
+    
+    // Other
     'Uber': 'Uber.jpg',
     'Fiverr': 'Fiverr - Freelance Service.jpg',
-    'Lightroom': 'LightroomideoEditor.png',
-    'Google Play': 'google_play.jpg',
-    'Shahid': 'Shahid.jpg',
-    'OSN+': 'OSN.jpg',
-    'Yacine TV': 'yacine-tv.png',
-    'beIN CONNECT': 'beIN.jpg',
-    'Kooora Live': 'KoooraLive.jpg',
-    'SoundCloud': 'SoundCloud.jpg',
-    'Deezer': 'Deezer.jpg',
-    'VLC Player': 'VLC.jpg',
-    'MX Player': 'MXPlayer.jpg',
-    'InShot': 'InShot.jpg',
-    'KineMaster': 'KineMaster.jpg',
-    'Telegram X': 'telegram_x.jpg',
-    'Instagram Lite': 'instagram_lite.jpg',
-    'TikTok Lite': 'tiktok_lite.jpg',
-    'Free Fire MAX': 'freefire_max.jpg',
-    'eFootball PES': 'eFootball.jpg',
-    'IMO': 'IMO.jpg',
-    'Line': 'Line.jpg',
-    'WeChat': 'WeChat.jpg',
-    'Google Photos': 'GooglePhotos.jpg',
-    'Flashlight': 'Flashlight.jpg',
-    'Calculator': 'Calculator.jpg',
-    'eBay': 'eBay.jpg',
-    'Fiver': 'Fiverr.jpg',
-    'Google Gemini': 'Google-Gemini.jpg'
-    const fileMap = {
-    // ... التطبيقات القديمة تبقى كما هي ...
-    
-    // التطبيقات الجديدة
-    'Roblox': 'roblox.png',
-    'IMO': 'social (1).png',  // أو غيّر الاسم لـ imo.png
-    'WhatsApp': 'social.png',  // أو غيّر الاسم لـ whatsapp.png
-    'Twitter': 'twitter.png',
-    'Viber': 'viber.png',
-    'VLC Player': 'vlc.png',
-    'WeChat': 'wechat.png',
-    'Western Union': 'western-union.png',
-    'Binance': 'binance.png',
-    'Discord': 'discord.png',
-    'Dropbox': 'dropbox.png',
-    'Firefox': 'firefox.png',
-    'Google Drive': 'google-drive.png',
-    'Google Pay': 'google-pay.png',
-    'Google Photos': 'google-photos.png',
-    'Google Play': 'google-play (1).png',
-    'Google': 'google.png',
-    'Google Assistant': 'google.png',
-    'Line': 'line.png',
-    'LinkedIn': 'linkedin.png',
-    'Google Maps': 'logo (1).png',
-    'PayPal': 'paypal.png',
-    '8 Ball Pool': 'pool-balls (1).png',
-    'Reddit': 'reddit.png'
+    'Lightroom': 'LightroomideoEditor.png'
 };
 
+// ==================== ألوان التطبيقات ====================
 const appColors = {
-    'WhatsApp': '25D366', 'Facebook': '1877F2', 'Messenger': '00B2FF',
-    'Call of Duty': 'FF6B6B', 'Roblox': 'DE1212', 'Minecraft': '5D8C3A',
-    'Uber': '000000', 'Microsoft Copilot': '00A4EF', 'Netflix': 'E50914',
-    'Spotify': '1DB954', 'Instagram': 'E4405F', 'Snapchat': 'FFFC00',
-    'Telegram': '0088CC', 'TikTok': '000000', 'Pinterest': 'BD081C',
-    'YouTube Music': 'FF0000', 'Google Translate': '4285F4',
-    'ChatGPT': '10A37F', 'Google Play': '34A853', 'Fiverr': '1DBF73',
-    'Shopify': '96BF48', 'Temu': 'FB7701', 'Picsart': 'C209C2',
-    'Free Fire': 'FFA500', 'Clash of Clans': 'F1C40F'
-    const appColors = {
-    // ... الألوان القديمة ...
-    
-    // الألوان الجديدة
-    'Roblox': 'DE1212',
-    'IMO': '2196F3',
     'WhatsApp': '25D366',
+    'Facebook': '1877F2',
+    'Messenger': '00B2FF',
+    'Call of Duty': 'FF6B6B',
+    'Roblox': 'DE1212',
+    'Minecraft': '5D8C3A',
+    'Uber': '000000',
+    'Microsoft Copilot': '00A4EF',
+    'Netflix': 'E50914',
+    'Spotify': '1DB954',
+    'Instagram': 'E4405F',
+    'Snapchat': 'FFFC00',
+    'Telegram': '0088CC',
+    'TikTok': '000000',
+    'Pinterest': 'BD081C',
+    'YouTube Music': 'FF0000',
+    'Google Translate': '4285F4',
+    'ChatGPT': '10A37F',
+    'Google Play': '34A853',
+    'Fiverr': '1DBF73',
+    'Shopify': '96BF48',
+    'Temu': 'FB7701',
+    'Picsart': 'C209C2',
+    'Free Fire': 'FFA500',
+    'Clash of Clans': 'F1C40F',
     'Twitter': '1DA1F2',
+    'LinkedIn': '0077B5',
+    'Discord': '5865F2',
+    'Reddit': 'FF4500',
     'Viber': '665CAC',
     'WeChat': '07C160',
     'Line': '00C300',
-    'Discord': '5865F2',
-    'Reddit': 'FF4500',
-    'LinkedIn': '0077B5',
+    'IMO': '2196F3',
     'VLC Player': 'FF8800',
     'Firefox': 'FF7139',
     'Google Maps': '4285F4',
@@ -177,13 +196,26 @@ const appColors = {
     'Google Photos': '4285F4',
     'Google Pay': '4285F4',
     'Google': '4285F4',
-    'Google Play': '34A853',
     'Dropbox': '0061FF',
     'PayPal': '003087',
     'Binance': 'F0B90B',
     'Western Union': 'FFDD00',
-    '8 Ball Pool': '000000'
+    '8 Ball Pool': '000000',
+    'Amazon': 'FF9900',
+    'YouTube Music': 'FF0000',
+    'Shahid': '0066CC',
+    'Duolingo': '58CC02',
+    'Canva': '00C4CC',
+    'Airbnb': 'FF5A5F',
+    'Waze': '33CCFF',
+    'Uber Eats': '06C167',
+    'Talabat': 'FF6B00',
+    'Coinbase': '0052FF',
+    'Avast Antivirus': 'FF7800',
+    'Opera': 'FF1B2D'
 };
+
+// ==================== الدوال الأساسية ====================
 
 function getDefaultIcon(appName) {
     const color = appColors[appName] || '2d3748';
@@ -248,7 +280,7 @@ function renderApps(apps) {
     categoriesContainer.innerHTML = '';
     
     if (!apps || apps.length === 0) {
-        categoriesContainer.innerHTML = '<p style="text-align: center; padding: 40px;">لا توجد تطبيقات</p>';
+        categoriesContainer.innerHTML = '<p style="text-align: center; padding: 40px;">لا توجد تطبيقات للعرض</p>';
         return;
     }
     
@@ -294,15 +326,23 @@ function renderApps(apps) {
     }
 }
 
-// التهيئة عند تحميل الصفحة
+// ==================== التهيئة عند تحميل الصفحة ====================
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Page loaded');
+    console.log('Page loaded successfully!');
+    console.log('Total apps:', appsData ? appsData.length : 0);
     
+    // عرض التطبيقات
     if (typeof appsData !== 'undefined' && appsData.length > 0) {
         renderApps(appsData);
+    } else {
+        console.error('appsData is not defined or empty');
+        const appsGrid = document.getElementById('appsGrid');
+        if (appsGrid) {
+            appsGrid.innerHTML = '<p style="text-align: center; padding: 40px; color: red;">خطأ: لم يتم تحميل البيانات</p>';
+        }
     }
     
-    // Sidebar
+    // ==================== Sidebar ====================
     const menuToggle = document.getElementById('menuToggle');
     const sidebar = document.getElementById('sidebar');
     const sidebarClose = document.getElementById('sidebarClose');
@@ -322,13 +362,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (menuToggle) menuToggle.addEventListener('click', (e) => {
         e.preventDefault();
+        e.stopPropagation();
         openSidebar();
     });
 
     if (sidebarClose) sidebarClose.addEventListener('click', closeSidebar);
     if (sidebarOverlay) sidebarOverlay.addEventListener('click', closeSidebar);
 
-    // Dark Mode
+    // إغلاق القائمة عند النقر على أي رابط
+    document.querySelectorAll('.sidebar a').forEach(link => {
+        link.addEventListener('click', () => {
+            setTimeout(closeSidebar, 300);
+        });
+    });
+
+    // ==================== Dark Mode ====================
     const themeToggle = document.getElementById('themeToggle');
     const darkModeToggle = document.getElementById('darkModeToggle');
     
@@ -355,15 +403,30 @@ document.addEventListener('DOMContentLoaded', function() {
     if (themeToggle) themeToggle.addEventListener('click', toggleDarkMode);
     if (darkModeToggle) darkModeToggle.addEventListener('change', toggleDarkMode);
 
-    // Language
+    // ==================== Language ====================
     const langToggle = document.getElementById('langToggle');
     const langButtons = document.querySelectorAll('.lang-btn');
     let currentLang = localStorage.getItem('lang') || 'ar';
     
     const translations = {
-        ar: { searchPlaceholder: 'ابحث عن تطبيق...', featuredTitle: '🔥 الأكثر تميزاً', download: 'تحميل', downloadNow: 'تحميل الآن' },
-        en: { searchPlaceholder: 'Search for an app...', featuredTitle: '🔥 Featured Apps', download: 'Download', downloadNow: 'Download Now' },
-        fr: { searchPlaceholder: 'Rechercher...', featuredTitle: '🔥 En Vedette', download: 'Télécharger', downloadNow: 'Télécharger Maintenant' }
+        ar: { 
+            searchPlaceholder: 'ابحث عن تطبيق...', 
+            featuredTitle: '🔥 الأكثر تميزاً', 
+            download: 'تحميل', 
+            downloadNow: 'تحميل الآن' 
+        },
+        en: { 
+            searchPlaceholder: 'Search for an app...', 
+            featuredTitle: '🔥 Featured Apps', 
+            download: 'Download', 
+            downloadNow: 'Download Now' 
+        },
+        fr: { 
+            searchPlaceholder: 'Rechercher...', 
+            featuredTitle: '🔥 En Vedette', 
+            download: 'Télécharger', 
+            downloadNow: 'Télécharger Maintenant' 
+        }
     };
     
     function applyLanguage(lang) {
@@ -408,9 +471,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // تطبيق اللغة المحفوظة
     applyLanguage(currentLang);
     
-    // Search
+    // ==================== Search ====================
     const searchInput = document.getElementById('searchInput');
     if (searchInput) {
         let searchTimeout;
@@ -424,7 +488,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Stats Animation
+    // ==================== Stats Animation ====================
     const totalAppsEl = document.getElementById('totalApps');
     if (totalAppsEl && sidebar) {
         sidebar.addEventListener('transitionend', () => {
@@ -442,4 +506,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }, { once: true });
     }
+    
+    console.log('All systems initialized successfully! 🚀');
 });

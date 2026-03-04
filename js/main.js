@@ -156,6 +156,33 @@ const appColors = {
     'ChatGPT': '10A37F', 'Google Play': '34A853', 'Fiverr': '1DBF73',
     'Shopify': '96BF48', 'Temu': 'FB7701', 'Picsart': 'C209C2',
     'Free Fire': 'FFA500', 'Clash of Clans': 'F1C40F'
+    const appColors = {
+    // ... الألوان القديمة ...
+    
+    // الألوان الجديدة
+    'Roblox': 'DE1212',
+    'IMO': '2196F3',
+    'WhatsApp': '25D366',
+    'Twitter': '1DA1F2',
+    'Viber': '665CAC',
+    'WeChat': '07C160',
+    'Line': '00C300',
+    'Discord': '5865F2',
+    'Reddit': 'FF4500',
+    'LinkedIn': '0077B5',
+    'VLC Player': 'FF8800',
+    'Firefox': 'FF7139',
+    'Google Maps': '4285F4',
+    'Google Drive': '4285F4',
+    'Google Photos': '4285F4',
+    'Google Pay': '4285F4',
+    'Google': '4285F4',
+    'Google Play': '34A853',
+    'Dropbox': '0061FF',
+    'PayPal': '003087',
+    'Binance': 'F0B90B',
+    'Western Union': 'FFDD00',
+    '8 Ball Pool': '000000'
 };
 
 function getDefaultIcon(appName) {

@@ -4,9 +4,8 @@ const fileMap = {
     'PUBG Mobile': 'pubg_mobile.jpg',
     'FIFA Mobile': 'Fifa.jpg',
     'Netflix': 'Netflix.png',
-    
     // Social Media
-    'WhatsApp': 'WhatsApp.jpg',
+ 'WhatsApp': 'WhatsApp.jpg',
     'Instagram': 'Instagram.jpg',
     'Telegram': 'Telegram.jpg',
     'Snapchat': 'snapchat.jpg',

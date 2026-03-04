@@ -1,3 +1,5 @@
+// js/apps-data.js - نسخة مصححة ونظيفة
+
 const appsData = [
     // ==================== SLIDER APPS ====================
     { id: 1, name: "PUBG Mobile", rating: 4.7, downloadLink: "#", category: "Games", isFeatured: true },
@@ -95,95 +97,64 @@ const appsData = [
     { id: 77, name: "Binance", rating: 4.5, downloadLink: "#", category: "Finance", isFeatured: false },
     { id: 78, name: "Western Union", rating: 4.4, downloadLink: "#", category: "Finance", isFeatured: false },
     { id: 79, name: "Coinbase", rating: 4.5, downloadLink: "#", category: "Finance", isFeatured: false },
+    { id: 80, name: "Google Pay", rating: 4.5, downloadLink: "#", category: "Finance", isFeatured: false },
     
     // ==================== NEWS ====================
-    { id: 80, name: "Sky News Arabia", rating: 4.5, downloadLink: "#", category: "News", isFeatured: false },
-    { id: 81, name: "Al Arabiya", rating: 4.4, downloadLink: "#", category: "News", isFeatured: false },
+    { id: 81, name: "Sky News Arabia", rating: 4.5, downloadLink: "#", category: "News", isFeatured: false },
+    { id: 82, name: "Al Arabiya", rating: 4.4, downloadLink: "#", category: "News", isFeatured: false },
     
     // ==================== HEALTH & FITNESS ====================
-    { id: 82, name: "MyFitnessPal", rating: 4.6, downloadLink: "#", category: "Health", isFeatured: false },
-    { id: 83, name: "Nike Training", rating: 4.7, downloadLink: "#", category: "Health", isFeatured: false },
-    { id: 84, name: "Strava", rating: 4.5, downloadLink: "#", category: "Health", isFeatured: false },
+    { id: 83, name: "MyFitnessPal", rating: 4.6, downloadLink: "#", category: "Health", isFeatured: false },
+    { id: 84, name: "Nike Training", rating: 4.7, downloadLink: "#", category: "Health", isFeatured: false },
+    { id: 85, name: "Strava", rating: 4.5, downloadLink: "#", category: "Health", isFeatured: false },
     
     // ==================== EDUCATION ====================
-    { id: 85, name: "Duolingo", rating: 4.8, downloadLink: "#", category: "Education", isFeatured: false },
-    { id: 86, name: "Khan Academy", rating: 4.7, downloadLink: "#", category: "Education", isFeatured: false },
-    { id: 87, name: "Udemy", rating: 4.6, downloadLink: "#", category: "Education", isFeatured: false },
+    { id: 86, name: "Duolingo", rating: 4.8, downloadLink: "#", category: "Education", isFeatured: false },
+    { id: 87, name: "Khan Academy", rating: 4.7, downloadLink: "#", category: "Education", isFeatured: false },
+    { id: 88, name: "Udemy", rating: 4.6, downloadLink: "#", category: "Education", isFeatured: false },
     
     // ==================== DESIGN & CREATIVITY ====================
-    { id: 88, name: "Canva", rating: 4.7, downloadLink: "#", category: "Design", isFeatured: false },
-    { id: 89, name: "Picsart", rating: 4.6, downloadLink: "#", category: "Design", isFeatured: false },
-    { id: 90, name: "Adobe Photoshop", rating: 4.5, downloadLink: "#", category: "Design", isFeatured: false },
+    { id: 89, name: "Canva", rating: 4.7, downloadLink: "#", category: "Design", isFeatured: false },
+    { id: 90, name: "Picsart", rating: 4.6, downloadLink: "#", category: "Design", isFeatured: false },
+    { id: 91, name: "Adobe Photoshop", rating: 4.5, downloadLink: "#", category: "Design", isFeatured: false },
     
     // ==================== NAVIGATION & TRAVEL ====================
-    { id: 91, name: "Google Maps", rating: 4.7, downloadLink: "#", category: "Navigation", isFeatured: false },
-    { id: 92, name: "Waze", rating: 4.6, downloadLink: "#", category: "Navigation", isFeatured: false },
-    { id: 93, name: "Booking.com", rating: 4.6, downloadLink: "#", category: "Travel", isFeatured: false },
-    { id: 94, name: "Airbnb", rating: 4.7, downloadLink: "#", category: "Travel", isFeatured: false },
+    { id: 92, name: "Google Maps", rating: 4.7, downloadLink: "#", category: "Navigation", isFeatured: false },
+    { id: 93, name: "Waze", rating: 4.6, downloadLink: "#", category: "Navigation", isFeatured: false },
+    { id: 94, name: "Booking.com", rating: 4.6, downloadLink: "#", category: "Travel", isFeatured: false },
+    { id: 95, name: "Airbnb", rating: 4.7, downloadLink: "#", category: "Travel", isFeatured: false },
     
     // ==================== SECURITY ====================
-    { id: 95, name: "Avast Antivirus", rating: 4.5, downloadLink: "#", category: "Security", isFeatured: false },
-    { id: 96, name: "Norton Security", rating: 4.4, downloadLink: "#", category: "Security", isFeatured: false },
+    { id: 96, name: "Avast Antivirus", rating: 4.5, downloadLink: "#", category: "Security", isFeatured: false },
+    { id: 97, name: "Norton Security", rating: 4.4, downloadLink: "#", category: "Security", isFeatured: false },
     
     // ==================== RELIGIOUS ====================
-    { id: 97, name: "Quran", rating: 4.9, downloadLink: "#", category: "Religious", isFeatured: false },
-    { id: 98, name: "Khatma", rating: 4.9, downloadLink: "#", category: "Religious", isFeatured: false },
-    { id: 99, name: "Salaat First", rating: 4.7, downloadLink: "#", category: "Religious", isFeatured: false },
+    { id: 98, name: "Quran", rating: 4.9, downloadLink: "#", category: "Religious", isFeatured: false },
+    { id: 99, name: "Khatma", rating: 4.9, downloadLink: "#", category: "Religious", isFeatured: false },
+    { id: 100, name: "Salaat First", rating: 4.7, downloadLink: "#", category: "Religious", isFeatured: false },
     
     // ==================== AI & ASSISTANTS ====================
-    { id: 100, name: "ChatGPT", rating: 4.8, downloadLink: "#", category: "AI", isFeatured: false },
-    { id: 101, name: "Google Gemini", rating: 4.5, downloadLink: "#", category: "AI", isFeatured: false },
-    { id: 102, name: "Microsoft Copilot", rating: 4.6, downloadLink: "#", category: "AI", isFeatured: false },
-    { id: 103, name: "Google Assistant", rating: 4.5, downloadLink: "#", category: "AI", isFeatured: false },
+    { id: 101, name: "ChatGPT", rating: 4.8, downloadLink: "#", category: "AI", isFeatured: false },
+    { id: 102, name: "Google Gemini", rating: 4.5, downloadLink: "#", category: "AI", isFeatured: false },
+    { id: 103, name: "Microsoft Copilot", rating: 4.6, downloadLink: "#", category: "AI", isFeatured: false },
+    { id: 104, name: "Google Assistant", rating: 4.5, downloadLink: "#", category: "AI", isFeatured: false },
     
     // ==================== ENTERTAINMENT ====================
-    { id: 104, name: "Koora", rating: 4.5, downloadLink: "#", category: "Entertainment", isFeatured: false },
-    { id: 105, name: "Ostoura", rating: 4.6, downloadLink: "#", category: "Entertainment", isFeatured: false },
-    { id: 106, name: "Partshisi", rating: 4.5, downloadLink: "#", category: "Entertainment", isFeatured: false },
-    { id: 107, name: "SnapTube", rating: 4.4, downloadLink: "#", category: "Entertainment", isFeatured: false },
-    { id: 108, name: "Opera", rating: 4.5, downloadLink: "#", category: "Entertainment", isFeatured: false },
-    { id: 109, name: "HatGPT", rating: 4.6, downloadLink: "#", category: "Entertainment", isFeatured: false },
+    { id: 105, name: "Koora", rating: 4.5, downloadLink: "#", category: "Entertainment", isFeatured: false },
+    { id: 106, name: "Ostoura", rating: 4.6, downloadLink: "#", category: "Entertainment", isFeatured: false },
+    { id: 107, name: "Partshisi", rating: 4.5, downloadLink: "#", category: "Entertainment", isFeatured: false },
+    { id: 108, name: "SnapTube", rating: 4.4, downloadLink: "#", category: "Entertainment", isFeatured: false },
+    { id: 109, name: "Opera", rating: 4.5, downloadLink: "#", category: "Entertainment", isFeatured: false },
+    { id: 110, name: "HatGPT", rating: 4.6, downloadLink: "#", category: "Entertainment", isFeatured: false },
     
     // ==================== OTHER ====================
-    { id: 110, name: "Uber", rating: 4.4, downloadLink: "#", category: "Other", isFeatured: false },
-    { id: 111, name: "Fiverr", rating: 4.6, downloadLink: "#", category: "Other", isFeatured: false },
-    { id: 112, name: "Lightroom", rating: 4.7, downloadLink: "#", category: "Other", isFeatured: false },
-    { id: 113, name: "Fiver", rating: 4.5, downloadLink: "#", category: "Other", isFeatured: false },
-    { id: 114, name: "Google Play", rating: 4.7, downloadLink: "#", category: "Other", isFeatured: false },
-    { id: 115, name: "Google Gemini", rating: 4.5, downloadLink: "#", category: "Other", isFeatured: false }
-    const appsData = [
-    // ... التطبيقات القديمة ...
-    
-    // التطبيقات الجديدة - أضفها إذا لم تكن موجودة
-    { id: 116, name: "Roblox", rating: 4.5, downloadLink: "#", category: "Games", isFeatured: false },
-    { id: 117, name: "IMO", rating: 4.2, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 118, name: "Viber", rating: 4.3, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 119, name: "WeChat", rating: 4.1, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 120, name: "Line", rating: 4.3, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 121, name: "Discord", rating: 4.6, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 122, name: "Reddit", rating: 4.4, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 123, name: "Twitter", rating: 4.3, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 124, name: "LinkedIn", rating: 4.5, downloadLink: "#", category: "Social", isFeatured: false },
-    
-    { id: 125, name: "VLC Player", rating: 4.7, downloadLink: "#", category: "Video", isFeatured: false },
-    { id: 126, name: "Firefox", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
-    
-    { id: 127, name: "Google Maps", rating: 4.7, downloadLink: "#", category: "Navigation", isFeatured: false },
-    { id: 128, name: "Google Drive", rating: 4.7, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 129, name: "Google Photos", rating: 4.6, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 130, name: "Google Pay", rating: 4.5, downloadLink: "#", category: "Finance", isFeatured: false },
-    { id: 131, name: "Google", rating: 4.7, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 132, name: "Google Play", rating: 4.7, downloadLink: "#", category: "Tools", isFeatured: false },
-    
-    { id: 133, name: "Dropbox", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 134, name: "PayPal", rating: 4.6, downloadLink: "#", category: "Finance", isFeatured: false },
-    { id: 135, name: "Binance", rating: 4.5, downloadLink: "#", category: "Finance", isFeatured: false },
-    { id: 136, name: "Western Union", rating: 4.4, downloadLink: "#", category: "Finance", isFeatured: false },
-    
-    { id: 137, name: "8 Ball Pool", rating: 4.5, downloadLink: "#", category: "Games", isFeatured: false }
+    { id: 111, name: "Uber", rating: 4.4, downloadLink: "#", category: "Other", isFeatured: false },
+    { id: 112, name: "Fiverr", rating: 4.6, downloadLink: "#", category: "Other", isFeatured: false },
+    { id: 113, name: "Lightroom", rating: 4.7, downloadLink: "#", category: "Other", isFeatured: false },
+    { id: 114, name: "Google Play", rating: 4.7, downloadLink: "#", category: "Other", isFeatured: false }
 ];
 
-// تصنيفات الفئات
+// ==================== تصنيفات الفئات ====================
 const categories = {
     "Social": { name: "💬 التواصل الاجتماعي", icon: "fa-comments" },
     "Games": { name: "🎮 الألعاب", icon: "fa-gamepad" },
@@ -198,7 +169,7 @@ const categories = {
     "Health": { name: "💪 الصحة واللياقة", icon: "fa-heartbeat" },
     "Education": { name: "📚 التعليم", icon: "fa-graduation-cap" },
     "Design": { name: "🎨 التصميم", icon: "fa-palette" },
-    "Navigation": { name: "🗺️ الملاحة", icon: "fa-map-marked" },
+    "Navigation": { name: "🗺️ الملاحة", icon: "fa-map-marked-alt" },
     "Travel": { name: "✈️ السفر", icon: "fa-plane" },
     "Security": { name: "🔒 الأمان", icon: "fa-shield-alt" },
     "Religious": { name: "🕌 ديني", icon: "fa-kaaba" },

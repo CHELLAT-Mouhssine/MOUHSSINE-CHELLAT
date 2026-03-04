@@ -151,6 +151,36 @@ const appsData = [
     { id: 113, name: "Fiver", rating: 4.5, downloadLink: "#", category: "Other", isFeatured: false },
     { id: 114, name: "Google Play", rating: 4.7, downloadLink: "#", category: "Other", isFeatured: false },
     { id: 115, name: "Google Gemini", rating: 4.5, downloadLink: "#", category: "Other", isFeatured: false }
+    const appsData = [
+    // ... التطبيقات القديمة ...
+    
+    // التطبيقات الجديدة - أضفها إذا لم تكن موجودة
+    { id: 116, name: "Roblox", rating: 4.5, downloadLink: "#", category: "Games", isFeatured: false },
+    { id: 117, name: "IMO", rating: 4.2, downloadLink: "#", category: "Social", isFeatured: false },
+    { id: 118, name: "Viber", rating: 4.3, downloadLink: "#", category: "Social", isFeatured: false },
+    { id: 119, name: "WeChat", rating: 4.1, downloadLink: "#", category: "Social", isFeatured: false },
+    { id: 120, name: "Line", rating: 4.3, downloadLink: "#", category: "Social", isFeatured: false },
+    { id: 121, name: "Discord", rating: 4.6, downloadLink: "#", category: "Social", isFeatured: false },
+    { id: 122, name: "Reddit", rating: 4.4, downloadLink: "#", category: "Social", isFeatured: false },
+    { id: 123, name: "Twitter", rating: 4.3, downloadLink: "#", category: "Social", isFeatured: false },
+    { id: 124, name: "LinkedIn", rating: 4.5, downloadLink: "#", category: "Social", isFeatured: false },
+    
+    { id: 125, name: "VLC Player", rating: 4.7, downloadLink: "#", category: "Video", isFeatured: false },
+    { id: 126, name: "Firefox", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
+    
+    { id: 127, name: "Google Maps", rating: 4.7, downloadLink: "#", category: "Navigation", isFeatured: false },
+    { id: 128, name: "Google Drive", rating: 4.7, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 129, name: "Google Photos", rating: 4.6, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 130, name: "Google Pay", rating: 4.5, downloadLink: "#", category: "Finance", isFeatured: false },
+    { id: 131, name: "Google", rating: 4.7, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 132, name: "Google Play", rating: 4.7, downloadLink: "#", category: "Tools", isFeatured: false },
+    
+    { id: 133, name: "Dropbox", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 134, name: "PayPal", rating: 4.6, downloadLink: "#", category: "Finance", isFeatured: false },
+    { id: 135, name: "Binance", rating: 4.5, downloadLink: "#", category: "Finance", isFeatured: false },
+    { id: 136, name: "Western Union", rating: 4.4, downloadLink: "#", category: "Finance", isFeatured: false },
+    
+    { id: 137, name: "8 Ball Pool", rating: 4.5, downloadLink: "#", category: "Games", isFeatured: false }
 ];
 
 // تصنيفات الفئات

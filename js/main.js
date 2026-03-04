@@ -116,6 +116,34 @@ const fileMap = {
     'eBay': 'eBay.jpg',
     'Fiver': 'Fiverr.jpg',
     'Google Gemini': 'Google-Gemini.jpg'
+    const fileMap = {
+    // ... التطبيقات القديمة تبقى كما هي ...
+    
+    // التطبيقات الجديدة
+    'Roblox': 'roblox.png',
+    'IMO': 'social (1).png',  // أو غيّر الاسم لـ imo.png
+    'WhatsApp': 'social.png',  // أو غيّر الاسم لـ whatsapp.png
+    'Twitter': 'twitter.png',
+    'Viber': 'viber.png',
+    'VLC Player': 'vlc.png',
+    'WeChat': 'wechat.png',
+    'Western Union': 'western-union.png',
+    'Binance': 'binance.png',
+    'Discord': 'discord.png',
+    'Dropbox': 'dropbox.png',
+    'Firefox': 'firefox.png',
+    'Google Drive': 'google-drive.png',
+    'Google Pay': 'google-pay.png',
+    'Google Photos': 'google-photos.png',
+    'Google Play': 'google-play (1).png',
+    'Google': 'google.png',
+    'Google Assistant': 'google.png',
+    'Line': 'line.png',
+    'LinkedIn': 'linkedin.png',
+    'Google Maps': 'logo (1).png',
+    'PayPal': 'paypal.png',
+    '8 Ball Pool': 'pool-balls (1).png',
+    'Reddit': 'reddit.png'
 };
 
 const appColors = {

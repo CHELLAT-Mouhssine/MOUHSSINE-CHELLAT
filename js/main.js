@@ -25,7 +25,6 @@ const fileMap = {
     'Telegram X': 'telegram_x.jpg',
     'Instagram Lite': 'instagram_lite.jpg',
     'TikTok Lite': 'tiktok_lite.jpg',
-    // التطبيقات الجديدة
 'Talabat': 'Talabat.jpg',
 'UC Browser': 'UCBrowser.jpg',
 'Calculator': 'Calculator.jpg',

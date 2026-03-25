@@ -152,6 +152,24 @@ const appsData = [
     { id: 112, name: "Fiverr", rating: 4.6, downloadLink: "#", category: "Other", isFeatured: false },
     { id: 113, name: "Lightroom", rating: 4.7, downloadLink: "#", category: "Other", isFeatured: false },
     { id: 114, name: "Google Play", rating: 4.7, downloadLink: "#", category: "Other", isFeatured: false }
+    // تطبيقات جديدة للتسوق والأدوات
+{ id: 115, name: "Talabat", rating: 4.6, downloadLink: "#", category: "Food", isFeatured: false },
+{ id: 116, name: "UC Browser", rating: 4.4, downloadLink: "#", category: "Tools", isFeatured: false },
+{ id: 117, name: "Calculator", rating: 4.4, downloadLink: "#", category: "Tools", isFeatured: false },
+{ id: 118, name: "Flashlight", rating: 4.3, downloadLink: "#", category: "Tools", isFeatured: false },
+{ id: 119, name: "Phone", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
+{ id: 120, name: "SHAREit", rating: 4.4, downloadLink: "#", category: "Tools", isFeatured: false },
+{ id: 121, name: "AccuBattery", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
+{ id: 122, name: "AppTweak", rating: 4.3, downloadLink: "#", category: "Tools", isFeatured: false },
+{ id: 123, name: "Adobe Acrobat", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
+{ id: 124, name: "AliExpress", rating: 4.5, downloadLink: "#", category: "Shopping", isFeatured: false },
+{ id: 125, name: "CamScanner", rating: 4.6, downloadLink: "#", category: "Tools", isFeatured: false },
+{ id: 126, name: "Glovo", rating: 4.4, downloadLink: "#", category: "Food", isFeatured: false },
+{ id: 127, name: "Google Chrome", rating: 4.7, downloadLink: "#", category: "Tools", isFeatured: false },
+{ id: 128, name: "Amazon", rating: 4.6, downloadLink: "#", category: "Shopping", isFeatured: false },
+{ id: 129, name: "Uber Eats", rating: 4.5, downloadLink: "#", category: "Food", isFeatured: false },
+{ id: 130, name: "Jumia", rating: 4.4, downloadLink: "#", category: "Shopping", isFeatured: false },
+{ id: 131, name: "eBay", rating: 4.5, downloadLink: "#", category: "Shopping", isFeatured: false }
 ];
 
 // ==================== تصنيفات الفئات ====================

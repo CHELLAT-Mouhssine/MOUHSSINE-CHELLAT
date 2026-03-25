@@ -25,6 +25,24 @@ const fileMap = {
     'Telegram X': 'telegram_x.jpg',
     'Instagram Lite': 'instagram_lite.jpg',
     'TikTok Lite': 'tiktok_lite.jpg',
+    // التطبيقات الجديدة
+'Talabat': 'Talabat.jpg',
+'UC Browser': 'UCBrowser.jpg',
+'Calculator': 'Calculator.jpg',
+'Flashlight': 'Flashlight.jpg',
+'Phone': 'Phone.jpg',
+'SHAREit': 'SHAREit.jpg',
+'AccuBattery': 'AccuBattery.jpg',
+'AppTweak': 'AppTweak.jpg',
+'Adobe Acrobat': 'AdobeAcrobat.jpg',
+'AliExpress': 'AliExpress.jpg',
+'CamScanner': 'CamScanner.jpg',
+'Glovo': 'Glovo.jpg',
+'Google Chrome': 'GoogleChrome.jpg',
+'Amazon': 'Amazon.jpg',
+'Uber Eats': 'UberEats.jpg',
+'Jumia': 'Jumia.jpg',
+'eBay': 'eBay.jpg'
     
     // Games
     'Free Fire': 'freefire.jpg',
@@ -212,6 +230,24 @@ const appColors = {
     'Coinbase': '0052FF',
     'Avast Antivirus': 'FF7800',
     'Opera': 'FF1B2D'
+    // ألوان التطبيقات الجديدة
+'Talabat': 'FF6B00',
+'UC Browser': 'FF6600',
+'Calculator': '4CAF50',
+'Flashlight': 'FFC107',
+'Phone': '2196F3',
+'SHAREit': '0099FF',
+'AccuBattery': 'FFEB3B',
+'AppTweak': '00BCD4',
+'Adobe Acrobat': 'E91E63',
+'AliExpress': 'FF4747',
+'CamScanner': '00BFA5',
+'Glovo': '00A0E3',
+'Google Chrome': '4285F4',
+'Amazon': 'FF9900',
+'Uber Eats': '06C167',
+'Jumia': 'F68B1E',
+'eBay': 'E53238'
 };
 
 // ==================== الدوال الأساسية ====================

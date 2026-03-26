@@ -4,8 +4,9 @@ const fileMap = {
     'PUBG Mobile': 'pubg_mobile.jpg',
     'FIFA Mobile': 'Fifa.jpg',
     'Netflix': 'Netflix.png',
+    
     // Social Media
- 'WhatsApp': 'WhatsApp.jpg',
+    'WhatsApp': 'whatsapp.png',
     'Instagram': 'Instagram.jpg',
     'Telegram': 'Telegram.jpg',
     'Snapchat': 'snapchat.jpg',
@@ -25,23 +26,6 @@ const fileMap = {
     'Telegram X': 'telegram_x.jpg',
     'Instagram Lite': 'instagram_lite.jpg',
     'TikTok Lite': 'tiktok_lite.jpg',
-'Talabat': 'Talabat.jpg',
-'UC Browser': 'UCBrowser.jpg',
-'Calculator': 'Calculator.jpg',
-'Flashlight': 'Flashlight.jpg',
-'Phone': 'Phone.jpg',
-'SHAREit': 'SHAREit.jpg',
-'AccuBattery': 'AccuBattery.jpg',
-'AppTweak': 'AppTweak.jpg',
-'Adobe Acrobat': 'AdobeAcrobat.jpg',
-'AliExpress': 'AliExpress.jpg',
-'CamScanner': 'CamScanner.jpg',
-'Glovo': 'Glovo.jpg',
-'Google Chrome': 'GoogleChrome.jpg',
-'Amazon': 'Amazon.jpg',
-'Uber Eats': 'UberEats.jpg',
-'Jumia': 'Jumia.jpg',
-'eBay': 'eBay.jpg'
     
     // Games
     'Free Fire': 'freefire.jpg',
@@ -58,6 +42,7 @@ const fileMap = {
     'Asphalt 9': 'Asphalt9.jpg',
     'Snake': 'Snake.jpg',
     'Free Fire MAX': 'freefire_max.jpg',
+    'UC Browser': 'UCBrowser.jpg',
     
     // Music & Video
     'Spotify': 'Spotify.jpg',
@@ -95,6 +80,10 @@ const fileMap = {
     'Google': 'google.png',
     'Google Pay': 'google-pay.png',
     'Google Maps': 'google-maps.png',
+    'Phone': 'Phone.jpg',
+    'AccuBattery': 'AccuBattery.jpg',
+    'AppTweak': 'AppTweak.jpg',
+    'Talabat': 'Talabat.jpg',
     
     // Shopping
     'Amazon': 'Amazon.jpg',
@@ -107,7 +96,6 @@ const fileMap = {
     
     // Food & Delivery
     'Uber Eats': 'UberEats.jpg',
-    'Talabat': 'Talabat.jpg',
     'Glovo': 'Glovo.jpg',
     'Mrsool': 'Mrsool.jpg',
     
@@ -218,7 +206,6 @@ const appColors = {
     'Western Union': 'FFDD00',
     '8 Ball Pool': '000000',
     'Amazon': 'FF9900',
-    'YouTube Music': 'FF0000',
     'Shahid': '0066CC',
     'Duolingo': '58CC02',
     'Canva': '00C4CC',
@@ -228,25 +215,55 @@ const appColors = {
     'Talabat': 'FF6B00',
     'Coinbase': '0052FF',
     'Avast Antivirus': 'FF7800',
-    'Opera': 'FF1B2D'
-    // ألوان التطبيقات الجديدة
-'Talabat': 'FF6B00',
-'UC Browser': 'FF6600',
-'Calculator': '4CAF50',
-'Flashlight': 'FFC107',
-'Phone': '2196F3',
-'SHAREit': '0099FF',
-'AccuBattery': 'FFEB3B',
-'AppTweak': '00BCD4',
-'Adobe Acrobat': 'E91E63',
-'AliExpress': 'FF4747',
-'CamScanner': '00BFA5',
-'Glovo': '00A0E3',
-'Google Chrome': '4285F4',
-'Amazon': 'FF9900',
-'Uber Eats': '06C167',
-'Jumia': 'F68B1E',
-'eBay': 'E53238'
+    'Opera': 'FF1B2D',
+    'UC Browser': 'FF6600',
+    'Calculator': '4CAF50',
+    'Flashlight': 'FFC107',
+    'Phone': '2196F3',
+    'SHAREit': '0099FF',
+    'AccuBattery': 'FFEB3B',
+    'AppTweak': '00BCD4',
+    'Adobe Acrobat': 'E91E63',
+    'AliExpress': 'FF4747',
+    'CamScanner': '00BFA5',
+    'Glovo': '00A0E3',
+    'Google Chrome': '4285F4',
+    'Jumia': 'F68B1E',
+    'eBay': 'E53238',
+    'Noon': 'FEAD0D',
+    'MyFitnessPal': '53C3F3',
+    'Nike Training': '111111',
+    'Strava': 'FC5200',
+    'Khan Academy': '14BF9B',
+    'Udemy': 'A435F0',
+    'Adobe Photoshop': '31A8FF',
+    'Booking.com': '003580',
+    'Norton Security': 'FFE01A',
+    'Quran': '006633',
+    'Khatma': '0099CC',
+    'Salaat First': '00AEEF',
+    'Google Gemini': '8E75F5',
+    'Google Assistant': '4285F4',
+    'Koora': 'FF6600',
+    'Ostoura': 'FF0066',
+    'Partshisi': '9C27B0',
+    'SnapTube': 'FF0000',
+    'HatGPT': '10A37F',
+    'Lightroom': '31A8FF',
+    'Fiver': '1DBF73',
+    'SoundCloud': 'FF5500',
+    'Deezer': 'FF0092',
+    'MX Player': 'FF5722',
+    'InShot': 'F53B5C',
+    'KineMaster': 'F2B137',
+    'OSN+': '00AEEF',
+    'Yacine TV': '00FF00',
+    'beIN CONNECT': 'A1184E',
+    'Kooora Live': '0066CC',
+    'Brave Browser': 'FB542B',
+    'Truecaller': '0082EF',
+    'Sky News Arabia': 'E91E63',
+    'Al Arabiya': 'FF6600'
 };
 
 // ==================== الدوال الأساسية ====================
@@ -268,6 +285,7 @@ function getImagePath(appName) {
 function createAppCard(app) {
     const card = document.createElement('div');
     card.className = 'app-card';
+    card.setAttribute('data-category', app.category);
     
     const stars = '★'.repeat(Math.floor(app.rating)) + '☆'.repeat(5 - Math.floor(app.rating));
     const imagePath = getImagePath(app.name);
@@ -278,7 +296,7 @@ function createAppCard(app) {
              onerror="this.onerror=null; this.src='${defaultIcon}'" loading="lazy">
         <h3 class="app-name">${app.name}</h3>
         <div class="app-rating">${app.rating} ${stars}</div>
-        <a href="${app.downloadLink}" class="download-btn" target="_blank">تحميل</a>
+        <a href="${app.downloadLink}" class="download-btn" target="_blank" rel="noopener noreferrer">تحميل</a>
     `;
     
     return card;
@@ -298,7 +316,7 @@ function createSliderCard(app) {
              onerror="this.onerror=null; this.src='${defaultIcon}'">
         <h3 class="app-name">${app.name}</h3>
         <div class="app-rating">${app.rating} ${stars}</div>
-        <a href="${app.downloadLink}" class="download-btn" target="_blank">تحميل الآن</a>
+        <a href="${app.downloadLink}" class="download-btn" target="_blank" rel="noopener noreferrer">تحميل الآن</a>
     `;
     
     return card;
@@ -308,13 +326,16 @@ function renderApps(apps) {
     const sliderContainer = document.getElementById('sliderContainer');
     const categoriesContainer = document.getElementById('categoriesContainer');
     
-    if (!sliderContainer || !categoriesContainer) return;
+    if (!sliderContainer || !categoriesContainer) {
+        console.error('Containers not found!');
+        return;
+    }
     
     sliderContainer.innerHTML = '';
     categoriesContainer.innerHTML = '';
     
     if (!apps || apps.length === 0) {
-        categoriesContainer.innerHTML = '<p style="text-align: center; padding: 40px;">لا توجد تطبيقات للعرض</p>';
+        categoriesContainer.innerHTML = '<p style="text-align: center; padding: 40px; color: var(--text-color);">لا توجد تطبيقات للعرض</p>';
         return;
     }
     
@@ -341,6 +362,7 @@ function renderApps(apps) {
         
         const section = document.createElement('div');
         section.className = 'category-section';
+        section.setAttribute('data-category', categoryKey);
         
         section.innerHTML = `
             <div class="category-header">
@@ -362,17 +384,17 @@ function renderApps(apps) {
 
 // ==================== التهيئة عند تحميل الصفحة ====================
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Page loaded successfully!');
-    console.log('Total apps:', appsData ? appsData.length : 0);
+    console.log('🚀 CHELAT STORE - Page loaded successfully!');
+    console.log('📱 Total apps:', appsData ? appsData.length : 0);
     
     // عرض التطبيقات
     if (typeof appsData !== 'undefined' && appsData.length > 0) {
         renderApps(appsData);
     } else {
-        console.error('appsData is not defined or empty');
-        const appsGrid = document.getElementById('appsGrid');
+        console.error('❌ appsData is not defined or empty');
+        const appsGrid = document.getElementById('appsGrid') || document.getElementById('categoriesContainer');
         if (appsGrid) {
-            appsGrid.innerHTML = '<p style="text-align: center; padding: 40px; color: red;">خطأ: لم يتم تحميل البيانات</p>';
+            appsGrid.innerHTML = '<p style="text-align: center; padding: 40px; color: red;">⚠️ خطأ: لم يتم تحميل البيانات</p>';
         }
     }
     
@@ -386,12 +408,14 @@ document.addEventListener('DOMContentLoaded', function() {
         if (sidebar) sidebar.classList.add('active');
         if (sidebarOverlay) sidebarOverlay.classList.add('active');
         document.body.classList.add('sidebar-open');
+        console.log('📂 Sidebar opened');
     }
 
     function closeSidebar() {
         if (sidebar) sidebar.classList.remove('active');
         if (sidebarOverlay) sidebarOverlay.classList.remove('active');
         document.body.classList.remove('sidebar-open');
+        console.log('📂 Sidebar closed');
     }
 
     if (menuToggle) menuToggle.addEventListener('click', (e) => {
@@ -432,6 +456,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (darkModeToggle) {
             darkModeToggle.checked = isNowDark;
         }
+        console.log('🌙 Dark Mode:', isNowDark);
     }
     
     if (themeToggle) themeToggle.addEventListener('click', toggleDarkMode);
@@ -447,19 +472,28 @@ document.addEventListener('DOMContentLoaded', function() {
             searchPlaceholder: 'ابحث عن تطبيق...', 
             featuredTitle: '🔥 الأكثر تميزاً', 
             download: 'تحميل', 
-            downloadNow: 'تحميل الآن' 
+            downloadNow: 'تحميل الآن',
+            statsSection: 'إحصائيات المتجر',
+            totalApps: 'تطبيق',
+            avgRating: 'متوسط التقييم'
         },
         en: { 
             searchPlaceholder: 'Search for an app...', 
             featuredTitle: '🔥 Featured Apps', 
             download: 'Download', 
-            downloadNow: 'Download Now' 
+            downloadNow: 'Download Now',
+            statsSection: 'Store Statistics',
+            totalApps: 'Apps',
+            avgRating: 'Average Rating'
         },
         fr: { 
             searchPlaceholder: 'Rechercher...', 
             featuredTitle: '🔥 En Vedette', 
             download: 'Télécharger', 
-            downloadNow: 'Télécharger Maintenant' 
+            downloadNow: 'Télécharger Maintenant',
+            statsSection: 'Statistiques du Magasin',
+            totalApps: 'Applications',
+            avgRating: 'Note Moyenne'
         }
     };
     
@@ -489,6 +523,8 @@ document.addEventListener('DOMContentLoaded', function() {
             if (btn.closest('.slider-card')) btn.textContent = t.downloadNow;
             else btn.textContent = t.download;
         });
+        
+        console.log('🌐 Language changed to:', lang);
     }
     
     if (langToggle) {
@@ -518,6 +554,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const term = e.target.value.toLowerCase().trim();
                 const filtered = appsData.filter(app => app.name.toLowerCase().includes(term));
                 renderApps(filtered);
+                console.log('🔍 Search:', term, '- Results:', filtered.length);
             }, 300);
         });
     }
@@ -528,10 +565,12 @@ document.addEventListener('DOMContentLoaded', function() {
         sidebar.addEventListener('transitionend', () => {
             if (sidebar.classList.contains('active') && totalAppsEl.textContent === '0+') {
                 let count = 0;
+                const target = appsData.length;
+                const increment = Math.ceil(target / 20);
                 const interval = setInterval(() => {
-                    count += 5;
-                    if (count >= appsData.length) {
-                        totalAppsEl.textContent = appsData.length + '+';
+                    count += increment;
+                    if (count >= target) {
+                        totalAppsEl.textContent = target + '+';
                         clearInterval(interval);
                     } else {
                         totalAppsEl.textContent = count + '+';
@@ -541,5 +580,46 @@ document.addEventListener('DOMContentLoaded', function() {
         }, { once: true });
     }
     
-    console.log('All systems initialized successfully! 🚀');
+    // ==================== Scroll to Top Button ====================
+    const scrollToTopBtn = document.createElement('button');
+    scrollToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+    scrollToTopBtn.className = 'scroll-to-top';
+    scrollToTopBtn.style.cssText = `
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        border: none;
+        cursor: pointer;
+        display: none;
+        z-index: 1000;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        transition: all 0.3s;
+    `;
+    scrollToTopBtn.addEventListener('mouseenter', () => {
+        scrollToTopBtn.style.transform = 'scale(1.1)';
+    });
+    scrollToTopBtn.addEventListener('mouseleave', () => {
+        scrollToTopBtn.style.transform = 'scale(1)';
+    });
+    scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    document.body.appendChild(scrollToTopBtn);
+    
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            scrollToTopBtn.style.display = 'block';
+        } else {
+            scrollToTopBtn.style.display = 'none';
+        }
+    });
+    
+    console.log('✅ All systems initialized successfully! 🎉');
+    console.log('💡 Total categories:', Object.keys(categories).length);
+    console.log('🎯 Featured apps:', appsData.filter(app => app.isFeatured).length);
 });

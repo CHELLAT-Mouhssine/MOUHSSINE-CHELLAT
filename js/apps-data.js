@@ -1,4 +1,5 @@
-// js/apps-data.js - نسخة مصححة ونظيفة
+// ==================== CHELAT STORE - تطبيقات المتجر ====================
+// الإصدار: 2.0 - محدث وكامل
 
 const appsData = [
     // ==================== SLIDER APPS ====================
@@ -43,133 +44,122 @@ const appsData = [
     { id: 35, name: "Asphalt 9", rating: 4.6, downloadLink: "#", category: "Games", isFeatured: false },
     { id: 36, name: "Snake", rating: 4.2, downloadLink: "#", category: "Games", isFeatured: false },
     { id: 37, name: "Free Fire MAX", rating: 4.7, downloadLink: "#", category: "Games", isFeatured: false },
+    { id: 38, name: "UC Browser", rating: 4.4, downloadLink: "#", category: "Games", isFeatured: false },
     
     // ==================== MUSIC & VIDEO ====================
-    { id: 38, name: "Spotify", rating: 4.8, downloadLink: "#", category: "Music", isFeatured: false },
-    { id: 39, name: "YouTube Music", rating: 4.5, downloadLink: "#", category: "Music", isFeatured: false },
-    { id: 40, name: "SoundCloud", rating: 4.6, downloadLink: "#", category: "Music", isFeatured: false },
-    { id: 41, name: "Deezer", rating: 4.5, downloadLink: "#", category: "Music", isFeatured: false },
-    { id: 42, name: "VLC Player", rating: 4.7, downloadLink: "#", category: "Video", isFeatured: false },
-    { id: 43, name: "MX Player", rating: 4.6, downloadLink: "#", category: "Video", isFeatured: false },
-    { id: 44, name: "InShot", rating: 4.7, downloadLink: "#", category: "Video", isFeatured: false },
-    { id: 45, name: "KineMaster", rating: 4.6, downloadLink: "#", category: "Video", isFeatured: false },
+    { id: 39, name: "Spotify", rating: 4.8, downloadLink: "#", category: "Music", isFeatured: false },
+    { id: 40, name: "YouTube Music", rating: 4.5, downloadLink: "#", category: "Music", isFeatured: false },
+    { id: 41, name: "SoundCloud", rating: 4.6, downloadLink: "#", category: "Music", isFeatured: false },
+    { id: 42, name: "Deezer", rating: 4.5, downloadLink: "#", category: "Music", isFeatured: false },
+    { id: 43, name: "VLC Player", rating: 4.7, downloadLink: "#", category: "Video", isFeatured: false },
+    { id: 44, name: "MX Player", rating: 4.6, downloadLink: "#", category: "Video", isFeatured: false },
+    { id: 45, name: "InShot", rating: 4.7, downloadLink: "#", category: "Video", isFeatured: false },
+    { id: 46, name: "KineMaster", rating: 4.6, downloadLink: "#", category: "Video", isFeatured: false },
     
     // ==================== STREAMING ====================
-    { id: 46, name: "Shahid", rating: 4.7, downloadLink: "#", category: "Streaming", isFeatured: false },
-    { id: 47, name: "OSN+", rating: 4.5, downloadLink: "#", category: "Streaming", isFeatured: false },
-    { id: 48, name: "Yacine TV", rating: 4.4, downloadLink: "#", category: "Streaming", isFeatured: false },
-    { id: 49, name: "beIN CONNECT", rating: 4.6, downloadLink: "#", category: "Streaming", isFeatured: false },
-    { id: 50, name: "Kooora Live", rating: 4.5, downloadLink: "#", category: "Streaming", isFeatured: false },
+    { id: 47, name: "Shahid", rating: 4.7, downloadLink: "#", category: "Streaming", isFeatured: false },
+    { id: 48, name: "OSN+", rating: 4.5, downloadLink: "#", category: "Streaming", isFeatured: false },
+    { id: 49, name: "Yacine TV", rating: 4.4, downloadLink: "#", category: "Streaming", isFeatured: false },
+    { id: 50, name: "beIN CONNECT", rating: 4.6, downloadLink: "#", category: "Streaming", isFeatured: false },
+    { id: 51, name: "Kooora Live", rating: 4.5, downloadLink: "#", category: "Streaming", isFeatured: false },
     
     // ==================== TOOLS & PRODUCTIVITY ====================
-    { id: 51, name: "Google Translate", rating: 4.6, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 52, name: "Google Chrome", rating: 4.7, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 53, name: "Microsoft Office", rating: 4.6, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 54, name: "Adobe Acrobat", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 55, name: "CamScanner", rating: 4.6, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 56, name: "Dropbox", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 57, name: "Google Drive", rating: 4.7, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 58, name: "Google Photos", rating: 4.6, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 59, name: "Firefox", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 60, name: "Brave Browser", rating: 4.6, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 61, name: "SHAREit", rating: 4.4, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 62, name: "Truecaller", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 63, name: "Flashlight", rating: 4.3, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 64, name: "Calculator", rating: 4.4, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 52, name: "Google Translate", rating: 4.6, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 53, name: "Google Chrome", rating: 4.7, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 54, name: "Microsoft Office", rating: 4.6, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 55, name: "Adobe Acrobat", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 56, name: "CamScanner", rating: 4.6, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 57, name: "Dropbox", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 58, name: "Google Drive", rating: 4.7, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 59, name: "Google Photos", rating: 4.6, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 60, name: "Firefox", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 61, name: "Brave Browser", rating: 4.6, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 62, name: "SHAREit", rating: 4.4, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 63, name: "Truecaller", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 64, name: "Flashlight", rating: 4.3, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 65, name: "Calculator", rating: 4.4, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 66, name: "Phone", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 67, name: "AccuBattery", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 68, name: "AppTweak", rating: 4.3, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 69, name: "Talabat", rating: 4.6, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 70, name: "Google Play", rating: 4.7, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 71, name: "Google", rating: 4.7, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 72, name: "Google Pay", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
+    { id: 73, name: "Google Maps", rating: 4.7, downloadLink: "#", category: "Tools", isFeatured: false },
     
     // ==================== SHOPPING ====================
-    { id: 65, name: "Amazon", rating: 4.6, downloadLink: "#", category: "Shopping", isFeatured: false },
-    { id: 66, name: "AliExpress", rating: 4.5, downloadLink: "#", category: "Shopping", isFeatured: false },
-    { id: 67, name: "Noon", rating: 4.6, downloadLink: "#", category: "Shopping", isFeatured: false },
-    { id: 68, name: "Jumia", rating: 4.4, downloadLink: "#", category: "Shopping", isFeatured: false },
-    { id: 69, name: "Temu", rating: 4.4, downloadLink: "#", category: "Shopping", isFeatured: false },
-    { id: 70, name: "Shopify", rating: 4.7, downloadLink: "#", category: "Shopping", isFeatured: false },
-    { id: 71, name: "eBay", rating: 4.5, downloadLink: "#", category: "Shopping", isFeatured: false },
+    { id: 74, name: "Amazon", rating: 4.6, downloadLink: "#", category: "Shopping", isFeatured: false },
+    { id: 75, name: "AliExpress", rating: 4.5, downloadLink: "#", category: "Shopping", isFeatured: false },
+    { id: 76, name: "Noon", rating: 4.6, downloadLink: "#", category: "Shopping", isFeatured: false },
+    { id: 77, name: "Jumia", rating: 4.4, downloadLink: "#", category: "Shopping", isFeatured: false },
+    { id: 78, name: "Temu", rating: 4.4, downloadLink: "#", category: "Shopping", isFeatured: false },
+    { id: 79, name: "Shopify", rating: 4.7, downloadLink: "#", category: "Shopping", isFeatured: false },
+    { id: 80, name: "eBay", rating: 4.5, downloadLink: "#", category: "Shopping", isFeatured: false },
     
     // ==================== FOOD & DELIVERY ====================
-    { id: 72, name: "Uber Eats", rating: 4.5, downloadLink: "#", category: "Food", isFeatured: false },
-    { id: 73, name: "Talabat", rating: 4.6, downloadLink: "#", category: "Food", isFeatured: false },
-    { id: 74, name: "Glovo", rating: 4.4, downloadLink: "#", category: "Food", isFeatured: false },
-    { id: 75, name: "Mrsool", rating: 4.5, downloadLink: "#", category: "Food", isFeatured: false },
+    { id: 81, name: "Uber Eats", rating: 4.5, downloadLink: "#", category: "Food", isFeatured: false },
+    { id: 82, name: "Talabat", rating: 4.6, downloadLink: "#", category: "Food", isFeatured: false },
+    { id: 83, name: "Glovo", rating: 4.4, downloadLink: "#", category: "Food", isFeatured: false },
+    { id: 84, name: "Mrsool", rating: 4.5, downloadLink: "#", category: "Food", isFeatured: false },
     
     // ==================== FINANCE ====================
-    { id: 76, name: "PayPal", rating: 4.6, downloadLink: "#", category: "Finance", isFeatured: false },
-    { id: 77, name: "Binance", rating: 4.5, downloadLink: "#", category: "Finance", isFeatured: false },
-    { id: 78, name: "Western Union", rating: 4.4, downloadLink: "#", category: "Finance", isFeatured: false },
-    { id: 79, name: "Coinbase", rating: 4.5, downloadLink: "#", category: "Finance", isFeatured: false },
-    { id: 80, name: "Google Pay", rating: 4.5, downloadLink: "#", category: "Finance", isFeatured: false },
+    { id: 85, name: "PayPal", rating: 4.6, downloadLink: "#", category: "Finance", isFeatured: false },
+    { id: 86, name: "Binance", rating: 4.5, downloadLink: "#", category: "Finance", isFeatured: false },
+    { id: 87, name: "Western Union", rating: 4.4, downloadLink: "#", category: "Finance", isFeatured: false },
+    { id: 88, name: "Coinbase", rating: 4.5, downloadLink: "#", category: "Finance", isFeatured: false },
     
     // ==================== NEWS ====================
-    { id: 81, name: "Sky News Arabia", rating: 4.5, downloadLink: "#", category: "News", isFeatured: false },
-    { id: 82, name: "Al Arabiya", rating: 4.4, downloadLink: "#", category: "News", isFeatured: false },
+    { id: 89, name: "Sky News Arabia", rating: 4.5, downloadLink: "#", category: "News", isFeatured: false },
+    { id: 90, name: "Al Arabiya", rating: 4.4, downloadLink: "#", category: "News", isFeatured: false },
     
     // ==================== HEALTH & FITNESS ====================
-    { id: 83, name: "MyFitnessPal", rating: 4.6, downloadLink: "#", category: "Health", isFeatured: false },
-    { id: 84, name: "Nike Training", rating: 4.7, downloadLink: "#", category: "Health", isFeatured: false },
-    { id: 85, name: "Strava", rating: 4.5, downloadLink: "#", category: "Health", isFeatured: false },
+    { id: 91, name: "MyFitnessPal", rating: 4.6, downloadLink: "#", category: "Health", isFeatured: false },
+    { id: 92, name: "Nike Training", rating: 4.7, downloadLink: "#", category: "Health", isFeatured: false },
+    { id: 93, name: "Strava", rating: 4.5, downloadLink: "#", category: "Health", isFeatured: false },
     
     // ==================== EDUCATION ====================
-    { id: 86, name: "Duolingo", rating: 4.8, downloadLink: "#", category: "Education", isFeatured: false },
-    { id: 87, name: "Khan Academy", rating: 4.7, downloadLink: "#", category: "Education", isFeatured: false },
-    { id: 88, name: "Udemy", rating: 4.6, downloadLink: "#", category: "Education", isFeatured: false },
+    { id: 94, name: "Duolingo", rating: 4.8, downloadLink: "#", category: "Education", isFeatured: false },
+    { id: 95, name: "Khan Academy", rating: 4.7, downloadLink: "#", category: "Education", isFeatured: false },
+    { id: 96, name: "Udemy", rating: 4.6, downloadLink: "#", category: "Education", isFeatured: false },
     
     // ==================== DESIGN & CREATIVITY ====================
-    { id: 89, name: "Canva", rating: 4.7, downloadLink: "#", category: "Design", isFeatured: false },
-    { id: 90, name: "Picsart", rating: 4.6, downloadLink: "#", category: "Design", isFeatured: false },
-    { id: 91, name: "Adobe Photoshop", rating: 4.5, downloadLink: "#", category: "Design", isFeatured: false },
+    { id: 97, name: "Canva", rating: 4.7, downloadLink: "#", category: "Design", isFeatured: false },
+    { id: 98, name: "Picsart", rating: 4.6, downloadLink: "#", category: "Design", isFeatured: false },
+    { id: 99, name: "Adobe Photoshop", rating: 4.5, downloadLink: "#", category: "Design", isFeatured: false },
     
     // ==================== NAVIGATION & TRAVEL ====================
-    { id: 92, name: "Google Maps", rating: 4.7, downloadLink: "#", category: "Navigation", isFeatured: false },
-    { id: 93, name: "Waze", rating: 4.6, downloadLink: "#", category: "Navigation", isFeatured: false },
-    { id: 94, name: "Booking.com", rating: 4.6, downloadLink: "#", category: "Travel", isFeatured: false },
-    { id: 95, name: "Airbnb", rating: 4.7, downloadLink: "#", category: "Travel", isFeatured: false },
+    { id: 100, name: "Google Maps", rating: 4.7, downloadLink: "#", category: "Navigation", isFeatured: false },
+    { id: 101, name: "Waze", rating: 4.6, downloadLink: "#", category: "Navigation", isFeatured: false },
+    { id: 102, name: "Booking.com", rating: 4.6, downloadLink: "#", category: "Travel", isFeatured: false },
+    { id: 103, name: "Airbnb", rating: 4.7, downloadLink: "#", category: "Travel", isFeatured: false },
     
     // ==================== SECURITY ====================
-    { id: 96, name: "Avast Antivirus", rating: 4.5, downloadLink: "#", category: "Security", isFeatured: false },
-    { id: 97, name: "Norton Security", rating: 4.4, downloadLink: "#", category: "Security", isFeatured: false },
+    { id: 104, name: "Avast Antivirus", rating: 4.5, downloadLink: "#", category: "Security", isFeatured: false },
+    { id: 105, name: "Norton Security", rating: 4.4, downloadLink: "#", category: "Security", isFeatured: false },
     
     // ==================== RELIGIOUS ====================
-    { id: 98, name: "Quran", rating: 4.9, downloadLink: "#", category: "Religious", isFeatured: false },
-    { id: 99, name: "Khatma", rating: 4.9, downloadLink: "#", category: "Religious", isFeatured: false },
-    { id: 100, name: "Salaat First", rating: 4.7, downloadLink: "#", category: "Religious", isFeatured: false },
+    { id: 106, name: "Quran", rating: 4.9, downloadLink: "#", category: "Religious", isFeatured: false },
+    { id: 107, name: "Khatma", rating: 4.9, downloadLink: "#", category: "Religious", isFeatured: false },
+    { id: 108, name: "Salaat First", rating: 4.7, downloadLink: "#", category: "Religious", isFeatured: false },
     
     // ==================== AI & ASSISTANTS ====================
-    { id: 101, name: "ChatGPT", rating: 4.8, downloadLink: "#", category: "AI", isFeatured: false },
-    { id: 102, name: "Google Gemini", rating: 4.5, downloadLink: "#", category: "AI", isFeatured: false },
-    { id: 103, name: "Microsoft Copilot", rating: 4.6, downloadLink: "#", category: "AI", isFeatured: false },
-    { id: 104, name: "Google Assistant", rating: 4.5, downloadLink: "#", category: "AI", isFeatured: false },
+    { id: 109, name: "ChatGPT", rating: 4.8, downloadLink: "#", category: "AI", isFeatured: false },
+    { id: 110, name: "Google Gemini", rating: 4.5, downloadLink: "#", category: "AI", isFeatured: false },
+    { id: 111, name: "Microsoft Copilot", rating: 4.6, downloadLink: "#", category: "AI", isFeatured: false },
+    { id: 112, name: "Google Assistant", rating: 4.5, downloadLink: "#", category: "AI", isFeatured: false },
     
     // ==================== ENTERTAINMENT ====================
-    { id: 105, name: "Koora", rating: 4.5, downloadLink: "#", category: "Entertainment", isFeatured: false },
-    { id: 106, name: "Ostoura", rating: 4.6, downloadLink: "#", category: "Entertainment", isFeatured: false },
-    { id: 107, name: "Partshisi", rating: 4.5, downloadLink: "#", category: "Entertainment", isFeatured: false },
-    { id: 108, name: "SnapTube", rating: 4.4, downloadLink: "#", category: "Entertainment", isFeatured: false },
-    { id: 109, name: "Opera", rating: 4.5, downloadLink: "#", category: "Entertainment", isFeatured: false },
-    { id: 110, name: "HatGPT", rating: 4.6, downloadLink: "#", category: "Entertainment", isFeatured: false },
+    { id: 113, name: "Koora", rating: 4.5, downloadLink: "#", category: "Entertainment", isFeatured: false },
+    { id: 114, name: "Ostoura", rating: 4.6, downloadLink: "#", category: "Entertainment", isFeatured: false },
+    { id: 115, name: "Partshisi", rating: 4.5, downloadLink: "#", category: "Entertainment", isFeatured: false },
+    { id: 116, name: "SnapTube", rating: 4.4, downloadLink: "#", category: "Entertainment", isFeatured: false },
+    { id: 117, name: "Opera", rating: 4.5, downloadLink: "#", category: "Entertainment", isFeatured: false },
+    { id: 118, name: "HatGPT", rating: 4.6, downloadLink: "#", category: "Entertainment", isFeatured: false },
     
     // ==================== OTHER ====================
-    { id: 111, name: "Uber", rating: 4.4, downloadLink: "#", category: "Other", isFeatured: false },
-    { id: 112, name: "Fiverr", rating: 4.6, downloadLink: "#", category: "Other", isFeatured: false },
-    { id: 113, name: "Lightroom", rating: 4.7, downloadLink: "#", category: "Other", isFeatured: false },
-    { id: 114, name: "Google Play", rating: 4.7, downloadLink: "#", category: "Other", isFeatured: false }
-    // تطبيقات جديدة للتسوق والأدوات
-{ id: 115, name: "Talabat", rating: 4.6, downloadLink: "#", category: "Food", isFeatured: false },
-{ id: 116, name: "UC Browser", rating: 4.4, downloadLink: "#", category: "Tools", isFeatured: false },
-{ id: 117, name: "Calculator", rating: 4.4, downloadLink: "#", category: "Tools", isFeatured: false },
-{ id: 118, name: "Flashlight", rating: 4.3, downloadLink: "#", category: "Tools", isFeatured: false },
-{ id: 119, name: "Phone", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
-{ id: 120, name: "SHAREit", rating: 4.4, downloadLink: "#", category: "Tools", isFeatured: false },
-{ id: 121, name: "AccuBattery", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
-{ id: 122, name: "AppTweak", rating: 4.3, downloadLink: "#", category: "Tools", isFeatured: false },
-{ id: 123, name: "Adobe Acrobat", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
-{ id: 124, name: "AliExpress", rating: 4.5, downloadLink: "#", category: "Shopping", isFeatured: false },
-{ id: 125, name: "CamScanner", rating: 4.6, downloadLink: "#", category: "Tools", isFeatured: false },
-{ id: 126, name: "Glovo", rating: 4.4, downloadLink: "#", category: "Food", isFeatured: false },
-{ id: 127, name: "Google Chrome", rating: 4.7, downloadLink: "#", category: "Tools", isFeatured: false },
-{ id: 128, name: "Amazon", rating: 4.6, downloadLink: "#", category: "Shopping", isFeatured: false },
-{ id: 129, name: "Uber Eats", rating: 4.5, downloadLink: "#", category: "Food", isFeatured: false },
-{ id: 130, name: "Jumia", rating: 4.4, downloadLink: "#", category: "Shopping", isFeatured: false },
-{ id: 131, name: "eBay", rating: 4.5, downloadLink: "#", category: "Shopping", isFeatured: false }
+    { id: 119, name: "Uber", rating: 4.4, downloadLink: "#", category: "Other", isFeatured: false },
+    { id: 120, name: "Fiverr", rating: 4.6, downloadLink: "#", category: "Other", isFeatured: false },
+    { id: 121, name: "Lightroom", rating: 4.7, downloadLink: "#", category: "Other", isFeatured: false }
 ];
 
 // ==================== تصنيفات الفئات ====================
@@ -195,3 +185,10 @@ const categories = {
     "Entertainment": { name: "🎭 الترفيه", icon: "fa-film" },
     "Other": { name: "📦 أخرى", icon: "fa-box" }
 };
+
+// إحصائيات
+console.log('📊 CHELAT STORE Statistics:');
+console.log('✅ Total Apps:', appsData.length);
+console.log('✅ Featured Apps:', appsData.filter(app => app.isFeatured).length);
+console.log('✅ Categories:', Object.keys(categories).length);
+console.log('✅ Ready to launch! 🚀');

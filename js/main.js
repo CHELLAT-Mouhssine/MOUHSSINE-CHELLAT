@@ -59,7 +59,7 @@ const fileMap = {
     'OSN+': 'OSN.jpg',
     'Yacine TV': 'yacine-tv.png',
     'beIN CONNECT': 'beIN.jpg',
-    'Kooora Live': 'KoooraLive.jpg',
+    'Kooora Live': 'Kora.jpg',
     
     // Tools & Productivity
     'Google Translate': 'Google Translate.jpg',

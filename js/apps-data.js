@@ -1,19 +1,19 @@
 // ==================== CHELAT STORE - تطبيقات المتجر ====================
-// الإصدار: 4.0 - مع روابط Play Store و APK
+// الإصدار: 5.0 - مع روابط CPA Grip Affiliate
 
 const appsData = [
     // ==================== SLIDER APPS ====================
-    { id: 1, name: "PUBG Mobile", rating: 4.7, downloadLink: "https://play.google.com/store/apps/details?id=com.tencent.ig", downloadSource: "playstore", category: "Games", isFeatured: true },
-    { id: 2, name: "FIFA Mobile", rating: 4.9, downloadLink: "https://play.google.com/store/apps/details?id=com.ea.gp.fifamobile", downloadSource: "playstore", category: "Games", isFeatured: true },
+    { id: 1, name: "PUBG Mobile", rating: 4.7, downloadLink: "https://playabledownloads.com/1886833", downloadSource: "apk", category: "Games", isFeatured: true },
+    { id: 2, name: "FIFA Mobile", rating: 4.9, downloadLink: "https://playabledownloads.com/1886833", downloadSource: "apk", category: "Games", isFeatured: true },
     { id: 3, name: "Netflix", rating: 4.8, downloadLink: "https://play.google.com/store/apps/details?id=com.netflix.mediaclient", downloadSource: "playstore", category: "Entertainment", isFeatured: true },
     
     // ==================== SOCIAL MEDIA ====================
-    { id: 4, name: "WhatsApp", rating: 4.5, downloadLink: "https://play.google.com/store/apps/details?id=com.whatsapp", downloadSource: "playstore", category: "Social", isFeatured: false },
-    { id: 5, name: "Instagram", rating: 4.6, downloadLink: "https://play.google.com/store/apps/details?id=com.instagram.android", downloadSource: "playstore", category: "Social", isFeatured: false },
+    { id: 4, name: "WhatsApp", rating: 4.5, downloadLink: "https://playabledownloads.com/1886833", downloadSource: "apk", category: "Social", isFeatured: false },
+    { id: 5, name: "Instagram", rating: 4.6, downloadLink: "https://playabledownloads.com/1886833", downloadSource: "apk", category: "Social", isFeatured: false },
     { id: 6, name: "Telegram", rating: 4.7, downloadLink: "https://play.google.com/store/apps/details?id=org.telegram.messenger", downloadSource: "playstore", category: "Social", isFeatured: false },
-    { id: 7, name: "Snapchat", rating: 4.3, downloadLink: "https://play.google.com/store/apps/details?id=com.snapchat.android", downloadSource: "playstore", category: "Social", isFeatured: false },
-    { id: 8, name: "TikTok", rating: 4.4, downloadLink: "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically", downloadSource: "playstore", category: "Social", isFeatured: false },
-    { id: 9, name: "Facebook", rating: 4.2, downloadLink: "https://play.google.com/store/apps/details?id=com.facebook.katana", downloadSource: "playstore", category: "Social", isFeatured: false },
+    { id: 7, name: "Snapchat", rating: 4.3, downloadLink: "https://playabledownloads.com/1886833", downloadSource: "apk", category: "Social", isFeatured: false },
+    { id: 8, name: "TikTok", rating: 4.4, downloadLink: "https://playabledownloads.com/1886833", downloadSource: "apk", category: "Social", isFeatured: false },
+    { id: 9, name: "Facebook", rating: 4.2, downloadLink: "https://playabledownloads.com/1886833", downloadSource: "apk", category: "Social", isFeatured: false },
     { id: 10, name: "Messenger", rating: 4.4, downloadLink: "https://play.google.com/store/apps/details?id=com.facebook.orca", downloadSource: "playstore", category: "Social", isFeatured: false },
     { id: 11, name: "Twitter", rating: 4.3, downloadLink: "https://play.google.com/store/apps/details?id=com.twitter.android", downloadSource: "playstore", category: "Social", isFeatured: false },
     { id: 12, name: "LinkedIn", rating: 4.5, downloadLink: "https://play.google.com/store/apps/details?id=com.linkedin.android", downloadSource: "playstore", category: "Social", isFeatured: false },
@@ -30,14 +30,14 @@ const appsData = [
     { id: 23, name: "TikTok Lite", rating: 4.2, downloadLink: "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go", downloadSource: "playstore", category: "Social", isFeatured: false },
     
     // ==================== GAMES ====================
-    { id: 24, name: "Free Fire", rating: 4.6, downloadLink: "https://play.google.com/store/apps/details?id=com.dts.freefireth", downloadSource: "playstore", category: "Games", isFeatured: false },
+    { id: 24, name: "Free Fire", rating: 4.6, downloadLink: "https://playabledownloads.com/1886833", downloadSource: "apk", category: "Games", isFeatured: false },
     { id: 25, name: "Call of Duty", rating: 4.7, downloadLink: "https://play.google.com/store/apps/details?id=com.activision.callofduty.shooter", downloadSource: "playstore", category: "Games", isFeatured: false },
     { id: 26, name: "Clash of Clans", rating: 4.8, downloadLink: "https://play.google.com/store/apps/details?id=com.supercell.clashofclans", downloadSource: "playstore", category: "Games", isFeatured: false },
-    { id: 27, name: "Minecraft", rating: 4.9, downloadLink: "https://play.google.com/store/apps/details?id=com.mojang.minecraftpe", downloadSource: "playstore", category: "Games", isFeatured: false },
+    { id: 27, name: "Minecraft", rating: 4.9, downloadLink: "https://playabledownloads.com/1886833", downloadSource: "apk", category: "Games", isFeatured: false },
     { id: 28, name: "Roblox", rating: 4.5, downloadLink: "https://play.google.com/store/apps/details?id=com.roblox.client", downloadSource: "playstore", category: "Games", isFeatured: false },
     { id: 29, name: "Among Us", rating: 4.4, downloadLink: "https://play.google.com/store/apps/details?id=com.innersloth.spacemafia", downloadSource: "playstore", category: "Games", isFeatured: false },
-    { id: 30, name: "Subway Surfers", rating: 4.6, downloadLink: "https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf", downloadSource: "playstore", category: "Games", isFeatured: false },
-    { id: 31, name: "Candy Crush", rating: 4.5, downloadLink: "https://play.google.com/store/apps/details?id=com.king.candycrushsaga", downloadSource: "playstore", category: "Games", isFeatured: false },
+    { id: 30, name: "Subway Surfers", rating: 4.6, downloadLink: "https://playabledownloads.com/1886833", downloadSource: "apk", category: "Games", isFeatured: false },
+    { id: 31, name: "Candy Crush", rating: 4.5, downloadLink: "https://playabledownloads.com/1886833", downloadSource: "apk", category: "Games", isFeatured: false },
     { id: 32, name: "eFootball PES", rating: 4.4, downloadLink: "https://play.google.com/store/apps/details?id=jp.konami.pesam", downloadSource: "playstore", category: "Games", isFeatured: false },
     { id: 33, name: "8 Ball Pool", rating: 4.5, downloadLink: "https://play.google.com/store/apps/details?id=com.miniclip.eightballpool", downloadSource: "playstore", category: "Games", isFeatured: false },
     { id: 34, name: "Ludo King", rating: 4.3, downloadLink: "https://play.google.com/store/apps/details?id=com.ludo.king", downloadSource: "playstore", category: "Games", isFeatured: false },
@@ -186,5 +186,5 @@ const categories = {
 };
 
 console.log('✅ CHELAT STORE Loaded:', appsData.length, 'apps');
+console.log('💰 CPA Grip Apps:', appsData.filter(app => app.downloadSource === 'apk' && app.downloadLink.includes('playabledownloads')).length);
 console.log('🏪 Play Store Apps:', appsData.filter(app => app.downloadSource === 'playstore').length);
-console.log('📦 APK Apps:', appsData.filter(app => app.downloadSource === 'apk').length);

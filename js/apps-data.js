@@ -1,165 +1,72 @@
 // ==================== CHELAT STORE - تطبيقات المتجر ====================
-// الإصدار: 2.0 - محدث وكامل
+// الإصدار: 3.0 - مع روابط التحميل
 
 const appsData = [
     // ==================== SLIDER APPS ====================
-    { id: 1, name: "PUBG Mobile", rating: 4.7, downloadLink: "#", category: "Games", isFeatured: true },
-    { id: 2, name: "FIFA Mobile", rating: 4.9, downloadLink: "#", category: "Games", isFeatured: true },
-    { id: 3, name: "Netflix", rating: 4.8, downloadLink: "#", category: "Entertainment", isFeatured: true },
+    { id: 1, name: "PUBG Mobile", rating: 4.7, downloadLink: "https://play.google.com/store/apps/details?id=com.tencent.ig", downloadSource: "playstore", category: "Games", isFeatured: true },
+    { id: 2, name: "FIFA Mobile", rating: 4.9, downloadLink: "https://play.google.com/store/apps/details?id=com.ea.gp.fifamobile", downloadSource: "playstore", category: "Games", isFeatured: true },
+    { id: 3, name: "Netflix", rating: 4.8, downloadLink: "https://play.google.com/store/apps/details?id=com.netflix.mediaclient", downloadSource: "playstore", category: "Entertainment", isFeatured: true },
     
     // ==================== SOCIAL MEDIA ====================
-    { id: 4, name: "WhatsApp", rating: 4.5, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 5, name: "Instagram", rating: 4.6, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 6, name: "Telegram", rating: 4.7, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 7, name: "Snapchat", rating: 4.3, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 8, name: "TikTok", rating: 4.4, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 9, name: "Facebook", rating: 4.2, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 10, name: "Messenger", rating: 4.4, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 11, name: "Twitter", rating: 4.3, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 12, name: "LinkedIn", rating: 4.5, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 13, name: "Pinterest", rating: 4.5, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 14, name: "Threads", rating: 4.3, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 15, name: "Discord", rating: 4.6, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 16, name: "Reddit", rating: 4.4, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 17, name: "Viber", rating: 4.3, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 18, name: "IMO", rating: 4.2, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 19, name: "Line", rating: 4.3, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 20, name: "WeChat", rating: 4.1, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 21, name: "Telegram X", rating: 4.5, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 22, name: "Instagram Lite", rating: 4.3, downloadLink: "#", category: "Social", isFeatured: false },
-    { id: 23, name: "TikTok Lite", rating: 4.2, downloadLink: "#", category: "Social", isFeatured: false },
+    { id: 4, name: "WhatsApp", rating: 4.5, downloadLink: "https://play.google.com/store/apps/details?id=com.whatsapp", downloadSource: "playstore", category: "Social", isFeatured: false },
+    { id: 5, name: "Instagram", rating: 4.6, downloadLink: "https://play.google.com/store/apps/details?id=com.instagram.android", downloadSource: "playstore", category: "Social", isFeatured: false },
+    { id: 6, name: "Telegram", rating: 4.7, downloadLink: "https://play.google.com/store/apps/details?id=org.telegram.messenger", downloadSource: "playstore", category: "Social", isFeatured: false },
+    { id: 7, name: "Snapchat", rating: 4.3, downloadLink: "https://play.google.com/store/apps/details?id=com.snapchat.android", downloadSource: "playstore", category: "Social", isFeatured: false },
+    { id: 8, name: "TikTok", rating: 4.4, downloadLink: "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically", downloadSource: "playstore", category: "Social", isFeatured: false },
+    { id: 9, name: "Facebook", rating: 4.2, downloadLink: "https://play.google.com/store/apps/details?id=com.facebook.katana", downloadSource: "playstore", category: "Social", isFeatured: false },
+    { id: 10, name: "Messenger", rating: 4.4, downloadLink: "https://play.google.com/store/apps/details?id=com.facebook.orca", downloadSource: "playstore", category: "Social", isFeatured: false },
+    { id: 11, name: "Twitter", rating: 4.3, downloadLink: "https://play.google.com/store/apps/details?id=com.twitter.android", downloadSource: "playstore", category: "Social", isFeatured: false },
+    { id: 12, name: "LinkedIn", rating: 4.5, downloadLink: "https://play.google.com/store/apps/details?id=com.linkedin.android", downloadSource: "playstore", category: "Social", isFeatured: false },
+    { id: 13, name: "Pinterest", rating: 4.5, downloadLink: "https://play.google.com/store/apps/details?id=com.pinterest", downloadSource: "playstore", category: "Social", isFeatured: false },
+    { id: 14, name: "Threads", rating: 4.3, downloadLink: "https://play.google.com/store/apps/details?id=com.instagram.barcelona", downloadSource: "playstore", category: "Social", isFeatured: false },
+    { id: 15, name: "Discord", rating: 4.6, downloadLink: "https://play.google.com/store/apps/details?id=com.discord", downloadSource: "playstore", category: "Social", isFeatured: false },
+    { id: 16, name: "Reddit", rating: 4.4, downloadLink: "https://play.google.com/store/apps/details?id=com.reddit.frontpage", downloadSource: "playstore", category: "Social", isFeatured: false },
+    { id: 17, name: "Viber", rating: 4.3, downloadLink: "https://play.google.com/store/apps/details?id=com.viber.voip", downloadSource: "playstore", category: "Social", isFeatured: false },
+    { id: 18, name: "IMO", rating: 4.2, downloadLink: "https://play.google.com/store/apps/details?id=com.imo.android.imoim", downloadSource: "playstore", category: "Social", isFeatured: false },
+    { id: 19, name: "Line", rating: 4.3, downloadLink: "https://play.google.com/store/apps/details?id=jp.naver.line.android", downloadSource: "playstore", category: "Social", isFeatured: false },
+    { id: 20, name: "WeChat", rating: 4.1, downloadLink: "https://play.google.com/store/apps/details?id=com.tencent.mm", downloadSource: "playstore", category: "Social", isFeatured: false },
     
     // ==================== GAMES ====================
-    { id: 24, name: "Free Fire", rating: 4.6, downloadLink: "#", category: "Games", isFeatured: false },
-    { id: 25, name: "Call of Duty", rating: 4.7, downloadLink: "#", category: "Games", isFeatured: false },
-    { id: 26, name: "Clash of Clans", rating: 4.8, downloadLink: "#", category: "Games", isFeatured: false },
-    { id: 27, name: "Minecraft", rating: 4.9, downloadLink: "#", category: "Games", isFeatured: false },
-    { id: 28, name: "Roblox", rating: 4.5, downloadLink: "#", category: "Games", isFeatured: false },
-    { id: 29, name: "Among Us", rating: 4.4, downloadLink: "#", category: "Games", isFeatured: false },
-    { id: 30, name: "Subway Surfers", rating: 4.6, downloadLink: "#", category: "Games", isFeatured: false },
-    { id: 31, name: "Candy Crush", rating: 4.5, downloadLink: "#", category: "Games", isFeatured: false },
-    { id: 32, name: "eFootball PES", rating: 4.4, downloadLink: "#", category: "Games", isFeatured: false },
-    { id: 33, name: "8 Ball Pool", rating: 4.5, downloadLink: "#", category: "Games", isFeatured: false },
-    { id: 34, name: "Ludo King", rating: 4.3, downloadLink: "#", category: "Games", isFeatured: false },
-    { id: 35, name: "Asphalt 9", rating: 4.6, downloadLink: "#", category: "Games", isFeatured: false },
-    { id: 36, name: "Snake", rating: 4.2, downloadLink: "#", category: "Games", isFeatured: false },
-    { id: 37, name: "Free Fire MAX", rating: 4.7, downloadLink: "#", category: "Games", isFeatured: false },
-    { id: 38, name: "UC Browser", rating: 4.4, downloadLink: "#", category: "Games", isFeatured: false },
+    { id: 21, name: "Free Fire", rating: 4.6, downloadLink: "https://play.google.com/store/apps/details?id=com.dts.freefireth", downloadSource: "playstore", category: "Games", isFeatured: false },
+    { id: 22, name: "Call of Duty", rating: 4.7, downloadLink: "https://play.google.com/store/apps/details?id=com.activision.callofduty.shooter", downloadSource: "playstore", category: "Games", isFeatured: false },
+    { id: 23, name: "Clash of Clans", rating: 4.8, downloadLink: "https://play.google.com/store/apps/details?id=com.supercell.clashofclans", downloadSource: "playstore", category: "Games", isFeatured: false },
+    { id: 24, name: "Minecraft", rating: 4.9, downloadLink: "https://play.google.com/store/apps/details?id=com.mojang.minecraftpe", downloadSource: "playstore", category: "Games", isFeatured: false },
+    { id: 25, name: "Roblox", rating: 4.5, downloadLink: "https://play.google.com/store/apps/details?id=com.roblox.client", downloadSource: "playstore", category: "Games", isFeatured: false },
+    { id: 26, name: "Among Us", rating: 4.4, downloadLink: "https://play.google.com/store/apps/details?id=com.innersloth.spacemafia", downloadSource: "playstore", category: "Games", isFeatured: false },
+    { id: 27, name: "Subway Surfers", rating: 4.6, downloadLink: "https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf", downloadSource: "playstore", category: "Games", isFeatured: false },
+    { id: 28, name: "Candy Crush", rating: 4.5, downloadLink: "https://play.google.com/store/apps/details?id=com.king.candycrushsaga", downloadSource: "playstore", category: "Games", isFeatured: false },
+    { id: 29, name: "8 Ball Pool", rating: 4.5, downloadLink: "https://play.google.com/store/apps/details?id=com.miniclip.eightballpool", downloadSource: "playstore", category: "Games", isFeatured: false },
+    { id: 30, name: "Ludo King", rating: 4.3, downloadLink: "https://play.google.com/store/apps/details?id=com.ludo.king", downloadSource: "playstore", category: "Games", isFeatured: false },
     
     // ==================== MUSIC & VIDEO ====================
-    { id: 39, name: "Spotify", rating: 4.8, downloadLink: "#", category: "Music", isFeatured: false },
-    { id: 40, name: "YouTube Music", rating: 4.5, downloadLink: "#", category: "Music", isFeatured: false },
-    { id: 41, name: "SoundCloud", rating: 4.6, downloadLink: "#", category: "Music", isFeatured: false },
-    { id: 42, name: "Deezer", rating: 4.5, downloadLink: "#", category: "Music", isFeatured: false },
-    { id: 43, name: "VLC Player", rating: 4.7, downloadLink: "#", category: "Video", isFeatured: false },
-    { id: 44, name: "MX Player", rating: 4.6, downloadLink: "#", category: "Video", isFeatured: false },
-    { id: 45, name: "InShot", rating: 4.7, downloadLink: "#", category: "Video", isFeatured: false },
-    { id: 46, name: "KineMaster", rating: 4.6, downloadLink: "#", category: "Video", isFeatured: false },
+    { id: 31, name: "Spotify", rating: 4.8, downloadLink: "https://play.google.com/store/apps/details?id=com.spotify.music", downloadSource: "playstore", category: "Music", isFeatured: false },
+    { id: 32, name: "YouTube Music", rating: 4.5, downloadLink: "https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music", downloadSource: "playstore", category: "Music", isFeatured: false },
+    { id: 33, name: "SoundCloud", rating: 4.6, downloadLink: "https://play.google.com/store/apps/details?id=com.soundcloud.android", downloadSource: "playstore", category: "Music", isFeatured: false },
+    { id: 34, name: "VLC Player", rating: 4.7, downloadLink: "https://play.google.com/store/apps/details?id=org.videolan.vlc", downloadSource: "playstore", category: "Video", isFeatured: false },
+    { id: 35, name: "MX Player", rating: 4.6, downloadLink: "https://play.google.com/store/apps/details?id=com.mxtech.videoplayer.ad", downloadSource: "playstore", category: "Video", isFeatured: false },
     
-    // ==================== STREAMING ====================
-    { id: 47, name: "Shahid", rating: 4.7, downloadLink: "#", category: "Streaming", isFeatured: false },
-    { id: 48, name: "OSN+", rating: 4.5, downloadLink: "#", category: "Streaming", isFeatured: false },
-    { id: 49, name: "Yacine TV", rating: 4.4, downloadLink: "#", category: "Streaming", isFeatured: false },
-    { id: 50, name: "beIN CONNECT", rating: 4.6, downloadLink: "#", category: "Streaming", isFeatured: false },
-    { id: 51, name: "Kooora Live", rating: 4.5, downloadLink: "#", category: "Streaming", isFeatured: false },
-    
-    // ==================== TOOLS & PRODUCTIVITY ====================
-    { id: 52, name: "Google Translate", rating: 4.6, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 53, name: "Google Chrome", rating: 4.7, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 54, name: "Microsoft Office", rating: 4.6, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 55, name: "Adobe Acrobat", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 56, name: "CamScanner", rating: 4.6, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 57, name: "Dropbox", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 58, name: "Google Drive", rating: 4.7, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 59, name: "Google Photos", rating: 4.6, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 60, name: "Firefox", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 61, name: "Brave Browser", rating: 4.6, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 62, name: "SHAREit", rating: 4.4, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 63, name: "Truecaller", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 64, name: "Flashlight", rating: 4.3, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 65, name: "Calculator", rating: 4.4, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 66, name: "Phone", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 67, name: "AccuBattery", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 68, name: "AppTweak", rating: 4.3, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 69, name: "Talabat", rating: 4.6, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 70, name: "Google Play", rating: 4.7, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 71, name: "Google", rating: 4.7, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 72, name: "Google Pay", rating: 4.5, downloadLink: "#", category: "Tools", isFeatured: false },
-    { id: 73, name: "Google Maps", rating: 4.7, downloadLink: "#", category: "Tools", isFeatured: false },
+    // ==================== TOOLS ====================
+    { id: 36, name: "Google Chrome", rating: 4.7, downloadLink: "https://play.google.com/store/apps/details?id=com.android.chrome", downloadSource: "playstore", category: "Tools", isFeatured: false },
+    { id: 37, name: "Google Translate", rating: 4.6, downloadLink: "https://play.google.com/store/apps/details?id=com.google.android.apps.translate", downloadSource: "playstore", category: "Tools", isFeatured: false },
+    { id: 38, name: "Google Drive", rating: 4.7, downloadLink: "https://play.google.com/store/apps/details?id=com.google.android.apps.docs", downloadSource: "playstore", category: "Tools", isFeatured: false },
+    { id: 39, name: "Google Photos", rating: 4.6, downloadLink: "https://play.google.com/store/apps/details?id=com.google.android.apps.photos", downloadSource: "playstore", category: "Tools", isFeatured: false },
+    { id: 40, name: "Google Maps", rating: 4.7, downloadLink: "https://play.google.com/store/apps/details?id=com.google.android.apps.maps", downloadSource: "playstore", category: "Tools", isFeatured: false },
+    { id: 41, name: "CamScanner", rating: 4.6, downloadLink: "https://play.google.com/store/apps/details?id=com.intsig.camscanner", downloadSource: "playstore", category: "Tools", isFeatured: false },
+    { id: 42, name: "SHAREit", rating: 4.4, downloadLink: "https://play.google.com/store/apps/details?id=com.lenovo.anyshare.gps", downloadSource: "playstore", category: "Tools", isFeatured: false },
     
     // ==================== SHOPPING ====================
-    { id: 74, name: "Amazon", rating: 4.6, downloadLink: "#", category: "Shopping", isFeatured: false },
-    { id: 75, name: "AliExpress", rating: 4.5, downloadLink: "#", category: "Shopping", isFeatured: false },
-    { id: 76, name: "Noon", rating: 4.6, downloadLink: "#", category: "Shopping", isFeatured: false },
-    { id: 77, name: "Jumia", rating: 4.4, downloadLink: "#", category: "Shopping", isFeatured: false },
-    { id: 78, name: "Temu", rating: 4.4, downloadLink: "#", category: "Shopping", isFeatured: false },
-    { id: 79, name: "Shopify", rating: 4.7, downloadLink: "#", category: "Shopping", isFeatured: false },
-    { id: 80, name: "eBay", rating: 4.5, downloadLink: "#", category: "Shopping", isFeatured: false },
+    { id: 43, name: "Amazon", rating: 4.6, downloadLink: "https://play.google.com/store/apps/details?id=com.amazon.mShop.android.shopping", downloadSource: "playstore", category: "Shopping", isFeatured: false },
+    { id: 44, name: "AliExpress", rating: 4.5, downloadLink: "https://play.google.com/store/apps/details?id=com.alibaba.aliexpresshd", downloadSource: "playstore", category: "Shopping", isFeatured: false },
+    { id: 45, name: "Jumia", rating: 4.4, downloadLink: "https://play.google.com/store/apps/details?id=com.jumia.android", downloadSource: "playstore", category: "Shopping", isFeatured: false },
+    { id: 46, name: "eBay", rating: 4.5, downloadLink: "https://play.google.com/store/apps/details?id=com.ebay.mobile", downloadSource: "playstore", category: "Shopping", isFeatured: false },
     
     // ==================== FOOD & DELIVERY ====================
-    { id: 81, name: "Uber Eats", rating: 4.5, downloadLink: "#", category: "Food", isFeatured: false },
-    { id: 82, name: "Talabat", rating: 4.6, downloadLink: "#", category: "Food", isFeatured: false },
-    { id: 83, name: "Glovo", rating: 4.4, downloadLink: "#", category: "Food", isFeatured: false },
-    { id: 84, name: "Mrsool", rating: 4.5, downloadLink: "#", category: "Food", isFeatured: false },
+    { id: 47, name: "Uber Eats", rating: 4.5, downloadLink: "https://play.google.com/store/apps/details?id=com.ubercab.eats", downloadSource: "playstore", category: "Food", isFeatured: false },
+    { id: 48, name: "Glovo", rating: 4.4, downloadLink: "https://play.google.com/store/apps/details?id=com.glovo", downloadSource: "playstore", category: "Food", isFeatured: false },
     
     // ==================== FINANCE ====================
-    { id: 85, name: "PayPal", rating: 4.6, downloadLink: "#", category: "Finance", isFeatured: false },
-    { id: 86, name: "Binance", rating: 4.5, downloadLink: "#", category: "Finance", isFeatured: false },
-    { id: 87, name: "Western Union", rating: 4.4, downloadLink: "#", category: "Finance", isFeatured: false },
-    { id: 88, name: "Coinbase", rating: 4.5, downloadLink: "#", category: "Finance", isFeatured: false },
-    
-    // ==================== NEWS ====================
-    { id: 89, name: "Sky News Arabia", rating: 4.5, downloadLink: "#", category: "News", isFeatured: false },
-    { id: 90, name: "Al Arabiya", rating: 4.4, downloadLink: "#", category: "News", isFeatured: false },
-    
-    // ==================== HEALTH & FITNESS ====================
-    { id: 91, name: "MyFitnessPal", rating: 4.6, downloadLink: "#", category: "Health", isFeatured: false },
-    { id: 92, name: "Nike Training", rating: 4.7, downloadLink: "#", category: "Health", isFeatured: false },
-    { id: 93, name: "Strava", rating: 4.5, downloadLink: "#", category: "Health", isFeatured: false },
-    
-    // ==================== EDUCATION ====================
-    { id: 94, name: "Duolingo", rating: 4.8, downloadLink: "#", category: "Education", isFeatured: false },
-    { id: 95, name: "Khan Academy", rating: 4.7, downloadLink: "#", category: "Education", isFeatured: false },
-    { id: 96, name: "Udemy", rating: 4.6, downloadLink: "#", category: "Education", isFeatured: false },
-    
-    // ==================== DESIGN & CREATIVITY ====================
-    { id: 97, name: "Canva", rating: 4.7, downloadLink: "#", category: "Design", isFeatured: false },
-    { id: 98, name: "Picsart", rating: 4.6, downloadLink: "#", category: "Design", isFeatured: false },
-    { id: 99, name: "Adobe Photoshop", rating: 4.5, downloadLink: "#", category: "Design", isFeatured: false },
-    
-    // ==================== NAVIGATION & TRAVEL ====================
-    { id: 100, name: "Google Maps", rating: 4.7, downloadLink: "#", category: "Navigation", isFeatured: false },
-    { id: 101, name: "Waze", rating: 4.6, downloadLink: "#", category: "Navigation", isFeatured: false },
-    { id: 102, name: "Booking.com", rating: 4.6, downloadLink: "#", category: "Travel", isFeatured: false },
-    { id: 103, name: "Airbnb", rating: 4.7, downloadLink: "#", category: "Travel", isFeatured: false },
-    
-    // ==================== SECURITY ====================
-    { id: 104, name: "Avast Antivirus", rating: 4.5, downloadLink: "#", category: "Security", isFeatured: false },
-    { id: 105, name: "Norton Security", rating: 4.4, downloadLink: "#", category: "Security", isFeatured: false },
-    
-    // ==================== RELIGIOUS ====================
-    { id: 106, name: "Quran", rating: 4.9, downloadLink: "#", category: "Religious", isFeatured: false },
-    { id: 107, name: "Khatma", rating: 4.9, downloadLink: "#", category: "Religious", isFeatured: false },
-    { id: 108, name: "Salaat First", rating: 4.7, downloadLink: "#", category: "Religious", isFeatured: false },
-    
-    // ==================== AI & ASSISTANTS ====================
-    { id: 109, name: "ChatGPT", rating: 4.8, downloadLink: "#", category: "AI", isFeatured: false },
-    { id: 110, name: "Google Gemini", rating: 4.5, downloadLink: "#", category: "AI", isFeatured: false },
-    { id: 111, name: "Microsoft Copilot", rating: 4.6, downloadLink: "#", category: "AI", isFeatured: false },
-    { id: 112, name: "Google Assistant", rating: 4.5, downloadLink: "#", category: "AI", isFeatured: false },
-    
-    // ==================== ENTERTAINMENT ====================
-    { id: 113, name: "Koora", rating: 4.5, downloadLink: "#", category: "Entertainment", isFeatured: false },
-    { id: 114, name: "Ostoura", rating: 4.6, downloadLink: "#", category: "Entertainment", isFeatured: false },
-    { id: 115, name: "Partshisi", rating: 4.5, downloadLink: "#", category: "Entertainment", isFeatured: false },
-    { id: 116, name: "SnapTube", rating: 4.4, downloadLink: "#", category: "Entertainment", isFeatured: false },
-    { id: 117, name: "Opera", rating: 4.5, downloadLink: "#", category: "Entertainment", isFeatured: false },
-    { id: 118, name: "HatGPT", rating: 4.6, downloadLink: "#", category: "Entertainment", isFeatured: false },
-    
-    // ==================== OTHER ====================
-    { id: 119, name: "Uber", rating: 4.4, downloadLink: "#", category: "Other", isFeatured: false },
-    { id: 120, name: "Fiverr", rating: 4.6, downloadLink: "#", category: "Other", isFeatured: false },
-    { id: 121, name: "Lightroom", rating: 4.7, downloadLink: "#", category: "Other", isFeatured: false }
+    { id: 49, name: "PayPal", rating: 4.6, downloadLink: "https://play.google.com/store/apps/details?id=com.paypal.android.p2pmobile", downloadSource: "playstore", category: "Finance", isFeatured: false },
+    { id: 50, name: "Binance", rating: 4.5, downloadLink: "https://play.google.com/store/apps/details?id=com.binance.dev", downloadSource: "playstore", category: "Finance", isFeatured: false }
 ];
 
 // ==================== تصنيفات الفئات ====================
@@ -168,27 +75,12 @@ const categories = {
     "Games": { name: "🎮 الألعاب", icon: "fa-gamepad" },
     "Music": { name: "🎵 الموسيقى", icon: "fa-music" },
     "Video": { name: "🎬 الفيديو", icon: "fa-video" },
-    "Streaming": { name: "📺 البث المباشر", icon: "fa-tv" },
     "Tools": { name: "🛠️ الأدوات", icon: "fa-tools" },
     "Shopping": { name: "🛒 التسوق", icon: "fa-shopping-cart" },
     "Food": { name: "🍔 الطعام والتوصيل", icon: "fa-utensils" },
     "Finance": { name: "💰 المالية", icon: "fa-coins" },
-    "News": { name: "📰 الأخبار", icon: "fa-newspaper" },
-    "Health": { name: "💪 الصحة واللياقة", icon: "fa-heartbeat" },
-    "Education": { name: "📚 التعليم", icon: "fa-graduation-cap" },
-    "Design": { name: "🎨 التصميم", icon: "fa-palette" },
-    "Navigation": { name: "🗺️ الملاحة", icon: "fa-map-marked-alt" },
-    "Travel": { name: "✈️ السفر", icon: "fa-plane" },
-    "Security": { name: "🔒 الأمان", icon: "fa-shield-alt" },
-    "Religious": { name: "🕌 ديني", icon: "fa-kaaba" },
-    "AI": { name: "🤖 الذكاء الاصطناعي", icon: "fa-robot" },
     "Entertainment": { name: "🎭 الترفيه", icon: "fa-film" },
     "Other": { name: "📦 أخرى", icon: "fa-box" }
 };
 
-// إحصائيات
-console.log('📊 CHELAT STORE Statistics:');
-console.log('✅ Total Apps:', appsData.length);
-console.log('✅ Featured Apps:', appsData.filter(app => app.isFeatured).length);
-console.log('✅ Categories:', Object.keys(categories).length);
-console.log('✅ Ready to launch! 🚀');
+console.log('✅ CHELAT STORE Loaded:', appsData.length, 'apps');

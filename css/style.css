@@ -618,3 +618,43 @@ body.sidebar-open {
 
 [dir="rtl"] { text-align: right; }
 [dir="ltr"] { text-align: left; }
+/* ==================== أزرار التحميل ==================== */
+
+.download-btn {
+    background-color: var(--primary-btn);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    margin-top: auto;
+    transition: 0.3s;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* زر Google Play */
+.playstore-btn {
+    background: linear-gradient(135deg, #4285F4, #34A853);
+}
+
+.playstore-btn:hover {
+    box-shadow: 0 5px 15px rgba(66, 133, 244, 0.4);
+}
+
+/* زر APK مباشر */
+.apk-btn {
+    background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+}
+
+.apk-btn:hover {
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}

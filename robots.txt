@@ -1,0 +1,10 @@
+# CHELAT STORE - Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://chellat-mouhssine.github.io/sitemap.xml
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /private/

@@ -23,9 +23,6 @@ const fileMap = {
     'IMO': 'imo.png',
     'Line': 'line.png',
     'WeChat': 'wechat.png',
-    'Telegram X': 'telegram_x.jpg',
-    'Instagram Lite': 'instagram_lite.jpg',
-    'TikTok Lite': 'tiktok_lite.jpg',
     
     // Games
     'Free Fire': 'freefire.jpg',
@@ -36,126 +33,38 @@ const fileMap = {
     'Among Us': 'AmongUs.jpg',
     'Subway Surfers': 'SubwaySurfers.jpg',
     'Candy Crush': 'CandyCrush.jpg',
-    'eFootball PES': 'eFootball.jpg',
     '8 Ball Pool': 'pool-balls (1).png',
     'Ludo King': 'LudoKing.jpg',
-    'Asphalt 9': 'Asphalt9.jpg',
-    'Snake': 'Snake.jpg',
-    'Free Fire MAX': 'freefire_max.jpg',
-    'UC Browser': 'UCBrowser.jpg',
     
     // Music & Video
     'Spotify': 'Spotify.jpg',
     'YouTube Music': 'YouTube.jpg',
     'SoundCloud': 'SoundCloud.jpg',
-    'Deezer': 'Deezer.jpg',
     'VLC Player': 'vlc.png',
     'MX Player': 'MXPlayer.jpg',
-    'InShot': 'InShot.jpg',
-    'KineMaster': 'KineMaster.jpg',
     
-    // Streaming
-    'Shahid': 'Shahid.jpg',
-    'OSN+': 'OSN.jpg',
-    'Yacine TV': 'yacine-tv.png',
-    'beIN CONNECT': 'beIN.jpg',
-    'Kooora Live': 'KoooraLive.jpg',
-    
-    // Tools & Productivity
-    'Google Translate': 'Google Translate.jpg',
+    // Tools
     'Google Chrome': 'GoogleChrome.jpg',
-    'Microsoft Office': 'MicrosoftOffice.jpg',
-    'Adobe Acrobat': 'AdobeAcrobat.jpg',
-    'CamScanner': 'CamScanner.jpg',
-    'Dropbox': 'dropbox.png',
+    'Google Translate': 'Google Translate.jpg',
     'Google Drive': 'google-drive.png',
     'Google Photos': 'google-photos.png',
-    'Firefox': 'firefox.png',
-    'Brave Browser': 'BraveBrowser.jpg',
-    'SHAREit': 'SHAREit.jpg',
-    'Truecaller': 'Truecaller.jpg',
-    'Flashlight': 'Flashlight.jpg',
-    'Calculator': 'Calculator.jpg',
-    'Google Play': 'google-play.png',
-    'Google': 'google.png',
-    'Google Pay': 'google-pay.png',
     'Google Maps': 'google-maps.png',
-    'Phone': 'Phone.jpg',
-    'AccuBattery': 'AccuBattery.jpg',
-    'AppTweak': 'AppTweak.jpg',
-    'Talabat': 'Talabat.jpg',
+    'CamScanner': 'CamScanner.jpg',
+    'SHAREit': 'SHAREit.jpg',
     
     // Shopping
     'Amazon': 'Amazon.jpg',
     'AliExpress': 'AliExpress.jpg',
-    'Noon': 'Noon.jpg',
     'Jumia': 'Jumia.jpg',
-    'Temu': 'Temu.jpg',
-    'Shopify': 'Shopify.jpg',
     'eBay': 'eBay.jpg',
     
     // Food & Delivery
     'Uber Eats': 'UberEats.jpg',
     'Glovo': 'Glovo.jpg',
-    'Mrsool': 'Mrsool.jpg',
     
     // Finance
     'PayPal': 'paypal.png',
-    'Binance': 'binance.png',
-    'Western Union': 'western-union.png',
-    'Coinbase': 'Coinbase.jpg',
-    
-    // News
-    'Sky News Arabia': 'SkyNews.jpg',
-    'Al Arabiya': 'AlArabiya.jpg',
-    
-    // Health & Fitness
-    'MyFitnessPal': 'MyFitnessPal.jpg',
-    'Nike Training': 'NikeTraining.jpg',
-    'Strava': 'Strava.jpg',
-    
-    // Education
-    'Duolingo': 'Duolingo.jpg',
-    'Khan Academy': 'KhanAcademy.jpg',
-    'Udemy': 'Udemy.jpg',
-    
-    // Design & Creativity
-    'Canva': 'Canva.jpg',
-    'Picsart': 'Picsart.png',
-    'Adobe Photoshop': 'AdobePhotoshop.jpg',
-    
-    // Navigation & Travel
-    'Waze': 'Waze.jpg',
-    'Booking.com': 'Booking.jpg',
-    'Airbnb': 'Airbnb.jpg',
-    
-    // Security
-    'Avast Antivirus': 'Avast.jpg',
-    'Norton Security': 'Norton.jpg',
-    
-    // Religious
-    'Quran': 'quran.png',
-    'Khatma': 'Khatma.png',
-    'Salaat First': 'salaat_first.jpg',
-    
-    // AI & Assistants
-    'ChatGPT': 'hatgpt.jpg',
-    'Google Gemini': 'Google-Gemini.jpg',
-    'Microsoft Copilot': 'Copilot.jpg',
-    'Google Assistant': 'google_assistant.jpg',
-    
-    // Entertainment
-    'Koora': 'Koora.jpg',
-    'Ostoura': 'Ostoura.png',
-    'Partshisi': 'Partshisi.png',
-    'SnapTube': 'snaptube.png',
-    'Opera': 'opera.jpeg',
-    'HatGPT': 'hatgpt.jpg',
-    
-    // Other
-    'Uber': 'Uber.jpg',
-    'Fiverr': 'Fiverr - Freelance Service.jpg',
-    'Lightroom': 'LightroomideoEditor.png'
+    'Binance': 'binance.png'
 };
 
 // ==================== ألوان التطبيقات ====================
@@ -163,107 +72,53 @@ const appColors = {
     'WhatsApp': '25D366',
     'Facebook': '1877F2',
     'Messenger': '00B2FF',
-    'Call of Duty': 'FF6B6B',
-    'Roblox': 'DE1212',
-    'Minecraft': '5D8C3A',
-    'Uber': '000000',
-    'Microsoft Copilot': '00A4EF',
-    'Netflix': 'E50914',
-    'Spotify': '1DB954',
     'Instagram': 'E4405F',
-    'Snapchat': 'FFFC00',
     'Telegram': '0088CC',
     'TikTok': '000000',
-    'Pinterest': 'BD081C',
-    'YouTube Music': 'FF0000',
-    'Google Translate': '4285F4',
-    'ChatGPT': '10A37F',
-    'Google Play': '34A853',
-    'Fiverr': '1DBF73',
-    'Shopify': '96BF48',
-    'Temu': 'FB7701',
-    'Picsart': 'C209C2',
-    'Free Fire': 'FFA500',
-    'Clash of Clans': 'F1C40F',
+    'Snapchat': 'FFFC00',
     'Twitter': '1DA1F2',
     'LinkedIn': '0077B5',
     'Discord': '5865F2',
     'Reddit': 'FF4500',
     'Viber': '665CAC',
-    'WeChat': '07C160',
-    'Line': '00C300',
     'IMO': '2196F3',
+    'Line': '00C300',
+    'WeChat': '07C160',
+    'PUBG Mobile': 'F4A900',
+    'FIFA Mobile': '1E3A8A',
+    'Netflix': 'E50914',
+    'Free Fire': 'FFA500',
+    'Call of Duty': 'FF6B6B',
+    'Clash of Clans': 'F1C40F',
+    'Minecraft': '5D8C3A',
+    'Roblox': 'DE1212',
+    'Spotify': '1DB954',
+    'YouTube Music': 'FF0000',
+    'SoundCloud': 'FF5500',
     'VLC Player': 'FF8800',
-    'Firefox': 'FF7139',
-    'Google Maps': '4285F4',
+    'Google Chrome': '4285F4',
+    'Google Translate': '4285F4',
     'Google Drive': '4285F4',
     'Google Photos': '4285F4',
-    'Google Pay': '4285F4',
-    'Google': '4285F4',
-    'Dropbox': '0061FF',
-    'PayPal': '003087',
-    'Binance': 'F0B90B',
-    'Western Union': 'FFDD00',
-    '8 Ball Pool': '000000',
+    'Google Maps': '4285F4',
     'Amazon': 'FF9900',
-    'Shahid': '0066CC',
-    'Duolingo': '58CC02',
-    'Canva': '00C4CC',
-    'Airbnb': 'FF5A5F',
-    'Waze': '33CCFF',
-    'Uber Eats': '06C167',
-    'Talabat': 'FF6B00',
-    'Coinbase': '0052FF',
-    'Avast Antivirus': 'FF7800',
-    'Opera': 'FF1B2D',
-    'UC Browser': 'FF6600',
-    'Calculator': '4CAF50',
-    'Flashlight': 'FFC107',
-    'Phone': '2196F3',
-    'SHAREit': '0099FF',
-    'AccuBattery': 'FFEB3B',
-    'AppTweak': '00BCD4',
-    'Adobe Acrobat': 'E91E63',
     'AliExpress': 'FF4747',
-    'CamScanner': '00BFA5',
-    'Glovo': '00A0E3',
-    'Google Chrome': '4285F4',
     'Jumia': 'F68B1E',
     'eBay': 'E53238',
-    'Noon': 'FEAD0D',
-    'MyFitnessPal': '53C3F3',
-    'Nike Training': '111111',
-    'Strava': 'FC5200',
-    'Khan Academy': '14BF9B',
-    'Udemy': 'A435F0',
-    'Adobe Photoshop': '31A8FF',
-    'Booking.com': '003580',
-    'Norton Security': 'FFE01A',
-    'Quran': '006633',
-    'Khatma': '0099CC',
-    'Salaat First': '00AEEF',
-    'Google Gemini': '8E75F5',
-    'Google Assistant': '4285F4',
-    'Koora': 'FF6600',
-    'Ostoura': 'FF0066',
-    'Partshisi': '9C27B0',
-    'SnapTube': 'FF0000',
-    'HatGPT': '10A37F',
-    'Lightroom': '31A8FF',
-    'Fiver': '1DBF73',
-    'SoundCloud': 'FF5500',
-    'Deezer': 'FF0092',
+    'Uber Eats': '06C167',
+    'Glovo': '00A0E3',
+    'PayPal': '003087',
+    'Binance': 'F0B90B',
+    'CamScanner': '00BFA5',
+    'SHAREit': '0099FF',
+    'Among Us': 'C61D2D',
+    'Subway Surfers': '00BCD4',
+    'Candy Crush': 'E91E63',
+    '8 Ball Pool': '000000',
+    'Ludo King': 'FF5722',
     'MX Player': 'FF5722',
-    'InShot': 'F53B5C',
-    'KineMaster': 'F2B137',
-    'OSN+': '00AEEF',
-    'Yacine TV': '00FF00',
-    'beIN CONNECT': 'A1184E',
-    'Kooora Live': '0066CC',
-    'Brave Browser': 'FB542B',
-    'Truecaller': '0082EF',
-    'Sky News Arabia': 'E91E63',
-    'Al Arabiya': 'FF6600'
+    'Threads': '000000',
+    'Pinterest': 'BD081C'
 };
 
 // ==================== الدوال الأساسية ====================
@@ -282,6 +137,24 @@ function getImagePath(appName) {
     return null;
 }
 
+function getDownloadButtonText(source) {
+    if (source === 'playstore') {
+        return '🏪 Google Play';
+    } else if (source === 'apk') {
+        return '📥 تحميل مباشر';
+    }
+    return 'تحميل';
+}
+
+function getDownloadButtonClass(source) {
+    if (source === 'playstore') {
+        return 'playstore-btn';
+    } else if (source === 'apk') {
+        return 'apk-btn';
+    }
+    return '';
+}
+
 function createAppCard(app) {
     const card = document.createElement('div');
     card.className = 'app-card';
@@ -290,13 +163,16 @@ function createAppCard(app) {
     const stars = '★'.repeat(Math.floor(app.rating)) + '☆'.repeat(5 - Math.floor(app.rating));
     const imagePath = getImagePath(app.name);
     const defaultIcon = getDefaultIcon(app.name);
+    const downloadText = getDownloadButtonText(app.downloadSource);
+    const downloadClass = getDownloadButtonClass(app.downloadSource);
     
     card.innerHTML = `
         <img src="${imagePath || defaultIcon}" alt="${app.name}" class="app-icon"
              onerror="this.onerror=null; this.src='${defaultIcon}'" loading="lazy">
         <h3 class="app-name">${app.name}</h3>
         <div class="app-rating">${app.rating} ${stars}</div>
-        <a href="${app.downloadLink}" class="download-btn" target="_blank" rel="noopener noreferrer">تحميل</a>
+        <a href="${app.downloadLink}" class="download-btn ${downloadClass}" 
+           target="_blank" rel="noopener noreferrer">${downloadText}</a>
     `;
     
     return card;
@@ -309,6 +185,8 @@ function createSliderCard(app) {
     const stars = '★'.repeat(Math.floor(app.rating)) + '☆'.repeat(5 - Math.floor(app.rating));
     const imagePath = getImagePath(app.name);
     const defaultIcon = getDefaultIcon(app.name);
+    const downloadText = getDownloadButtonText(app.downloadSource);
+    const downloadClass = getDownloadButtonClass(app.downloadSource);
     
     card.innerHTML = `
         <img src="${imagePath || defaultIcon}" alt="${app.name}" class="app-icon"
@@ -316,7 +194,8 @@ function createSliderCard(app) {
              onerror="this.onerror=null; this.src='${defaultIcon}'">
         <h3 class="app-name">${app.name}</h3>
         <div class="app-rating">${app.rating} ${stars}</div>
-        <a href="${app.downloadLink}" class="download-btn" target="_blank" rel="noopener noreferrer">تحميل الآن</a>
+        <a href="${app.downloadLink}" class="download-btn ${downloadClass}" 
+           target="_blank" rel="noopener noreferrer">${downloadText}</a>
     `;
     
     return card;

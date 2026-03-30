@@ -59,7 +59,7 @@ const fileMap = {
     'OSN+': 'OSN.jpg',
     'Yacine TV': 'yacine-tv.png',
     'beIN CONNECT': 'beIN.jpg',
-    'Kooora Live': 'Kora.jpg',
+    'Kooora Live': 'KoooraLive.jpg',
     
     // Tools & Productivity
     'Google Translate': 'Google Translate.jpg',
@@ -339,13 +339,11 @@ function renderApps(apps) {
         return;
     }
     
-    // عرض التطبيقات المميزة في السلايدر
     const featuredApps = apps.filter(app => app.isFeatured);
     featuredApps.forEach(app => {
         sliderContainer.appendChild(createSliderCard(app));
     });
     
-    // تجميع التطبيقات حسب الفئات
     const appsByCategory = {};
     apps.forEach(app => {
         if (!app.isFeatured) {
@@ -356,7 +354,6 @@ function renderApps(apps) {
         }
     });
     
-    // عرض كل فئة
     for (const [categoryKey, categoryApps] of Object.entries(appsByCategory)) {
         const categoryInfo = categories[categoryKey] || { name: categoryKey, icon: 'fa-box' };
         
@@ -387,7 +384,6 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('🚀 CHELAT STORE - Page loaded successfully!');
     console.log('📱 Total apps:', appsData ? appsData.length : 0);
     
-    // عرض التطبيقات
     if (typeof appsData !== 'undefined' && appsData.length > 0) {
         renderApps(appsData);
     } else {
@@ -408,14 +404,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (sidebar) sidebar.classList.add('active');
         if (sidebarOverlay) sidebarOverlay.classList.add('active');
         document.body.classList.add('sidebar-open');
-        console.log('📂 Sidebar opened');
     }
 
     function closeSidebar() {
         if (sidebar) sidebar.classList.remove('active');
         if (sidebarOverlay) sidebarOverlay.classList.remove('active');
         document.body.classList.remove('sidebar-open');
-        console.log('📂 Sidebar closed');
     }
 
     if (menuToggle) menuToggle.addEventListener('click', (e) => {
@@ -427,7 +421,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (sidebarClose) sidebarClose.addEventListener('click', closeSidebar);
     if (sidebarOverlay) sidebarOverlay.addEventListener('click', closeSidebar);
 
-    // إغلاق القائمة عند النقر على أي رابط
     document.querySelectorAll('.sidebar a').forEach(link => {
         link.addEventListener('click', () => {
             setTimeout(closeSidebar, 300);
@@ -456,7 +449,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (darkModeToggle) {
             darkModeToggle.checked = isNowDark;
         }
-        console.log('🌙 Dark Mode:', isNowDark);
     }
     
     if (themeToggle) themeToggle.addEventListener('click', toggleDarkMode);
@@ -472,28 +464,19 @@ document.addEventListener('DOMContentLoaded', function() {
             searchPlaceholder: 'ابحث عن تطبيق...', 
             featuredTitle: '🔥 الأكثر تميزاً', 
             download: 'تحميل', 
-            downloadNow: 'تحميل الآن',
-            statsSection: 'إحصائيات المتجر',
-            totalApps: 'تطبيق',
-            avgRating: 'متوسط التقييم'
+            downloadNow: 'تحميل الآن'
         },
         en: { 
             searchPlaceholder: 'Search for an app...', 
             featuredTitle: '🔥 Featured Apps', 
             download: 'Download', 
-            downloadNow: 'Download Now',
-            statsSection: 'Store Statistics',
-            totalApps: 'Apps',
-            avgRating: 'Average Rating'
+            downloadNow: 'Download Now'
         },
         fr: { 
             searchPlaceholder: 'Rechercher...', 
             featuredTitle: '🔥 En Vedette', 
             download: 'Télécharger', 
-            downloadNow: 'Télécharger Maintenant',
-            statsSection: 'Statistiques du Magasin',
-            totalApps: 'Applications',
-            avgRating: 'Note Moyenne'
+            downloadNow: 'Télécharger Maintenant'
         }
     };
     
@@ -523,8 +506,6 @@ document.addEventListener('DOMContentLoaded', function() {
             if (btn.closest('.slider-card')) btn.textContent = t.downloadNow;
             else btn.textContent = t.download;
         });
-        
-        console.log('🌐 Language changed to:', lang);
     }
     
     if (langToggle) {
@@ -541,7 +522,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // تطبيق اللغة المحفوظة
     applyLanguage(currentLang);
     
     // ==================== Search ====================
@@ -554,7 +534,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 const term = e.target.value.toLowerCase().trim();
                 const filtered = appsData.filter(app => app.name.toLowerCase().includes(term));
                 renderApps(filtered);
-                console.log('🔍 Search:', term, '- Results:', filtered.length);
             }, 300);
         });
     }
@@ -620,6 +599,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     console.log('✅ All systems initialized successfully! 🎉');
-    console.log('💡 Total categories:', Object.keys(categories).length);
-    console.log('🎯 Featured apps:', appsData.filter(app => app.isFeatured).length);
 });

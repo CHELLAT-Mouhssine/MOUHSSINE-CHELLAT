@@ -1,5 +1,5 @@
 // ==================== CHELAT STORE - تطبيقات المتجر ====================
-// الإصدار: 3.0 - 120 تطبيق مع روابط التحميل
+// الإصدار: 4.0 - مع روابط Play Store و APK
 
 const appsData = [
     // ==================== SLIDER APPS ====================
@@ -146,18 +146,18 @@ const appsData = [
     { id: 109, name: "Microsoft Copilot", rating: 4.6, downloadLink: "https://play.google.com/store/apps/details?id=com.microsoft.copilot", downloadSource: "playstore", category: "AI", isFeatured: false },
     { id: 110, name: "Google Assistant", rating: 4.5, downloadLink: "https://play.google.com/store/apps/details?id=com.google.android.apps.googleassistant", downloadSource: "playstore", category: "AI", isFeatured: false },
     
-    // ==================== ENTERTAINMENT ====================
-    { id: 111, name: "SnapTube", rating: 4.4, downloadLink: "https://play.google.com/store/apps/details?id=com.snaptube.premium", downloadSource: "playstore", category: "Entertainment", isFeatured: false },
-    { id: 112, name: "Fiverr", rating: 4.6, downloadLink: "https://play.google.com/store/apps/details?id=com.fiverr.fiverr", downloadSource: "playstore", category: "Entertainment", isFeatured: false },
-    { id: 113, name: "Uber", rating: 4.4, downloadLink: "https://play.google.com/store/apps/details?id=com.ubercab", downloadSource: "playstore", category: "Entertainment", isFeatured: false },
+    // ==================== ENTERTAINMENT - APK LINKS ====================
+    { id: 111, name: "SnapTube", rating: 4.4, downloadLink: "https://apkpure.com/snaptube/com.snaptube.premium", downloadSource: "apk", category: "Entertainment", isFeatured: false },
+    { id: 112, name: "YouTube Vanced", rating: 4.7, downloadLink: "https://apkmirror.com/apk/team-vanced/youtube-vanced", downloadSource: "apk", category: "Entertainment", isFeatured: false },
+    { id: 113, name: "GBWhatsApp", rating: 4.5, downloadLink: "https://apkpure.com/gbwhatsapp/com.gbwhatsapp", downloadSource: "apk", category: "Social", isFeatured: false },
+    { id: 114, name: "FMWhatsApp", rating: 4.4, downloadLink: "https://apkmirror.com/apk/fouadmods/fmwhatsapp", downloadSource: "apk", category: "Social", isFeatured: false },
+    { id: 115, name: "Instagram Plus", rating: 4.3, downloadLink: "https://apkpure.com/instagram-plus/com.instagram.plus", downloadSource: "apk", category: "Social", isFeatured: false },
     
     // ==================== OTHER ====================
-    { id: 114, name: "Google", rating: 4.7, downloadLink: "https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox", downloadSource: "playstore", category: "Other", isFeatured: false },
-    { id: 115, name: "Phone", rating: 4.5, downloadLink: "https://play.google.com/store/apps/details?id=com.google.android.dialer", downloadSource: "playstore", category: "Other", isFeatured: false },
-    { id: 116, name: "Messages", rating: 4.4, downloadLink: "https://play.google.com/store/apps/details?id=com.google.android.apps.messaging", downloadSource: "playstore", category: "Other", isFeatured: false },
-    { id: 117, name: "Contacts", rating: 4.3, downloadLink: "https://play.google.com/store/apps/details?id=com.google.android.contacts", downloadSource: "playstore", category: "Other", isFeatured: false },
-    { id: 118, name: "Clock", rating: 4.5, downloadLink: "https://play.google.com/store/apps/details?id=com.google.android.deskclock", downloadSource: "playstore", category: "Other", isFeatured: false },
-    { id: 119, name: "Calendar", rating: 4.4, downloadLink: "https://play.google.com/store/apps/details?id=com.google.android.calendar", downloadSource: "playstore", category: "Other", isFeatured: false },
+    { id: 116, name: "Google", rating: 4.7, downloadLink: "https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox", downloadSource: "playstore", category: "Other", isFeatured: false },
+    { id: 117, name: "Phone", rating: 4.5, downloadLink: "https://play.google.com/store/apps/details?id=com.google.android.dialer", downloadSource: "playstore", category: "Other", isFeatured: false },
+    { id: 118, name: "Messages", rating: 4.4, downloadLink: "https://play.google.com/store/apps/details?id=com.google.android.apps.messaging", downloadSource: "playstore", category: "Other", isFeatured: false },
+    { id: 119, name: "Contacts", rating: 4.3, downloadLink: "https://play.google.com/store/apps/details?id=com.google.android.contacts", downloadSource: "playstore", category: "Other", isFeatured: false },
     { id: 120, name: "Gmail", rating: 4.6, downloadLink: "https://play.google.com/store/apps/details?id=com.google.android.gm", downloadSource: "playstore", category: "Other", isFeatured: false }
 ];
 
@@ -186,3 +186,5 @@ const categories = {
 };
 
 console.log('✅ CHELAT STORE Loaded:', appsData.length, 'apps');
+console.log('🏪 Play Store Apps:', appsData.filter(app => app.downloadSource === 'playstore').length);
+console.log('📦 APK Apps:', appsData.filter(app => app.downloadSource === 'apk').length);

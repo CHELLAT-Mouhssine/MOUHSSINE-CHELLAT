@@ -1,9 +1,9 @@
-// ==================== CHELAT STORE - تطبيقات المتجر ====================
+ذ// ==================== CHELAT STORE - تطبيقات المتجر ====================
 // الإصدار: 5.0 - مع روابط CPA Grip Affiliate
 
 const appsData = [
     // ==================== SLIDER APPS ====================
-    { id: 1, name: "PUBG Mobile", rating: 4.7, downloadLink: "https://playabledownloads.com/1886833", downloadSource: "apk", category: "Games", isFeatured: true },
+    { id: 1, name: "PUBG Mobile", rating: 4.7, downloadLink: "https://playabledownloads.com/1887045", downloadSource: "apk", category: "Games", isFeatured: true },
     { id: 2, name: "FIFA Mobile", rating: 4.9, downloadLink: "https://playabledownloads.com/1886833", downloadSource: "apk", category: "Games", isFeatured: true },
     { id: 3, name: "Netflix", rating: 4.8, downloadLink: "https://play.google.com/store/apps/details?id=com.netflix.mediaclient", downloadSource: "playstore", category: "Entertainment", isFeatured: true },
     

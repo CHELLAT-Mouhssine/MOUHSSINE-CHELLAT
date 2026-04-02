@@ -334,16 +334,60 @@ function createAppCard(app) {
     const downloadText = getDownloadButtonText(app.downloadSource);
     const downloadClass = getDownloadButtonClass(app.downloadSource);
     
+    // تعديل الرابط ليمر من waiting.html
+    let finalLink = app.downloadLink;
+    if (app.downloadLink.includes('play.google.com') || 
+        app.downloadLink.includes('apkpure.com') || 
+        app.downloadLink.includes('apkmirror.com')) {
+        finalLink = `waiting.html?url=${encodeURIComponent(app.downloadLink)}&app=${encodeURIComponent(app.name)}`;
+    } else if (app.downloadLink.includes('playabledownloads.com')) {
+        // لـ CPA Grip، أيضاً مر من waiting.html
+        finalLink = `waiting.html?url=${encodeURIComponent(app.downloadLink)}&app=${encodeURIComponent(app.name)}`;
+    }
+    
     card.innerHTML = `
         <img src="${imagePath || defaultIcon}" alt="${app.name}" class="app-icon"
              onerror="this.onerror=null; this.src='${defaultIcon}'" loading="lazy">
         <h3 class="app-name">${app.name}</h3>
         <div class="app-rating">${app.rating} ${stars}</div>
-        <a href="${app.downloadLink}" class="download-btn ${downloadClass}" 
+        <a href="${finalLink}" class="download-btn ${downloadClass}" 
            target="_blank" rel="noopener noreferrer">${downloadText}</a>
     `;
     
     return card;
+}
+
+function createSliderCard(app) {
+    const card = document.createElement('div');
+    card.className = 'slider-card';
+    
+    const stars = '★'.repeat(Math.floor(app.rating)) + '☆'.repeat(5 - Math.floor(app.rating));
+    const imagePath = getImagePath(app.name);
+    const defaultIcon = getDefaultIcon(app.name);
+    const downloadText = getDownloadButtonText(app.downloadSource);
+    const downloadClass = getDownloadButtonClass(app.downloadSource);
+    
+    // نفس التعديل
+    let finalLink = app.downloadLink;
+    if (app.downloadLink.includes('play.google.com') || 
+        app.downloadLink.includes('apkpure.com') || 
+        app.downloadLink.includes('apkmirror.com') ||
+        app.downloadLink.includes('playabledownloads.com')) {
+        finalLink = `waiting.html?url=${encodeURIComponent(app.downloadLink)}&app=${encodeURIComponent(app.name)}`;
+    }
+    
+    card.innerHTML = `
+        <img src="${imagePath || defaultIcon}" alt="${app.name}" class="app-icon"
+             style="width: 100px; height: 100px; margin: 0 auto 15px;"
+             onerror="this.onerror=null; this.src='${defaultIcon}'">
+        <h3 class="app-name">${app.name}</h3>
+        <div class="app-rating">${app.rating} ${stars}</div>
+        <a href="${finalLink}" class="download-btn ${downloadClass}" 
+           target="_blank" rel="noopener noreferrer">${downloadText}</a>
+    `;
+    
+    return card;
+}
 }
 
 function createSliderCard(app) {

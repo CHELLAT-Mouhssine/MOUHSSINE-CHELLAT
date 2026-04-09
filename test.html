@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار - CHELAT STORE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        .test-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+        .app-card {
+            background: #667eea;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 اختبار الموقع</h1>
+    
+    <div class="test-box">
+        <h2>1️⃣ اختبار JavaScript:</h2>
+        <div id="js-test">⏳ جاري التحميل...</div>
+    </div>
+    
+    <div class="test-box">
+        <h2>2️⃣ اختبار apps-data.js:</h2>
+        <div id="apps-test">⏳ جاري التحميل...</div>
+    </div>
+    
+    <div class="test-box">
+        <h2>3️⃣ عرض تطبيقات:</h2>
+        <div id="apps-display"></div>
+    </div>
+    
+    <div class="test-box">
+        <h2>4️⃣ رابط waiting.html:</h2>
+        <a href="waiting.html" target="_blank">
+            اضغط هنا لاختبار waiting.html
+        </a>
+    </div>
+
+    <script src="js/apps-data.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        // اختبار 1: JavaScript يعمل
+        document.getElementById('js-test').innerHTML = 
+            '<span class="success">✅ JavaScript يعمل!</span>';
+        
+        // اختبار 2: apps-data.js تحميل
+        setTimeout(() => {
+            if (typeof appsData !== 'undefined') {
+                document.getElementById('apps-test').innerHTML = 
+                    `<span class="success">✅ apps-data.js تحميل!<br>عدد التطبيقات: ${appsData.length}</span>`;
+                
+                // عرض 3 تطبيقات للتجربة
+                const display = document.getElementById('apps-display');
+                appsData.slice(0, 3).forEach(app => {
+                    const div = document.createElement('div');
+                    div.className = 'app-card';
+                    div.innerHTML = `
+                        <h3>${app.name}</h3>
+                        <p>التقييم: ${app.rating} ⭐</p>
+                        <p>الفئة: ${app.category}</p>
+                        <a href="${app.downloadLink}" target="_blank" 
+                           style="background:white;color:#667eea;padding:8px 15px;
+                                  border-radius:5px;text-decoration:none;display:inline-block;margin:5px;">
+                            تحميل
+                        </a>
+                    `;
+                    display.appendChild(div);
+                });
+            } else {
+                document.getElementById('apps-test').innerHTML = 
+                    '<span class="error">❌ apps-data.js ما تحميلش!</span>';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

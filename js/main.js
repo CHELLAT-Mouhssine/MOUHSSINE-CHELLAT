@@ -1,4 +1,5 @@
 // ==================== CHELAT STORE - Main JavaScript ====================
+// الإصدار: 3.0 - مع دعم waiting.html و CPA Grip
 
 const APPS_PER_PAGE = 20;
 let currentPage = 1;
@@ -12,11 +13,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check if appsData is loaded
     if (typeof appsData === 'undefined') {
         console.error('❌ apps-data.js not loaded!');
-        alert('Error: apps-data.js not loaded!');
+        alert('خطأ: لم يتم تحميل بيانات التطبيقات!');
         return;
     }
     
     console.log('✅ appsData loaded:', appsData.length, 'apps');
+    console.log('💰 CPA Grip Apps:', appsData.filter(app => app.downloadLink.includes('playabledownloads.com') || app.downloadLink === 'CPA_GRIP_LINK').length);
+    console.log('🏪 Play Store Apps:', appsData.filter(app => app.downloadSource === 'playstore').length);
     
     filteredApps = [...appsData];
     initializeApp();
@@ -31,7 +34,7 @@ function initializeApp() {
     console.log('✅ CHELAT STORE Loaded Successfully!');
 }
 
-// Render Slider
+// ==================== Render Slider ====================
 function renderSlider() {
     const sliderContainer = document.getElementById('sliderContainer');
     if (!sliderContainer) {
@@ -58,14 +61,14 @@ function createSliderCard(app) {
     const btnClass = app.downloadSource === 'playstore' ? 'playstore-btn' : 'apk-btn';
     
     card.innerHTML = `
-        <div style="text-align:center; padding:20px;">
-            <div style="font-size:60px; margin-bottom:10px;">📱</div>
-            <h3 style="margin:10px 0;">${app.name}</h3>
-            <div style="color:#ffa500; margin:10px 0;">${app.rating} ${stars}</div>
+        <div style="text-align:center;">
+            <div class="app-icon" style="font-size:60px; margin-bottom:10px;">📱</div>
+            ${app.isFeatured ? '<span style="background:#ffd700; color:#333; padding:3px 10px; border-radius:10px; font-size:12px;">مميز</span>' : ''}
+            <h3 style="margin:15px 0 10px; color:white;">${app.name}</h3>
+            <div class="rating" style="color:#ffd700; margin:10px 0;">${app.rating} ${stars}</div>
             <a href="${finalLink}" class="download-btn ${btnClass}" 
                target="_blank" rel="noopener noreferrer"
-               style="display:inline-block; padding:10px 20px; border-radius:5px; 
-                      text-decoration:none; color:white; margin:10px 0;">
+               style="display:inline-block; padding:10px 20px; border-radius:25px; text-decoration:none; color:white; margin:10px 0; transition:all 0.3s;">
                 ${downloadText}
             </a>
         </div>
@@ -74,7 +77,7 @@ function createSliderCard(app) {
     return card;
 }
 
-// Render Categories
+// ==================== Render Categories ====================
 function renderCategories() {
     const container = document.getElementById('categoriesContainer');
     if (!container) return;
@@ -85,6 +88,7 @@ function renderCategories() {
         'Games': 'الألعاب',
         'Music': 'الموسيقى',
         'Video': 'الفيديو',
+        'Streaming': 'البث المباشر',
         'Tools': 'الأدوات',
         'Shopping': 'التسوق',
         'Food': 'الطعام',
@@ -92,6 +96,12 @@ function renderCategories() {
         'News': 'الأخبار',
         'Health': 'الصحة',
         'Education': 'التعليم',
+        'Design': 'التصميم',
+        'Navigation': 'الملاحة',
+        'Travel': 'السفر',
+        'Security': 'الأمان',
+        'Religious': 'ديني',
+        'AI': 'الذكاء الاصطناعي',
         'Entertainment': 'الترفيه',
         'Other': 'أخرى'
     };
@@ -147,7 +157,7 @@ function filterByCategory(category) {
     renderApps();
 }
 
-// Render Apps
+// ==================== Render Apps ====================
 function renderApps() {
     const container = document.getElementById('appsContainer');
     if (!container) return;
@@ -174,15 +184,14 @@ function createAppCard(app) {
     const btnClass = app.downloadSource === 'playstore' ? 'playstore-btn' : 'apk-btn';
     
     card.innerHTML = `
-        <div style="text-align:center; padding:15px;">
-            <div style="font-size:50px; margin-bottom:10px;">📱</div>
-            <h3 style="margin:10px 0; font-size:16px;">${app.name}</h3>
-            <div style="color:#ffa500; margin:10px 0;">${app.rating} ${stars}</div>
-            <div style="color:#888; font-size:12px; margin:5px 0;">${app.category}</div>
+        <div style="text-align:center;">
+            <div class="app-icon" style="font-size:60px; margin-bottom:15px;">📱</div>
+            <h3 style="color:#333; margin:10px 0; font-size:16px;">${app.name}</h3>
+            <div class="rating" style="color:#ffa500; margin:10px 0;">${app.rating} ${stars}</div>
+            <div class="category" style="color:#888; font-size:12px; margin:5px 0;">${app.category}</div>
             <a href="${finalLink}" class="download-btn ${btnClass}" 
                target="_blank" rel="noopener noreferrer"
-               style="display:inline-block; padding:8px 15px; border-radius:5px; 
-                      text-decoration:none; color:white; margin:10px 0; font-size:14px;">
+               style="display:inline-block; padding:8px 15px; border-radius:25px; text-decoration:none; color:white; margin:10px 0; font-size:14px; transition:all 0.3s;">
                 ${downloadText}
             </a>
         </div>
@@ -191,23 +200,37 @@ function createAppCard(app) {
     return card;
 }
 
-// Get Final Link (with waiting.html redirect)
+// ==================== Get Final Link (with waiting.html redirect) ====================
 function getFinalLink(app) {
     let finalLink = app.downloadLink;
     
+    // جميع الروابط تمر من waiting.html
     if (app.downloadLink.includes('play.google.com') || 
         app.downloadLink.includes('apkpure.com') || 
         app.downloadLink.includes('apkmirror.com') ||
-        app.downloadLink.includes('playabledownloads.com')) {
+        app.downloadLink.includes('playabledownloads.com') ||
+        app.downloadLink === 'CPA_GRIP_LINK') {
         finalLink = `waiting.html?url=${encodeURIComponent(app.downloadLink)}&app=${encodeURIComponent(app.name)}`;
     }
     
     return finalLink;
 }
 
+// ==================== Load More Button ====================
 function updateLoadMoreButton() {
-    const loadMoreBtn = document.querySelector('.load-more-btn');
-    if (!loadMoreBtn) return;
+    let loadMoreBtn = document.querySelector('.load-more-btn');
+    
+    if (!loadMoreBtn) {
+        loadMoreBtn = document.createElement('button');
+        loadMoreBtn.className = 'load-more-btn';
+        loadMoreBtn.innerHTML = 'تحميل المزيد 📥';
+        loadMoreBtn.style.cssText = 'display:block; margin:20px auto; padding:15px 40px; background:linear-gradient(135deg, #667eea 0%, #764ba2 100%); color:white; border:none; border-radius:25px; cursor:pointer; font-size:16px;';
+        
+        const appsSection = document.querySelector('.apps-section');
+        if (appsSection) {
+            appsSection.appendChild(loadMoreBtn);
+        }
+    }
     
     const start = currentPage * APPS_PER_PAGE;
     if (start >= filteredApps.length) {
@@ -223,7 +246,7 @@ function loadMoreApps() {
     renderApps();
 }
 
-// Search
+// ==================== Search ====================
 function setupSearch() {
     const searchInput = document.getElementById('searchInput');
     if (!searchInput) return;

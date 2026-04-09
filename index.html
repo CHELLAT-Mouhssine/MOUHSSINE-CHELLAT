@@ -3,15 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHELAT STORE | تحميل تطبيقات وألعاب</title>
+    <title>CHELAT STORE | تحميل تطبيقات وألعاب أندرويد و آيفون 2026</title>
+    <meta name="description" content="CHELAT STORE - أفضل متجر عربي لتحميل التطبيقات والألعاب مجاناً. PUBG, FIFA, WhatsApp, TikTok وأكثر من 120 تطبيق.">
+    <meta name="keywords" content="تطبيقات 2026, تحميل تطبيقات, ألعاب أندرويد, تطبيقات مجانية, PUBG, FIFA, WhatsApp, TikTok, CHELAT STORE">
+    <meta name="author" content="CHELAT STORE">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="CHELAT STORE | تحميل تطبيقات وألعاب مجاناً">
+    <meta property="og:description" content="أفضل متجر عربي لتحميل التطبيقات والألعاب مجاناً. أكثر من 120 تطبيق.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chellat-mouhssine.github.io/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/icons/logo.png">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+        
+        .logo-container h1 {
+            color: #667eea;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        
+        .search-box {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #667eea;
+            border-radius: 50px;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s;
+        }
+        
+        .search-box input:focus {
+            box-shadow: 0 0 15px rgba(102, 126, 234, 0.5);
+        }
+        
+        .slider-section, .categories-section, .apps-section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            text-align: center;
+        }
+        
+        .slider-container {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 10px;
+        }
+        
+        .slider-card {
+            min-width: 250px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            padding: 20px;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .slider-card h3 {
+            margin: 15px 0 10px;
+            text-align: center;
+        }
+        
+        .slider-card .rating {
+            text-align: center;
+            color: #ffd700;
+            margin-bottom: 15px;
+        }
+        
+        .categories-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        
+        .category-btn {
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 14px;
+        }
+        
+        .category-btn:hover, .category-btn.active {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+        
+        .apps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 10px;
+        }
+        
+        .app-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+        
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+        }
+        
+        .app-card .app-icon {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+        
+        .app-card h3 {
+            color: #333;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        
+        .app-card .rating {
+            color: #ffa500;
+            margin: 10px 0;
+        }
+        
+        .app-card .category {
+            color: #888;
+            font-size: 12px;
+            margin: 5px 0;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: white;
+            margin: 10px 0;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .playstore-btn {
+            background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%);
+        }
+        
+        .apk-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .download-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            color: #667eea;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .slider-card {
+                min-width: 200px;
+            }
+            
+            .apps-container {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="logo-container">
-            <h1>📱 CHELAT STORE</h1>
+            <h1>📱 CHELAT STORE 🔥</h1>
         </div>
         <div class="search-box">
             <input type="text" id="searchInput" placeholder="ابحث عن تطبيق...">
@@ -39,6 +260,7 @@
     <!-- Footer -->
     <footer>
         <p>© 2026 CHELAT STORE - جميع الحقوق محفوظة</p>
+        <p>💰 تم التطوير بواسطة CHELLAT Mouhssine</p>
     </footer>
 
     <!-- JavaScript Files -->
